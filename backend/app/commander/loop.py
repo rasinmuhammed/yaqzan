@@ -50,6 +50,7 @@ class CommanderLoop:
         # operator keeps per-directive override.
         self.authority: str = "supervised"
         self.pending: dict[str, Directive] = {}  # "{cycle}:{id}" -> directive
+        self.history: list[dict[str, Any]] = []
 
     def cycle_due(self, snap: StateSnapshot) -> bool:
         if self._running:
@@ -138,12 +139,14 @@ class CommanderLoop:
             await self.emit("directives_applied", {
                 "cycle": self.cycle, "directive_ids": applied, "by": "auto"})
 
-        self.trace.append({
+        record = {
             "type": "cycle", "cycle": self.cycle, "tick": snap.tick,
             "deltas": deltas, "reasoning": "".join(reasoning_parts),
             "plan": plan.model_dump(), "applied": applied,
             "verifier_feedback": self.verifier_feedback,
-        })
+        }
+        self.trace.append(record)
+        self.history.append(record)
         self.previous_plan = plan
 
     async def _parse_with_repair(self, messages: list[dict], completion: str) -> CommandPlan | None:

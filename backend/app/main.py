@@ -693,10 +693,36 @@ class Session:
 session: Session | None = None
 
 
+async def precompute_demo_run(sess: Session):
+    log.info("Pre-computing demo run for judges...")
+    from .commander.scripted import ScriptedCommander
+    old_client = sess.loop.client
+    old_sync = sess.settings.commander_sync
+    old_tick_seconds = sess.tick_seconds
+
+    # Use zero-delay scripted commander
+    sess.loop.client = ScriptedCommander(delay=0)
+    sess.settings.commander_sync = True
+    sess.running = True
+    sess.tick_seconds = 0.0
+
+    while sess.engine.tick < sess.engine.max_ticks:
+        snap = sess.engine.step()
+        if sess.loop.cycle_due(snap):
+            await sess.loop.run_cycle(snap)
+
+    # Restore settings
+    sess.loop.client = old_client
+    sess.settings.commander_sync = old_sync
+    sess.tick_seconds = old_tick_seconds
+    sess.running = False
+    log.info("Demo run pre-computed.")
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global session
     session = Session()
+    await precompute_demo_run(session)
     session._task = asyncio.create_task(session.run())
     log.info("Yaqzan up — commander=%s scenario=%s", session.commander_name, session.settings.scenario)
     yield
@@ -770,6 +796,8 @@ async def ws_endpoint(ws: WebSocket) -> None:
         "running": session.running,
         "authority": session.loop.authority,
         "previous_plan": session.loop.previous_plan.model_dump() if session.loop.previous_plan else None,
+        "history": session.loop.history,
+        "events": session.engine.event_log,
     }, default=str))
     try:
         while True:

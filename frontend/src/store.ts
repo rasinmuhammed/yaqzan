@@ -181,19 +181,29 @@ function reduce(s: AppState, a: Action): AppState {
         case "sim_status":
           return { ...s, running: m.running };
         case "hello": {
-          const initCycles = s.cycles.length > 0 ? s.cycles : (m.previous_plan ? [{
-            cycle: m.previous_plan.cycle,
-            tick: 0,
+          const initCycles = m.previous_plan ? [{
+            cycle: m.snapshot?.tick ? Math.floor(m.snapshot.tick / 3) : 0,
+            tick: m.snapshot?.tick ?? 0,
             reasoning: "Restored from history.",
             done: true,
             plan: m.previous_plan,
             meta: { elapsed_s: 0, tokens: 0 }
-          }] : []);
+          }] : [];
           return {
             ...s, commander: m.commander, running: m.running,
             snapshot: m.snapshot ?? s.snapshot,
             authority: m.authority === "delegated" ? "delegated" : "supervised",
-            cycles: initCycles,
+            cycles: m.history && m.history.length > 0 
+              ? m.history.map((h: any) => ({
+                  cycle: h.cycle,
+                  tick: h.tick,
+                  reasoning: h.reasoning,
+                  done: true,
+                  plan: h.plan,
+                  meta: h.meta || { elapsed_s: 0, tokens: 0 }
+                }))
+              : initCycles,
+            events: m.events ? m.events.map((e: string) => ({ tick: 0, text: e, severity: "info" })) : s.events,
           };
         }
         case "authority":

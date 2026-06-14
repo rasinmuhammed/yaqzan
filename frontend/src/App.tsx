@@ -19,6 +19,7 @@ import { ChatPanel } from "./components/dashboards/ChatPanel";
 import { ReportsDash } from "./components/dashboards/ReportsDash";
 import { SimulatorPanel } from "./components/dashboards/SimulatorPanel";
 import { ReportIncidentModal } from "./components/ReportIncidentModal";
+import { DisclaimerModal } from "./components/DisclaimerModal";
 import { useYaqzan } from "./store";
 
 const SEV_COLORS: Record<string, string> = {
@@ -39,6 +40,12 @@ export default function App() {
   const [showReport, setShowReport] = useState(false);
   const [reportSeen, setReportSeen] = useState(false);
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
+  const [showDisclaimer, setShowDisclaimer] = useState(() => {
+    if (film) return false;
+    const seen = localStorage.getItem("yaqzan_disclaimer_seen");
+    if (!seen) localStorage.setItem("yaqzan_disclaimer_seen", "1");
+    return !seen;
+  });
   const [latestInject, setLatestInject] = useState<{
     id: string; severity: string; headline: string; tick: number;
   } | null>(null);
@@ -182,6 +189,9 @@ export default function App() {
       )}
       {isReportModalOpen && (
         <ReportIncidentModal city={state.city} onClose={() => setIsReportModalOpen(false)} send={send} />
+      )}
+      {showDisclaimer && (
+        <DisclaimerModal onClose={() => setShowDisclaimer(false)} />
       )}
 
       {/* header */}
