@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     # Hold sim time while the commander is mid-cycle. Honest pairing of
     # accelerated sim time with a slow reasoning endpoint: the disaster
     # does not outrun its commander. Recommended ON for live-K2 demos.
-    commander_sync: bool = True
+    commander_sync: bool = False
 
     # Trace persistence
     trace_dir: str = "traces"
