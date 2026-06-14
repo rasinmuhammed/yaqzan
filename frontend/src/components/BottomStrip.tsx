@@ -1,4 +1,4 @@
-import { useMemo, useRef, useEffect } from "react";
+import { useMemo, useRef, useEffect, useState } from "react";
 import type { Snapshot, TickerEvent } from "../types";
 
 const TREND = (curr: number, prev: number | undefined) => {
@@ -34,12 +34,14 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
   const tick = snapshot?.tick ?? 0;
   const maxTick = 60;
   const prevRisk = riskHistory.length >= 2 ? riskHistory[riskHistory.length - 2] : undefined;
+  const [activeSpeed, setActiveSpeed] = useState<number>(1.5);
 
   return (
     <div className="panel flex h-full items-center gap-0 px-0">
       {/* Sim controls */}
       {!film && (
-        <div className="flex shrink-0 items-center gap-1.5 border-r border-[var(--hairline)] px-3">
+        <div className="flex shrink-0 items-center gap-2 border-r border-[var(--hairline)] px-3">
+          <div className="flex items-center gap-1.5">
           <button
             onClick={() => send({ cmd: running ? "pause" : "start" })}
             className="pill flex items-center gap-1.5 border border-[var(--brand-line)] bg-[var(--brand-soft)] px-3 py-1 text-[10px] font-semibold text-[var(--brand)] transition-all hover:bg-[var(--brand)] hover:text-white"
@@ -62,6 +64,23 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
           >
             Reset
           </button>
+          </div>
+          <div className="flex items-center gap-0.5 ml-1 rounded-md border border-[var(--hairline)] bg-[var(--bg-inset)] p-0.5">
+            {[
+              { label: "1x", val: 2.0 },
+              { label: "2x", val: 1.0 },
+              { label: "5x", val: 0.4 },
+            ].map((s) => (
+              <button
+                key={s.label}
+                onClick={() => { setActiveSpeed(s.val); send({ cmd: "set_speed", seconds: s.val }); }}
+                className={`px-2 py-[3px] text-[9px] font-bold tracking-wider rounded transition-colors ${activeSpeed === s.val ? "bg-[var(--brand-soft)] text-[var(--brand)]" : "text-[var(--ink-dim)] hover:text-[var(--ink-bright)] hover:bg-[var(--bg-raised)]"}`}
+                title={`Set speed to ${s.label}`}
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
         </div>
       )}
 
@@ -83,7 +102,7 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
       {/* Key metrics with trend arrows */}
       <div className="flex flex-1 items-center gap-0">
         <MetricCell
-          label="AT RISK"
+          label="PEOPLE AT RISK"
           value={(snapshot?.casualties_at_risk ?? 0).toLocaleString()}
           trend={TREND(snapshot?.casualties_at_risk ?? 0, prevRisk)}
           critical={(snapshot?.casualties_at_risk ?? 0) > 15000}
@@ -96,18 +115,18 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
           }
         />
         <MetricCell
-          label="EVACUATED"
+          label="PEOPLE SAVED"
           value={(snapshot?.total_evacuated ?? 0).toLocaleString()}
           color="var(--ok)"
         />
         {/* Honest per-instance throughput: citizen reports the AI has triaged */}
         <MetricCell
-          label="REPORTS TRIAGED"
+          label="AI TRIAGED"
           value={reportsTriaged.toLocaleString()}
           color="var(--brand)"
         />
         <MetricCell
-          label="911 CALLS"
+          label="911 CALL RATE"
           value={`${tel?.calls_911_per_min ?? 0}/m`}
           critical={(tel?.calls_911_per_min ?? 0) > 500}
           color={
@@ -117,7 +136,7 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
           }
         />
         <MetricCell
-          label="CELL TOWER"
+          label="NETWORK HEALTH"
           value={`${tel?.cell_network_pct ?? 100}%`}
           color={
             (tel?.cell_network_pct ?? 100) < 60
@@ -126,7 +145,7 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
           }
         />
         <MetricCell
-          label="CYCLES"
+          label="AI DECISIONS"
           value={String(cycleCount)}
           color="var(--brand)"
         />
