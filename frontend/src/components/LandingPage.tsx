@@ -243,6 +243,7 @@ export const LandingPage = memo(function LandingPage({
           </div>
         </div>
         <div className="landing-nav-links">
+          <a href="/report" className="landing-nav-link" style={{ color: "var(--brand)", fontWeight: 600 }}>Public Reporting</a>
           <button onClick={onGuide} className="landing-nav-link">How It Works</button>
           <button onClick={onEnter} className="landing-nav-link">Dashboard</button>
         </div>

@@ -90,6 +90,34 @@ export default function App() {
 
   const sev = state.snapshot?.severity_level ?? "normal";
 
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 760);
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth <= 760);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
+
+  const isReportRoute = window.location.pathname === "/report";
+
+  if (isReportRoute) {
+    return (
+      <div className="h-screen w-screen bg-[var(--bg)]" style={{ position: "fixed", inset: 0 }}>
+        <ReportIncidentModal city={state.city} onClose={() => {}} send={send} />
+      </div>
+    );
+  }
+
+  if (isMobile) {
+    return (
+      <div style={{ display: "flex", position: "fixed", inset: 0, zIndex: 9999, flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 14, padding: 32, textAlign: "center", background: "var(--bg)" }}>
+        <div style={{ fontFamily: "Outfit, sans-serif", fontSize: 20, fontWeight: 700, color: "#edf0f7" }}>YAQZAN</div>
+        <div style={{ fontFamily: "Inter, sans-serif", fontSize: 13, lineHeight: 1.6, color: "#6b7a94", maxWidth: 280 }}>
+          The live operations room is built for a larger screen. Please open Yaqzan on a tablet or desktop for the full experience.
+        </div>
+      </div>
+    );
+  }
+
   if (page === "landing") {
     return (
       <LandingPage 
