@@ -40,12 +40,7 @@ export default function App() {
   const [showReport, setShowReport] = useState(false);
   const [reportSeen, setReportSeen] = useState(false);
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
-  const [showDisclaimer, setShowDisclaimer] = useState(() => {
-    if (film) return false;
-    const seen = localStorage.getItem("yaqzan_disclaimer_seen");
-    if (!seen) localStorage.setItem("yaqzan_disclaimer_seen", "1");
-    return !seen;
-  });
+  const [showDisclaimer, setShowDisclaimer] = useState(!film);
   const [latestInject, setLatestInject] = useState<{
     id: string; severity: string; headline: string; tick: number;
   } | null>(null);
