@@ -64,6 +64,13 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
           >
             Reset
           </button>
+          <button
+            onClick={() => send({ cmd: "jump_time" })}
+            className="pill border border-[var(--hairline)] bg-transparent px-2.5 py-1 text-[10px] font-bold text-[var(--ink-dim)] transition-colors hover:border-[var(--brand)] hover:text-[var(--brand)]"
+            title="Fast-forward 15 ticks instantly"
+          >
+            Skip Intro
+          </button>
           </div>
           <div className="flex items-center gap-0.5 ml-1 rounded-md border border-[var(--hairline)] bg-[var(--bg-inset)] p-0.5">
             {[

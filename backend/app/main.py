@@ -122,6 +122,12 @@ class Session:
             self.report_seq = 100
             await self.hub.broadcast("sim_status", {"running": False})
             await self.hub.broadcast("state_snapshot", {"snapshot": self.engine.snapshot().model_dump()})
+        elif cmd == "jump_time":
+            target = min(self.engine.max_ticks, self.engine.tick + 15)
+            while self.engine.tick < target:
+                self.engine.step()
+            self.loop.last_cycle_tick = target
+            await self.hub.broadcast("state_snapshot", {"snapshot": self.engine.snapshot().model_dump()})
         elif cmd == "load_scenario":
             scenario = msg.get("scenario", "")
             path = SCENARIO_DIR / scenario
