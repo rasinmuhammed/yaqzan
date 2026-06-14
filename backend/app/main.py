@@ -51,10 +51,11 @@ class Session:
         self.engine = SimulationEngine(SCENARIO_DIR / self.settings.scenario, seed=self.settings.seed)
         self.trace = TraceStore(self.settings.trace_dir)
         from .commander.scripted import ReplayCommander
-        self.client: CommanderClient = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
+        self.macro_client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
+        self.client: CommanderClient = K2Client(self.settings) if self.settings.k2_configured else self.macro_client
         self.commander_name = "k2_replay"
         self.loop = CommanderLoop(
-            self.engine, self.client, self.trace, self.hub.broadcast,
+            self.engine, self.macro_client, self.trace, self.hub.broadcast,
             cycle_ticks=self.settings.commander_cycle_ticks,
         )
         self.running = False
@@ -74,9 +75,10 @@ class Session:
         authority = self.loop.authority
         self.engine = SimulationEngine(SCENARIO_DIR / self.settings.scenario, seed=self.settings.seed)
         from .commander.scripted import ReplayCommander
-        self.client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
+        self.macro_client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
+        self.client = K2Client(self.settings) if self.settings.k2_configured else self.macro_client
         self.loop = CommanderLoop(
-            self.engine, self.client, self.trace, self.hub.broadcast,
+            self.engine, self.macro_client, self.trace, self.hub.broadcast,
             cycle_ticks=self.settings.commander_cycle_ticks,
         )
         self.loop.authority = authority
