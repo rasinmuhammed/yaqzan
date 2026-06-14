@@ -209,7 +209,15 @@ export default function App() {
           onReset={() => { setShowReport(false); send({ cmd: "reset" }); setTimeout(() => send({ cmd: "start" }), 600); }} />
       )}
       {isReportModalOpen && (
-        <ReportIncidentModal city={state.city} onClose={() => setIsReportModalOpen(false)} send={send} />
+        <ReportIncidentModal
+          city={state.city}
+          onClose={() => setIsReportModalOpen(false)}
+          send={(msg) => {
+            send(msg);
+            setActiveTab("reports");
+            setIsReportModalOpen(false);
+          }}
+        />
       )}
       {showDisclaimer && (
         <DisclaimerModal onClose={() => setShowDisclaimer(false)} />

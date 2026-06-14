@@ -56,11 +56,14 @@ Action params:
 """
 
 
-def compact_world_state(snap: StateSnapshot, city_name: str, shelters: dict[str, int]) -> str:
-    """Serialize a snapshot into a compact, stable-ordered world state (~2-4K tokens)."""
+def compact_world_state(snap: StateSnapshot, city_name: str, shelters: dict[str, int], recent_reports: list[dict] = None) -> str:
+    """A densely packed summary of the simulation for the commander.
+    We exclude normal nodes and empty edges to save tokens.
+    """
     tel = snap.telemetry
-    flooded = [n for n in snap.nodes if n.depth in ("flooded", "severe")]
-    ponding = [n.id for n in snap.nodes if n.depth == "ponding"]
+    flooded = [n for n in snap.nodes if n.water_m > 0.05]
+    ponding = [n.id for n in snap.nodes if 0.01 < n.water_m <= 0.05]
+    
     state = {
         "city": city_name,
         "tick": snap.tick,
@@ -107,6 +110,7 @@ def compact_world_state(snap: StateSnapshot, city_name: str, shelters: dict[str,
             {"id": i.id, "tick": i.tick, "severity": i.severity, "headline": i.headline}
             for i in snap.active_injects
         ],
+        "recent_citizen_reports": recent_reports or [],
         "contaminated_nodes": snap.contaminated_nodes,
         "severity_level": snap.severity_level,
     }

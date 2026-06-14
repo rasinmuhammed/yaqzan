@@ -61,24 +61,24 @@ class CommanderLoop:
             i.severity == "critical" and i.tick == snap.tick for i in snap.active_injects
         )
 
-    async def run_cycle(self, snap: StateSnapshot) -> None:
+    async def run_cycle(self, snap: StateSnapshot, recent_reports: list[dict] = None) -> None:
         self._running = True
-        self.cycle += 1
         self.last_cycle_tick = snap.tick
+        self.cycle += 1
         try:
-            await self._run_cycle_inner(snap)
+            await self._run_cycle_inner(snap, recent_reports)
         except Exception as e:
             self.trace.append({"type": "cycle_error", "cycle": self.cycle, "error": str(e)})
             await self.emit("cycle_degraded", {"cycle": self.cycle, "reason": str(e)})
         finally:
             self._running = False
 
-    async def _run_cycle_inner(self, snap: StateSnapshot) -> None:
+    async def _run_cycle_inner(self, snap: StateSnapshot, recent_reports: list[dict] = None) -> None:
         started = time.monotonic()
         shelters = {
             n.id: n.shelter_capacity for n in self.engine.city.nodes.values() if n.is_shelter
         }
-        world = compact_world_state(snap, self.engine.city.name, shelters)
+        world = compact_world_state(snap, self.engine.city.name, shelters, recent_reports)
         deltas = self._deltas()
         user = cycle_user_prompt(world, self.cycle, self.previous_plan, deltas, self.verifier_feedback)
         messages = [

@@ -104,7 +104,7 @@ class Session:
 
             if self.loop.cycle_due(snap) and (self._commander_task is None or self._commander_task.done()):
                 # Commander runs concurrently with the sim; cycles never overlap.
-                self._commander_task = asyncio.create_task(self.loop.run_cycle(snap))
+                self._commander_task = asyncio.create_task(self.loop.run_cycle(snap, self.recent_reports))
             await asyncio.sleep(self.tick_seconds)
 
     async def handle(self, msg: dict[str, Any], ws: WebSocket | None = None) -> None:
@@ -284,7 +284,7 @@ class Session:
                 from .commander.prompts import compact_world_state
                 snap = self.engine.snapshot()
                 shelters = {n.id: n.shelter_capacity for n in city.nodes.values() if n.is_shelter}
-                context = compact_world_state(snap, city.name, shelters)
+                context = compact_world_state(snap, city.name, shelters, self.recent_reports)
                 node_ids = ", ".join(sorted(city.nodes))
                 edge_ids = ", ".join(sorted(self.engine.city.edges))
                 messages = [
@@ -412,7 +412,7 @@ class Session:
             snap = self.engine.snapshot()
             shelters = {n.id: n.shelter_capacity
                         for n in self.engine.city.nodes.values() if n.is_shelter}
-            context = compact_world_state(snap, self.engine.city.name, shelters)
+            context = compact_world_state(snap, self.engine.city.name, shelters, self.recent_reports)
             loc, typ, desc = report.get("location", ""), report.get("type", ""), report.get("description", "")
             messages = [
                 {"role": "system", "content": (
@@ -619,7 +619,7 @@ class Session:
                 n.id: n.shelter_capacity
                 for n in self.engine.city.nodes.values() if n.is_shelter
             }
-            context = compact_world_state(snap, self.engine.city.name, shelters)
+            context = compact_world_state(snap, self.engine.city.name, shelters, self.recent_reports)
             messages = [
                 {"role": "system", "content": (
                     "You are Yaqzan, the AI incident commander advising this city's emergency "
