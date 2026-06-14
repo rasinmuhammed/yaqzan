@@ -251,12 +251,15 @@ export const ChatPanel = memo(function ChatPanel({
 
   return (
     <div className="flex h-full flex-col">
-      <DashHeader title="ASK COMMANDER AI" subtitle="Situational Q&A powered by K2"
+      <DashHeader title="ASK COMMANDER AI" subtitle="Ask anything — answered live by K2 Think V2"
         right={
-          <div className="flex items-center gap-1.5">
-            <span className="flex h-[6px] w-[6px] rounded-full bg-[var(--ok)] animate-pulse" />
-            <span className="text-[9px] text-[var(--ink-dim)]">Live context</span>
-          </div>
+          <span className="flex items-center gap-1.5 rounded bg-[rgba(16,185,129,0.1)] px-2 py-1 text-[8.5px] font-bold tracking-wider text-emerald-500" title="Type your own question — this is a genuine, live K2 Think V2 response, not pre-recorded.">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+            </span>
+            LIVE K2 · TYPE YOUR OWN
+          </span>
         }
       />
       <div ref={scrollRef} className="scroll-thin flex-1 overflow-y-auto px-5 py-4">

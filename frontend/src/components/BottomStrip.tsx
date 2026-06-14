@@ -91,19 +91,20 @@ export function BottomStrip({ snapshot, events, riskHistory, running, film, cycl
         </div>
       )}
 
-      {/* Progress bar segment */}
-      <div className="flex shrink-0 flex-col items-center gap-0.5 border-r border-[var(--hairline)] px-4">
+      {/* Timeline scrubber — drag to seek to any point in the drill instantly */}
+      <div className="flex shrink-0 flex-col items-center gap-1 border-r border-[var(--hairline)] px-4">
         <div className="flex items-baseline gap-1.5">
           <span className="mono text-[16px] font-bold text-[var(--ink-bright)]">{tick}</span>
           <span className="mono text-[10px] text-[var(--ink-dim)]">/ {maxTick}</span>
+          <span className="label-caps ml-1" style={{ fontSize: 7 }}>timeline</span>
         </div>
-        <div className="h-[3px] w-[52px] overflow-hidden rounded-full bg-[var(--bg-inset)]">
-          <div className="h-full rounded-full transition-all duration-1000"
-            style={{
-              width: `${(tick / maxTick) * 100}%`,
-              background: `linear-gradient(90deg, var(--brand) 0%, ${(snapshot?.severity_level === "extreme" || snapshot?.severity_level === "critical") ? "#ef4444" : "var(--brand-bright)"} 100%)`,
-            }} />
-        </div>
+        <input
+          type="range" min={0} max={maxTick} value={Math.min(tick, maxTick)}
+          onChange={(e) => send({ cmd: "seek", tick: Number(e.target.value) })}
+          title="Drag to scrub through the drill"
+          className="yaqzan-scrubber w-[120px]"
+          style={{ ["--pct" as string]: `${(Math.min(tick, maxTick) / maxTick) * 100}%` }}
+        />
       </div>
 
       {/* Key metrics with trend arrows */}

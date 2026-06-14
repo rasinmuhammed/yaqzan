@@ -752,3 +752,21 @@ input:focus-visible, button:focus-visible {
 /* The intelligence stream reads as calm prose, not a log dump */
 .label-caps { letter-spacing: 0.16em; }
 
+
+/* Timeline scrubber — drag to seek through the pre-seeded drill */
+.yaqzan-scrubber {
+  -webkit-appearance: none; appearance: none;
+  height: 4px; border-radius: 99px; cursor: pointer; outline: none;
+  background: linear-gradient(90deg, var(--brand) var(--pct, 0%), var(--bg-inset) var(--pct, 0%));
+}
+.yaqzan-scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--brand-bright); border: 2px solid var(--bg);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.55); cursor: grab; transition: transform 0.12s ease;
+}
+.yaqzan-scrubber::-webkit-slider-thumb:active { cursor: grabbing; transform: scale(1.25); }
+.yaqzan-scrubber::-moz-range-thumb {
+  width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--bg);
+  background: var(--brand-bright); cursor: grab;
+}

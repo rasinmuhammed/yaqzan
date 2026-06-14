@@ -51,8 +51,16 @@ class Session:
         self.engine = SimulationEngine(SCENARIO_DIR / self.settings.scenario, seed=self.settings.seed)
         self.trace = TraceStore(self.settings.trace_dir)
         from .commander.scripted import ReplayCommander
+        # Two clients, deliberately separate:
+        #  - macro_client (replay): drives the slow autonomous commander loop
+        #    from a pre-recorded trace, so judges never wait minutes per cycle.
+        #  - live_client (K2): powers the interactive features judges verify
+        #    live — Ask AI chat, citizen-report triage, live-event injection,
+        #    and the disaster designer. NEVER replaced by the replay.
         self.macro_client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
-        self.client: CommanderClient = K2Client(self.settings) if self.settings.k2_configured else self.macro_client
+        self.live_client: CommanderClient = (
+            K2Client(self.settings) if self.settings.k2_configured else self.macro_client
+        )
         self.commander_name = "k2_replay"
         self.loop = CommanderLoop(
             self.engine, self.macro_client, self.trace, self.hub.broadcast,
@@ -71,12 +79,58 @@ class Session:
         self.recent_reports: list[dict[str, Any]] = []
         self.report_seq = 100  # monotonic id source (above the seeded demo ids)
 
+    async def _seek(self, target: int) -> None:
+        """Scrub to any tick in the pre-seeded drill. The engine is
+        deterministic, so we rebuild the world from tick 0, applying the
+        recorded commander directives at their cycle points, then show the
+        replayed briefing for that moment. Instant — no waiting."""
+        from .commander.schema import Directive
+        target = max(0, min(self.engine.max_ticks, int(target)))
+        self.running = False
+        self.reset()
+        self.recent_reports.clear()
+        self.report_ops.clear()
+        self.report_seq = 100
+        cadence = max(1, self.settings.commander_cycle_ticks)
+        cycles = getattr(self.macro_client, "cycles", [])
+        last = None
+        while self.engine.tick < target:
+            self.engine.step()  # auto-applies injects + advances units
+            t = self.engine.tick
+            if t % cadence == 0:
+                idx = (t // cadence) - 1
+                if 0 <= idx < len(cycles):
+                    rec = cycles[idx]
+                    plan = rec.get("plan") or {}
+                    applied = set(rec.get("applied") or [])
+                    for dd in plan.get("directives", []):
+                        if dd.get("id") in applied or (not applied and dd.get("verified")):
+                            try:
+                                self.loop._apply(Directive(**dd))
+                            except Exception:
+                                pass
+                    last = (idx, rec)
+        self.loop.last_cycle_tick = target
+        await self.hub.broadcast("sim_status", {"running": False})
+        await self.hub.broadcast("state_snapshot", {"snapshot": self.engine.snapshot().model_dump()})
+        # Surface the replayed briefing valid at this point.
+        if last:
+            idx, rec = last
+            await self.hub.broadcast("cycle_start", {"cycle": idx + 1, "tick": target})
+            await self.hub.broadcast("reasoning_token", {"cycle": idx + 1, "text": rec.get("reasoning", "")})
+            await self.hub.broadcast("reasoning_done", {"cycle": idx + 1})
+            await self.hub.broadcast("plan", {
+                "cycle": idx + 1, "plan": rec.get("plan", {}),
+                "meta": {"elapsed_s": 0, "tokens": len(rec.get("reasoning", "")) // 4},
+            })
+
     def reset(self) -> None:
         authority = self.loop.authority
         self.engine = SimulationEngine(SCENARIO_DIR / self.settings.scenario, seed=self.settings.seed)
         from .commander.scripted import ReplayCommander
+        # Fresh replay for the commander loop; the live K2 client persists so
+        # chat / report / live-event stay live across resets.
         self.macro_client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
-        self.client = K2Client(self.settings) if self.settings.k2_configured else self.macro_client
         self.loop = CommanderLoop(
             self.engine, self.macro_client, self.trace, self.hub.broadcast,
             cycle_ticks=self.settings.commander_cycle_ticks,
@@ -129,6 +183,8 @@ class Session:
                 self.engine.step()
             self.loop.last_cycle_tick = target
             await self.hub.broadcast("state_snapshot", {"snapshot": self.engine.snapshot().model_dump()})
+        elif cmd == "seek":
+            await self._seek(int(msg.get("tick", 0)))
         elif cmd == "load_scenario":
             scenario = msg.get("scenario", "")
             path = SCENARIO_DIR / scenario
@@ -138,9 +194,11 @@ class Session:
                 self.settings.scenario = scenario
                 self.engine = SimulationEngine(path, seed=self.settings.seed)
                 from .commander.scripted import ReplayCommander
-                self.client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
+                # Only the commander loop swaps to the fresh replay — the live
+                # K2 client (chat / report / live-event) is left untouched.
+                self.macro_client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
                 self.loop = CommanderLoop(
-                    self.engine, self.client, self.trace, self.hub.broadcast,
+                    self.engine, self.macro_client, self.trace, self.hub.broadcast,
                     cycle_ticks=self.settings.commander_cycle_ticks,
                 )
                 self.loop.authority = authority
@@ -242,7 +300,7 @@ class Session:
     async def _gen_with_repair(self, sg, messages: list[dict], city) -> "object":
         """Stream the designer's reasoning, parse, repair once on failure."""
         completion: list[str] = []
-        async for ev in self.client.stream(messages):
+        async for ev in self.live_client.stream(messages):
             if ev.kind == "reasoning":
                 await self.hub.broadcast("scenario_gen_reasoning", {"text": ev.text})
             else:
@@ -262,7 +320,7 @@ class Session:
                                             "Re-emit ONLY the corrected fenced ```json block. No prose."},
             ]
             parts: list[str] = []
-            async for ev in self.client.stream(repair):
+            async for ev in self.live_client.stream(repair):
                 if ev.kind == "content":
                     parts.append(ev.text)
             return sg.parse_generated("".join(parts))
@@ -336,7 +394,7 @@ class Session:
     async def _interpret_event(self, messages: list[dict], fenced):
         """Stream the model's interpretation (reasoning shown live) and parse it."""
         completion, buf, in_fence = "", "", False
-        stream = getattr(self.client, "stream_raw", self.client.stream)
+        stream = getattr(self.live_client, "stream_raw", self.live_client.stream)
         async for ev in stream(messages):
             if ev.kind == "reasoning":
                 await self.hub.broadcast("live_event_reasoning", {"text": ev.text})
@@ -446,7 +504,7 @@ class Session:
                 triage, instruction, directive = self._scripted_report_op(report, snap, rid)
             else:
                 completion, buf, in_fence = "", "", False
-                stream = getattr(self.client, "stream_raw", self.client.stream)
+                stream = getattr(self.live_client, "stream_raw", self.live_client.stream)
                 async for ev in stream(messages):
                     if ev.kind == "reasoning":
                         await ws.send_text(json.dumps({"type": "report_reasoning", "id": rid, "text": ev.text}))
@@ -623,13 +681,14 @@ class Session:
             messages = [
                 {"role": "system", "content": (
                     "You are Yaqzan, the AI incident commander advising this city's emergency "
-                    "operations center during a simulated training drill. Treat all data as real for the exercise, but you know ONLY the situation report below; "
-                    "never invent districts, units, or facts.\n\n"
-                    "RESPONSE FORMAT:\n"
-                    "Direct, concise, no hedging. Use an ASSESSMENT and ACTION ITEMS "
-                    "if recommending strategy; otherwise just answer the question clearly. "
-                    "Under 180 words. If asked for public messaging, write it ready to broadcast.\n\n"
-                    "write it ready to broadcast.\n\n"
+                    "operations center during a simulated training drill. Treat all data as real "
+                    "for the exercise, but you know ONLY the situation report below; never invent "
+                    "towns, units, or facts.\n\n"
+                    "RESPONSE FORMAT (strict): think briefly first, then write a line containing "
+                    "exactly ANSWER: and after it give your reply for the operator. The reply is "
+                    "direct and concise, no hedging: an ASSESSMENT (1-2 sentences) then ACTION "
+                    "ITEMS (numbered) if recommending strategy, otherwise a clear direct answer. "
+                    "Under 150 words. If asked for public messaging, write it ready to broadcast.\n\n"
                     f"CURRENT SITUATION REPORT:\n{context}"
                 )},
                 {"role": "user", "content": question},
@@ -651,36 +710,28 @@ class Session:
                 await ws.send_text(json.dumps({"type": "chat_done"}))
                 return
 
-            stream = getattr(self.client, "stream_raw", self.client.stream)
-            in_think = False
+            # K2's chain-of-thought arrives as plain content and it often echoes
+            # the word ANSWER: inside its reasoning, so a first-match split is
+            # unreliable. We stream the whole content live as the thinking trace
+            # (collapsed in the UI), then extract the operator-facing answer from
+            # the LAST ANSWER: marker once the stream completes.
+            stream = getattr(self.live_client, "stream_raw", self.live_client.stream)
+            full = ""
             async for ev in stream(messages):
                 if ev.kind == "reasoning":
                     await ws.send_text(json.dumps({"type": "chat_reasoning", "text": ev.text}))
                     continue
-                
-                # Manual <think> tag parsing for models that emit them as text
-                text = ev.text
-                while text:
-                    if not in_think:
-                        idx = text.find("<think>")
-                        if idx != -1:
-                            if idx > 0:
-                                await ws.send_text(json.dumps({"type": "chat_token", "text": text[:idx]}))
-                            in_think = True
-                            text = text[idx + len("<think>"):]
-                        else:
-                            await ws.send_text(json.dumps({"type": "chat_token", "text": text}))
-                            break
-                    else:
-                        idx = text.find("</think>")
-                        if idx != -1:
-                            if idx > 0:
-                                await ws.send_text(json.dumps({"type": "chat_reasoning", "text": text[:idx]}))
-                            in_think = False
-                            text = text[idx + len("</think>"):]
-                        else:
-                            await ws.send_text(json.dumps({"type": "chat_reasoning", "text": text}))
-                            break
+                text = ev.text.replace("<think>", "").replace("</think>", "")
+                full += text
+                await ws.send_text(json.dumps({"type": "chat_reasoning", "text": text}))
+            idx = full.rfind("ANSWER:")
+            if idx != -1:
+                answer = full[idx + len("ANSWER:"):].strip()
+            else:
+                # No marker: fall back to the last ASSESSMENT block, else the tail.
+                a = full.rfind("ASSESSMENT")
+                answer = full[a:].strip() if a != -1 else full.strip()[-600:]
+            await ws.send_text(json.dumps({"type": "chat_token", "text": answer or full.strip()[-400:]}))
             await ws.send_text(json.dumps({"type": "chat_done"}))
         except Exception as e:
             log.error("Chat error: %s", e)

@@ -283,7 +283,13 @@ export const ReportsDash = memo(function ReportsDash({
         title="INCIDENT REPORTS"
         subtitle="Citizen report → K2 triage → Authority → Action"
         right={
-          <></>
+          <span className="flex items-center gap-1.5 rounded bg-[rgba(16,185,129,0.1)] px-2 py-1 text-[8.5px] font-bold tracking-wider text-emerald-500" title="File your own report — K2 Think V2 triages it live, not from a script.">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+            </span>
+            LIVE K2 · FILE YOUR OWN
+          </span>
         }
       />
 

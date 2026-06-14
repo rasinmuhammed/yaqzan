@@ -109,12 +109,9 @@ export const ReasoningStream = memo(function ReasoningStream({
         </div>
         <div className="flex items-center gap-2">
           <span className="label-caps">AI Situation Briefing</span>
-          <span className="flex items-center gap-1.5 rounded bg-[rgba(16,185,129,0.1)] px-1.5 py-0.5 text-[8.5px] font-bold tracking-wider text-emerald-500" title="Reasoning tokens are streamed directly from the K2 Think V2 inference cluster in real-time.">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-            </span>
-            LIVE K2 API
+          <span className="flex items-center gap-1.5 rounded bg-[rgba(140,160,200,0.1)] px-1.5 py-0.5 text-[8.5px] font-bold tracking-wider text-[var(--ink-dim)]" title="This autonomous-commander run is replayed from a pre-recorded K2 Think V2 trace for fast, repeatable demos. The Ask AI chat, incident triage, and live-event injection are genuinely live — verify those yourself.">
+            <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21" /></svg>
+            PRE-COMPUTED REPLAY
           </span>
         </div>
         {warming ? (
@@ -133,12 +130,9 @@ export const ReasoningStream = memo(function ReasoningStream({
       <div className="flex items-center justify-between border-b border-[var(--hairline)] px-4 py-2">
         <div className="flex items-center gap-2">
           <span className="label-caps">AI Situation Briefing</span>
-          <span className="flex items-center gap-1.5 rounded bg-[rgba(16,185,129,0.1)] px-1.5 py-0.5 text-[8.5px] font-bold tracking-wider text-emerald-500" title="Reasoning tokens are streamed directly from the K2 Think V2 inference cluster in real-time.">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-            </span>
-            LIVE K2 API
+          <span className="flex items-center gap-1.5 rounded bg-[rgba(140,160,200,0.1)] px-1.5 py-0.5 text-[8.5px] font-bold tracking-wider text-[var(--ink-dim)]" title="This autonomous-commander run is replayed from a pre-recorded K2 Think V2 trace for fast, repeatable demos. The Ask AI chat, incident triage, and live-event injection are genuinely live — verify those yourself.">
+            <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21" /></svg>
+            PRE-COMPUTED REPLAY
           </span>
         </div>
         {active.length > 0 && (
