@@ -697,7 +697,7 @@ async def precompute_demo_run(sess: Session):
     log.info("Pre-computing demo run from trace...")
     import json
     from .sim.engine import SCENARIO_DIR
-    from .commander.models import CommandPlan
+    from .commander.schema import CommandPlan
     
     trace_path = SCENARIO_DIR / "demo_trace.jsonl"
     if not trace_path.exists():
