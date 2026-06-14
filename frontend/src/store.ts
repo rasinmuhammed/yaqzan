@@ -257,14 +257,27 @@ export function useYaqzan() {
     let alive = true;
     // Resilient loaders: retry until the backend answers, so the map never
     // gets stuck on "Loading…" if it mounted during a backend restart.
+    const getApiUrl = (path: string) => {
+      const baseUrl = import.meta.env.VITE_BACKEND_URL || "";
+      return `${baseUrl}${path}`;
+    };
+
+    const getWsUrl = () => {
+      if (import.meta.env.VITE_BACKEND_URL) {
+        return import.meta.env.VITE_BACKEND_URL.replace(/^http/, "ws") + "/ws";
+      }
+      const proto = location.protocol === "https:" ? "wss" : "ws";
+      return `${proto}://${location.host}/ws`;
+    };
+
     const loadCity = (tries = 0) => {
-      fetch("/api/city")
+      fetch(getApiUrl("/api/city"))
         .then((r) => r.json())
         .then((city) => { if (alive) dispatch({ t: "city", city }); })
         .catch(() => { if (alive && tries < 30) setTimeout(() => loadCity(tries + 1), 1000); });
     };
     const loadScenarios = (tries = 0) => {
-      fetch("/api/scenarios")
+      fetch(getApiUrl("/api/scenarios"))
         .then((r) => r.json())
         .then((scenarios) => { if (alive) dispatch({ t: "scenarios", scenarios }); })
         .catch(() => { if (alive && tries < 30) setTimeout(() => loadScenarios(tries + 1), 1000); });
@@ -273,8 +286,7 @@ export function useYaqzan() {
     loadScenarios();
 
     function connect() {
-      const proto = location.protocol === "https:" ? "wss" : "ws";
-      const ws = new WebSocket(`${proto}://${location.host}/ws`);
+      const ws = new WebSocket(getWsUrl());
       wsRef.current = ws;
       ws.onmessage = (e) => {
         const msg = JSON.parse(e.data);
@@ -289,7 +301,7 @@ export function useYaqzan() {
           else if (msg.type === "report_op_applied") dispatch({ t: "report", kind: "dispatched" });
           else if (msg.type === "report_duplicate") dispatch({ t: "report", kind: "merged" });
           if (msg.type === "scenario_gen_done") {
-            fetch("/api/scenarios")
+            fetch(getApiUrl("/api/scenarios"))
               .then((r) => r.json())
               .then((scenarios) => dispatch({ t: "scenarios", scenarios }))
               .catch(() => {});
