@@ -29,6 +29,8 @@ const SEV_COLORS: Record<string, string> = {
   extreme: "#ff3333",
 };
 
+import { MobileReportPage } from "./components/MobileReportPage";
+
 export default function App() {
   const { state, dispatch, send } = useYaqzan();
   const film = useMemo(() => new URLSearchParams(location.search).has("film"), []);
@@ -100,11 +102,7 @@ export default function App() {
   const isReportRoute = window.location.pathname === "/report";
 
   if (isReportRoute) {
-    return (
-      <div className="h-screen w-screen bg-[var(--bg)]" style={{ position: "fixed", inset: 0 }}>
-        <ReportIncidentModal city={state.city} onClose={() => {}} send={send} />
-      </div>
-    );
+    return <MobileReportPage />;
   }
 
   if (isMobile) {
