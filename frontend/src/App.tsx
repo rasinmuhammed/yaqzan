@@ -213,7 +213,13 @@ export default function App() {
           city={state.city}
           onClose={() => setIsReportModalOpen(false)}
           send={(msg) => {
-            send(msg);
+            // Tag the report with the tick on screen so the backend triages
+            // against the state the reporter is actually viewing.
+            const tagged =
+              msg.cmd === "citizen_report" && msg.report
+                ? { ...msg, report: { ...(msg.report as object), tick } }
+                : msg;
+            send(tagged);
             setActiveTab("reports");
             setIsReportModalOpen(false);
           }}

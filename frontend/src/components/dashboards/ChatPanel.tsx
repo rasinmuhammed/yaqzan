@@ -237,7 +237,9 @@ export const ChatPanel = memo(function ChatPanel({
     setInput("");
     setStreaming(true);
     setMessages((prev) => [...prev, { role: "user", text: q }]);
-    send({ cmd: "chat_query", question: q });
+    // Send the tick on screen so the backend reasons about the state the
+    // operator is actually looking at, even if the shared session has drifted.
+    send({ cmd: "chat_query", question: q, tick: snapshot?.tick ?? null });
   };
 
   const suggestions = [

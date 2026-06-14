@@ -303,7 +303,7 @@ class Session:
         elif cmd == "chat_query":
             question = msg.get("question", "")
             if question:
-                asyncio.create_task(self._handle_chat(ws, question))
+                asyncio.create_task(self._handle_chat(ws, question, msg.get("tick")))
         elif cmd == "generate_scenario":
             prompt = str(msg.get("prompt", "")).strip()
             if prompt and (self._gen_task is None or self._gen_task.done()):
@@ -505,9 +505,13 @@ class Session:
         from .commander.schema import Directive, FENCED_JSON
         from .commander.verifier import Verifier
 
+        # The tick the reporter is looking at — may differ from the shared
+        # engine if the session drifted (see _engine_for_tick).
+        view_tick = report.get("tick")
+        eng = self._engine_for_tick(view_tick)
         self.report_seq += 1
         rid = str(report.get("id") or f"RPT-{self.report_seq:03d}")
-        report = {**report, "id": rid, "tick": self.engine.tick}
+        report = {**report, "id": rid, "tick": eng.tick}
 
         # De-duplicate before spending a triage on it: if a recent report
         # already covers this place + incident type, merge instead of
@@ -525,10 +529,10 @@ class Session:
         })
         self.recent_reports = self.recent_reports[-40:]
         try:
-            snap = self.engine.snapshot()
+            snap = eng.snapshot()
             shelters = {n.id: n.shelter_capacity
-                        for n in self.engine.city.nodes.values() if n.is_shelter}
-            context = compact_world_state(snap, self.engine.city.name, shelters, self.recent_reports)
+                        for n in eng.city.nodes.values() if n.is_shelter}
+            context = compact_world_state(snap, eng.city.name, shelters, self.recent_reports)
             loc, typ, desc = report.get("location", ""), report.get("type", ""), report.get("description", "")
             messages = [
                 {"role": "system", "content": (
@@ -585,7 +589,8 @@ class Session:
 
             verified, reason = False, "no actionable recommendation"
             if directive is not None:
-                verified, reason = Verifier(self.engine).verify(directive)
+                # Verify against the same tick the triage reasoned over.
+                verified, reason = Verifier(eng).verify(directive)
                 directive.verified = verified
                 directive.rejection_reason = None if verified else reason
                 if verified:
@@ -720,7 +725,37 @@ class Session:
         self.trace.append({"type": "citizen_op_accepted", "report": rid, "directive": d.model_dump()})
         await self.hub.broadcast("report_op_applied", {"id": rid, "directive_id": d.id})
 
-    async def _handle_chat(self, ws: WebSocket, question: str) -> None:
+    def _engine_for_tick(self, tick: Any) -> SimulationEngine:
+        """The engine state for the tick the operator is viewing.
+
+        The shared session can drift from a given client's display: a reconnect
+        auto-resets the engine to tick 0, and the pre-seeded scroller jumps the
+        view ahead. Chat/triage must reason about the state on screen, not
+        whatever self.engine happens to hold, or the model will answer "no
+        flooding" over a city that is clearly underwater. When the live engine
+        already matches we use it; otherwise we deterministically reconstruct
+        the state at that tick (same seed → identical disaster)."""
+        eng = self.engine
+        if tick is not None:
+            t = max(0, min(eng.max_ticks, int(tick)))
+            if t != eng.tick:
+                ghost = SimulationEngine(
+                    SCENARIO_DIR / self.settings.scenario,
+                    seed=self.settings.seed, with_baseline=False,
+                )
+                while ghost.tick < t:
+                    ghost.step()
+                eng = ghost
+        return eng
+
+    def _world_for_tick(self, tick: Any) -> tuple[Any, dict[str, int]]:
+        """Return (snapshot, shelters) for the tick the operator is viewing."""
+        eng = self._engine_for_tick(tick)
+        shelters = {n.id: n.shelter_capacity
+                    for n in eng.city.nodes.values() if n.is_shelter}
+        return eng.snapshot(), shelters
+
+    async def _handle_chat(self, ws: WebSocket, question: str, tick: Any = None) -> None:
         """Stream a chat response to a single client (not broadcast).
 
         The visible reasoning is the product, so the model is asked to
@@ -730,11 +765,7 @@ class Session:
         """
         from .commander.prompts import compact_world_state
         try:
-            snap = self.engine.snapshot()
-            shelters = {
-                n.id: n.shelter_capacity
-                for n in self.engine.city.nodes.values() if n.is_shelter
-            }
+            snap, shelters = self._world_for_tick(tick)
             context = compact_world_state(snap, self.engine.city.name, shelters, self.recent_reports)
             messages = [
                 {"role": "system", "content": (
