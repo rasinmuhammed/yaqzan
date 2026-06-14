@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { useEffect, useReducer, useRef } from "react";
 import type { City, Cycle, Plan, Snapshot, TickerEvent } from "./types";
 
