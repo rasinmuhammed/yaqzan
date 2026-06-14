@@ -5,7 +5,7 @@
   "description": "August monsoon over the Pamba catchment. Reservoirs spill into Kuttanad's below-sea-level polders while the Thanneermukkom bund and Thottappally spillway struggle to hold back Vembanad Lake. Modelled on the 2018 Kerala floods.",
   "provenance": "Geography, place names and flood-control structures are real (Kuttanad, Alappuzha district). Population and hydrology are plausible synthetic values for simulation.",
   "seed": 2018,
-  "ticks": 60,
+  "ticks": 30,
   "water_sources": [
     "chengannur",
     "pandanad",

@@ -32,7 +32,7 @@ interface Props {
 export function BottomStrip({ snapshot, events, riskHistory, running, film, cycleCount, reportsTriaged, send }: Props) {
   const tel = snapshot?.telemetry;
   const tick = snapshot?.tick ?? 0;
-  const maxTick = 60;
+  const maxTick = 30;
   const prevRisk = riskHistory.length >= 2 ? riskHistory[riskHistory.length - 2] : undefined;
   const [activeSpeed, setActiveSpeed] = useState<number>(1.5);
 
