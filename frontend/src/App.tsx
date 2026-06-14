@@ -220,15 +220,7 @@ export default function App() {
           )}
           {/* Live event injector */}
           {!film && <LiveEventBar send={send} />}
-          {/* Guided demo launcher */}
-          {!film && !demoActive && (
-            <button onClick={() => { setDemoActive(true); }}
-              className="pill flex items-center gap-1.5 border border-[var(--brand-line)] bg-[var(--brand-soft)] px-2.5 py-[3px] text-[9px] font-bold tracking-[0.08em] text-[var(--brand)] transition-colors hover:bg-[var(--brand)] hover:text-white"
-              title="Scripted walkthrough of the full loop">
-              <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21" /></svg>
-              GUIDED DEMO
-            </button>
-          )}
+
           {/* Human-in-the-loop authority toggle */}
           {!film && (
             <div
