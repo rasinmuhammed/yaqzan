@@ -342,6 +342,12 @@ export function useYaqzan() {
     };
   }, []);
 
-  const send = (msg: Record<string, unknown>) => wsRef.current?.send(JSON.stringify(msg));
+  const send = (msg: Record<string, unknown>) => {
+    if (wsRef.current?.readyState === WebSocket.OPEN) {
+      wsRef.current.send(JSON.stringify(msg));
+    } else {
+      console.warn("WebSocket not open, dropping message:", msg);
+    }
+  };
   return { state, dispatch, send };
 }
