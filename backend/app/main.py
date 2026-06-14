@@ -694,29 +694,32 @@ session: Session | None = None
 
 
 async def precompute_demo_run(sess: Session):
-    log.info("Pre-computing demo run for judges...")
-    from .commander.scripted import ScriptedCommander
-    old_client = sess.loop.client
-    old_sync = sess.settings.commander_sync
-    old_tick_seconds = sess.tick_seconds
+    log.info("Pre-computing demo run from trace...")
+    import json
+    from .sim.engine import SCENARIO_DIR
+    from .commander.models import CommandPlan
+    
+    trace_path = SCENARIO_DIR / "demo_trace.jsonl"
+    if not trace_path.exists():
+        log.warning("No demo_trace.jsonl found, skipping precompute.")
+        return
 
-    # Use zero-delay scripted commander
-    sess.loop.client = ScriptedCommander(token_delay_s=0.0)
-    sess.settings.commander_sync = True
-    sess.running = True
-    sess.tick_seconds = 0.0
-
+    # Fast forward engine
     while sess.engine.tick < sess.engine.max_ticks:
-        snap = sess.engine.step()
-        if sess.loop.cycle_due(snap):
-            await sess.loop.run_cycle(snap)
+        sess.engine.step()
 
-    # Restore settings
-    sess.loop.client = old_client
-    sess.settings.commander_sync = old_sync
-    sess.tick_seconds = old_tick_seconds
-    sess.running = False
-    log.info("Demo run pre-computed.")
+    # Load trace into history
+    with open(trace_path, "r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            if record.get("type") == "cycle":
+                sess.loop.history.append(record)
+                if record.get("plan"):
+                    sess.loop.previous_plan = CommandPlan(**record["plan"])
+    
+    log.info("Demo run pre-computed from trace.")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
