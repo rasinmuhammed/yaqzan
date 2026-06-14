@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+from pathlib import Path
 import re
 from collections.abc import AsyncIterator
 
@@ -325,3 +326,45 @@ class ScriptedCommander:
 
 def _chunks(text: str, size: int = 7) -> list[str]:
     return [text[i : i + size] for i in range(0, len(text), size)]
+
+
+class ReplayCommander:
+    """Streams exact reasoning and plans from a previously captured trace file."""
+    
+    def __init__(self, trace_path: Path, token_delay_s: float = TOKEN_DELAY_S) -> None:
+        self.delay = token_delay_s
+        self.cycles: list[dict] = []
+        if trace_path.exists():
+            with open(trace_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip(): continue
+                    try:
+                        record = json.loads(line)
+                        if record.get("type") == "cycle":
+                            self.cycles.append(record)
+                    except Exception:
+                        pass
+
+    async def stream(self, messages: list[dict]) -> AsyncIterator[StreamEvent]:
+        # Determine which cycle we are on by looking at the prompt's Tick
+        user = messages[-1]["content"]
+        m = WORLD_STATE_RE.search(user)
+        state = json.loads(m.group(1)) if m else {}
+        tick = state.get("tick", 0)
+        
+        cycle_idx = (tick // 3) - 1
+        cycle_idx = max(0, min(cycle_idx, len(self.cycles) - 1))
+        
+        record = self.cycles[cycle_idx] if self.cycles else {"reasoning": "No trace data available.", "plan": {"directives": [], "watching": [], "confidence": "low"}}
+        
+        reasoning = record.get("reasoning", "")
+        plan = record.get("plan", {"directives": [], "watching": [], "confidence": "low"})
+        
+        for chunk in _chunks(reasoning, size=15):
+            yield StreamEvent("reasoning", chunk)
+            await asyncio.sleep(self.delay)
+            
+        content = "```json\n" + json.dumps(plan, indent=1) + "\n```"
+        for chunk in _chunks(content, size=24):
+            yield StreamEvent("content", chunk)
+            await asyncio.sleep(self.delay / 2)

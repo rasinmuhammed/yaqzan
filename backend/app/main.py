@@ -50,10 +50,9 @@ class Session:
         self.hub = Hub()
         self.engine = SimulationEngine(SCENARIO_DIR / self.settings.scenario, seed=self.settings.seed)
         self.trace = TraceStore(self.settings.trace_dir)
-        self.client: CommanderClient = (
-            K2Client(self.settings) if self.settings.k2_configured else ScriptedCommander()
-        )
-        self.commander_name = "k2" if self.settings.k2_configured else "scripted"
+        from .commander.scripted import ReplayCommander
+        self.client: CommanderClient = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
+        self.commander_name = "k2_replay"
         self.loop = CommanderLoop(
             self.engine, self.client, self.trace, self.hub.broadcast,
             cycle_ticks=self.settings.commander_cycle_ticks,
@@ -74,8 +73,8 @@ class Session:
     def reset(self) -> None:
         authority = self.loop.authority
         self.engine = SimulationEngine(SCENARIO_DIR / self.settings.scenario, seed=self.settings.seed)
-        if not self.settings.k2_configured:
-            self.client = ScriptedCommander()  # scripted commander carries per-run state
+        from .commander.scripted import ReplayCommander
+        self.client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
         self.loop = CommanderLoop(
             self.engine, self.client, self.trace, self.hub.broadcast,
             cycle_ticks=self.settings.commander_cycle_ticks,
@@ -136,8 +135,8 @@ class Session:
                 authority = self.loop.authority
                 self.settings.scenario = scenario
                 self.engine = SimulationEngine(path, seed=self.settings.seed)
-                if not self.settings.k2_configured:
-                    self.client = ScriptedCommander()
+                from .commander.scripted import ReplayCommander
+                self.client = ReplayCommander(SCENARIO_DIR / "demo_trace.jsonl")
                 self.loop = CommanderLoop(
                     self.engine, self.client, self.trace, self.hub.broadcast,
                     cycle_ticks=self.settings.commander_cycle_ticks,
