@@ -290,6 +290,46 @@ export const LandingPage = memo(function LandingPage({
         <HeroOrb />
       </section>
 
+      <div className="landing-demo-banner reveal" style={{ maxWidth: 1000, margin: "0 auto 80px", border: "1px solid var(--brand)", borderRadius: 12, padding: "24px 32px", backgroundColor: "rgba(232,101,42,0.05)" }}>
+        <h3 style={{ color: "var(--brand)", fontSize: 13, fontWeight: "bold", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 12, display: "flex", alignItems: "center", gap: 8 }}>
+          <SvgIcon path={ICONS.verify} size={16} /> Live Demo Architecture Note
+        </h3>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 32 }}>
+          <div style={{ flex: 1 }}>
+            <h4 style={{ color: "var(--ink-bright)", fontSize: 15, fontWeight: 600, marginBottom: 6 }}>1. Pre-seeded Macro Cycles</h4>
+            <p style={{ color: "var(--ink-dim)", fontSize: 13, lineHeight: 1.6 }}>
+              To ensure a seamless viewing experience, the main disaster timeline instantly streams pre-seeded, real AI reasoning traces. This eliminates the physical 15-second TTFT (Time To First Token) delay inherent to the live K2 API.
+            </p>
+          </div>
+          <div style={{ flex: 1 }}>
+            <h4 style={{ color: "var(--ink-bright)", fontSize: 15, fontWeight: 600, marginBottom: 6 }}>2. Live Interactive API</h4>
+            <p style={{ color: "var(--ink-dim)", fontSize: 13, lineHeight: 1.6 }}>
+              The server remains fully wired to the live K2 API. Interactive actions—such as submitting an <strong>Incident Report</strong> or querying the <strong>Commander Chat</strong>—bypass the seeded trace and are processed dynamically by the real K2 AI.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ─── Why Reasoning Models ─── */}
+      <section className="landing-why reveal">
+        <div className="landing-section-header">
+          <span className="landing-section-tag">THE CASE FOR REASONING</span>
+          <h2 className="landing-section-title">Why a reasoning model, not a dashboard?</h2>
+          <p className="landing-section-sub">
+            Emergency operators have always had data. What they lacked was a system that could read all of it at once, reason across competing priorities, and produce a concrete, justified action plan in seconds.
+          </p>
+        </div>
+        <div className="landing-why-grid">
+          {WHY_REASONING.map((w, i) => (
+            <div key={i} className={`landing-why-card reveal delay-${(i % 2 + 1) * 100}`}>
+              <div className="landing-why-icon">{w.icon}</div>
+              <h3 className="landing-why-card-title">{w.title}</h3>
+              <p className="landing-why-card-desc">{w.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* ─── The Meaning of Yaqzan ─── */}
       <section className="landing-meaning reveal">
         <div className="landing-meaning-inner">
