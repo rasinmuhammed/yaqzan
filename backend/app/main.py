@@ -748,6 +748,11 @@ async def city() -> dict:
 @app.websocket("/ws")
 async def ws_endpoint(ws: WebSocket) -> None:
     assert session is not None
+    
+    # Auto-reset if the simulation is finished when a new client connects
+    if session.engine.tick > 0 and session.engine.tick >= session.engine.max_ticks:
+        await session.handle({"cmd": "reset"})
+        
     await ws.accept()
     session.hub.clients.add(ws)
     # Greet with current state so late joiners render immediately.
