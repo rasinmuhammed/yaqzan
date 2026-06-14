@@ -37,10 +37,14 @@ export function ReportIncidentModal({
   onClose: () => void;
   send: (msg: Record<string, unknown>) => void;
 }) {
-  const [formData, setFormData] = useState({ location: "", type: REPORT_TYPES[0], description: "", reporter: "" });
-  const [submitting, setSubmitting] = useState(false);
-
   const towns = city ? city.nodes.filter((n: any) => !n.id.startsWith("pump") && !n.id.startsWith("cell")).sort((a: any, b: any) => a.name.localeCompare(b.name)) : [];
+  const [formData, setFormData] = useState({ 
+    location: towns.length > 0 ? towns[0].id : "", 
+    type: REPORT_TYPES[0], 
+    description: "", 
+    reporter: "" 
+  });
+  const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = () => {
     if (!formData.location || !formData.description || submitting) return;
