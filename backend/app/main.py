@@ -701,7 +701,7 @@ async def precompute_demo_run(sess: Session):
     old_tick_seconds = sess.tick_seconds
 
     # Use zero-delay scripted commander
-    sess.loop.client = ScriptedCommander(delay=0)
+    sess.loop.client = ScriptedCommander(token_delay_s=0.0)
     sess.settings.commander_sync = True
     sess.running = True
     sess.tick_seconds = 0.0
