@@ -9,6 +9,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
+import re
 from contextlib import asynccontextmanager
 from typing import Any
 
@@ -24,6 +25,63 @@ from .trace.store import TraceStore
 
 log = logging.getLogger("yaqzan")
 logging.basicConfig(level=logging.INFO)
+
+
+# A sentence that *starts* with one of these signals K2 has resumed deliberating
+# after stating a conclusion ("But we should double-check…"). We keep the
+# conclusion and drop everything from that sentence on, so the operator never
+# sees the model arguing with itself.
+_COT_RESUME = re.compile(
+    r"(?i)^(but\b|wait\b|hold on|however\b|let me|let's|on second thought|"
+    r"actually\b|hmm\b|i need to|i should|we should (double|re-?check|verify|confirm|also)|"
+    r"we (might|could) |re-?check|double-?check|so we (should|need)|alternatively\b)"
+)
+# Inline conclusion phrasing K2 uses even when it never prints the ANSWER: marker.
+_INLINE_ANSWER = re.compile(
+    r"(?im)(?:thus,?\s+|so,?\s+|hence,?\s+|therefore,?\s+|final\s+)?"
+    r"answer\s*(?:is)?\s*:\s*"
+)
+
+
+def _trim_cot(ans: str) -> str:
+    """Keep leading sentences; stop at the first that resumes deliberation."""
+    ans = ans.strip()
+    kept: list[str] = []
+    for sent in re.split(r"(?<=[.!?])\s+", ans):
+        if _COT_RESUME.match(sent.strip()):
+            break
+        kept.append(sent)
+    return " ".join(kept).strip()
+
+
+def _extract_chat_answer(full: str) -> str:
+    """Pull the operator-facing reply out of K2's raw stream.
+
+    K2-Think reasons verbosely and sometimes truncates before printing a clean
+    ANSWER: marker, so we degrade gracefully: explicit marker → fullest inline
+    "answer:" conclusion → ASSESSMENT block → trimmed tail. Each path strips the
+    follow-on reasoning so the operator never sees the model second-guessing.
+    """
+    s = full.replace("<think>", "").replace("</think>", "").strip()
+    if not s:
+        return ""
+    for marker in ("ANSWER:", "FINAL ANSWER:", "Final answer:"):
+        i = s.rfind(marker)
+        if i != -1:
+            ans = _trim_cot(s[i + len(marker):])
+            if ans:
+                return ans
+    # No marker: take the fullest of K2's inline "answer:" conclusions.
+    cands = [_trim_cot(s[m.end():]) for m in _INLINE_ANSWER.finditer(s)]
+    cands = [c for c in cands if len(c) > 8]
+    if cands:
+        return max(cands, key=len)
+    i = s.rfind("ASSESSMENT")
+    if i != -1:
+        return s[i:].strip()
+    # Last resort: the final paragraph, with any resumed reasoning trimmed.
+    tail = s.split("\n\n")[-1].strip() or s[-600:]
+    return _trim_cot(tail)
 
 
 class Hub:
@@ -724,13 +782,7 @@ class Session:
                 text = ev.text.replace("<think>", "").replace("</think>", "")
                 full += text
                 await ws.send_text(json.dumps({"type": "chat_reasoning", "text": text}))
-            idx = full.rfind("ANSWER:")
-            if idx != -1:
-                answer = full[idx + len("ANSWER:"):].strip()
-            else:
-                # No marker: fall back to the last ASSESSMENT block, else the tail.
-                a = full.rfind("ASSESSMENT")
-                answer = full[a:].strip() if a != -1 else full.strip()[-600:]
+            answer = _extract_chat_answer(full)
             await ws.send_text(json.dumps({"type": "chat_token", "text": answer or full.strip()[-400:]}))
             await ws.send_text(json.dumps({"type": "chat_done"}))
         except Exception as e:

@@ -273,6 +273,9 @@ function reduce(s: AppState, a: Action): AppState {
 export function useYaqzan() {
   const [state, dispatch] = useReducer(reduce, initial);
   const wsRef = useRef<WebSocket | null>(null);
+  // Messages enqueued while the socket is closed/reconnecting, flushed on open.
+  // Without this, a submit during a backend hiccup is silently dropped.
+  const outboxRef = useRef<string[]>([]);
 
   useEffect(() => {
     let alive = true;
@@ -309,6 +312,12 @@ export function useYaqzan() {
     function connect() {
       const ws = new WebSocket(getWsUrl());
       wsRef.current = ws;
+      ws.onopen = () => {
+        // Flush anything queued while we were disconnected.
+        const pending = outboxRef.current;
+        outboxRef.current = [];
+        for (const m of pending) ws.send(m);
+      };
       ws.onmessage = (e) => {
         const msg = JSON.parse(e.data);
         // Panel-local streams (chat, scenario designer, citizen reports) fan
@@ -343,10 +352,15 @@ export function useYaqzan() {
   }, []);
 
   const send = (msg: Record<string, unknown>) => {
-    if (wsRef.current?.readyState === WebSocket.OPEN) {
-      wsRef.current.send(JSON.stringify(msg));
+    const payload = JSON.stringify(msg);
+    const ws = wsRef.current;
+    if (ws?.readyState === WebSocket.OPEN) {
+      ws.send(payload);
     } else {
-      console.warn("WebSocket not open, dropping message:", msg);
+      // Socket is connecting, closing, or closed. Queue and let onopen flush it
+      // so a report/chat submitted during a backend hiccup is never lost.
+      outboxRef.current.push(payload);
+      console.warn("WebSocket not open; queued message for next connection:", msg);
     }
   };
   return { state, dispatch, send };

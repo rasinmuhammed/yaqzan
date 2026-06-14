@@ -103,7 +103,9 @@ class K2Client:
             "model": self.settings.k2_model,
             "messages": messages,
             "stream": True,
-            "max_tokens": 4096,
+            # K2-Think reasons verbosely; 4096 truncated before it reached a
+            # clean answer. Give it room to actually conclude.
+            "max_tokens": 8192,
             "temperature": 0.7,
         }
         async with self._client.stream("POST", "/chat/completions", json=payload) as resp:
