@@ -13,6 +13,9 @@ export function MobileReportPage() {
       if (m.type === "report_response") {
         setInstruction(m.citizen_instruction || "Your report has been logged. Emergency services have been notified.");
         setStatus("success");
+      } else if (m.type === "report_duplicate") {
+        setInstruction("We have already received a report for this incident at this location. Emergency services are aware and responding.");
+        setStatus("success");
       }
     };
     window.addEventListener("yaqzan_ws", handler);

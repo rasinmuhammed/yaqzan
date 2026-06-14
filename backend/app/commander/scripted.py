@@ -358,6 +358,12 @@ class ReplayCommander:
         record = self.cycles[cycle_idx] if self.cycles else {"reasoning": "No trace data available.", "plan": {"directives": [], "watching": [], "confidence": "low"}}
         
         reasoning = record.get("reasoning", "")
+        if len(reasoning) > 2000:
+            if "</think>" in reasoning:
+                reasoning = reasoning.split("</think>")[-1].strip()
+            if len(reasoning) > 2000:
+                reasoning = reasoning[:1997] + "..."
+        
         plan = record.get("plan", {"directives": [], "watching": [], "confidence": "low"})
         
         for chunk in _chunks(reasoning, size=15):
