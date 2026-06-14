@@ -210,10 +210,7 @@ function CycleBlock({ cycle: c, onHover }: { cycle: Cycle; onHover: (id: string 
     .replace(/<\/?think>/g, "") // strip think tags
     .replace(/,\s*$/gm, ""); // strip trailing commas
 
-  // Drop lines that leak the system prompt / output-format plumbing so only
-  // the genuine situational reasoning is shown (not "output a JSON block…").
-  const META = /(output (a |the )?json|json block|fenced block|triple backtick|"(situation_read|directives|watching|confidence)"|step-by-step|numbered steps?|under \d+ (words|steps)|each directive (must|has)|actions? (possible|are)|produce (a |the )?(plan|final answer|json)|now produce|now proceed|we need to parse|the user is giving|the format (says|requires)|ready to broadcast|public messaging|reference only|incident commander, advising|world state\b)/i;
-  const lines = cleaned.split("\n").filter((l) => l.trim().length > 0 && !META.test(l));
+  const lines = cleaned.split("\n").filter((l) => l.trim().length > 0);
   return (
     <div className="mb-5 last:mb-0">
       <div className="mb-2 flex items-center gap-2">

@@ -181,7 +181,7 @@ export default function App() {
           onReset={() => { setShowReport(false); send({ cmd: "reset" }); setTimeout(() => send({ cmd: "start" }), 600); }} />
       )}
       {isReportModalOpen && (
-        <ReportIncidentModal onClose={() => setIsReportModalOpen(false)} send={send} />
+        <ReportIncidentModal city={state.city} onClose={() => setIsReportModalOpen(false)} send={send} />
       )}
 
       {/* header */}

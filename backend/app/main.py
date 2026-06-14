@@ -758,6 +758,7 @@ async def ws_endpoint(ws: WebSocket) -> None:
         "snapshot": session.engine.snapshot().model_dump() if session.engine.tick else None,
         "running": session.running,
         "authority": session.loop.authority,
+        "previous_plan": session.loop.previous_plan.model_dump() if session.loop.previous_plan else None,
     }, default=str))
     try:
         while True:

@@ -180,12 +180,22 @@ function reduce(s: AppState, a: Action): AppState {
       switch (m.type) {
         case "sim_status":
           return { ...s, running: m.running };
-        case "hello":
+        case "hello": {
+          const initCycles = s.cycles.length > 0 ? s.cycles : (m.previous_plan ? [{
+            cycle: m.previous_plan.cycle,
+            tick: 0,
+            reasoning: "Restored from history.",
+            done: true,
+            plan: m.previous_plan,
+            meta: { elapsed_s: 0, tokens: 0 }
+          }] : []);
           return {
             ...s, commander: m.commander, running: m.running,
             snapshot: m.snapshot ?? s.snapshot,
             authority: m.authority === "delegated" ? "delegated" : "supervised",
+            cycles: initCycles,
           };
+        }
         case "authority":
           return { ...s, authority: m.mode === "delegated" ? "delegated" : "supervised" };
         case "directives_applied": {

@@ -29,14 +29,18 @@ function SvgIcon({ d, size = 18 }: { d: string; size?: number }) {
 }
 
 export function ReportIncidentModal({
+  city,
   onClose,
   send
 }: {
+  city: any;
   onClose: () => void;
   send: (msg: Record<string, unknown>) => void;
 }) {
   const [formData, setFormData] = useState({ location: "", type: REPORT_TYPES[0], description: "", reporter: "" });
   const [submitting, setSubmitting] = useState(false);
+
+  const towns = city ? city.nodes.filter((n: any) => !n.id.startsWith("pump") && !n.id.startsWith("cell")).sort((a: any, b: any) => a.name.localeCompare(b.name)) : [];
 
   const handleSubmit = () => {
     if (!formData.location || !formData.description || submitting) return;
@@ -76,12 +80,16 @@ export function ReportIncidentModal({
             </div>
             <div>
               <label className="block text-[10px] text-[var(--ink-faint)] mb-2 tracking-wide">TOWN / LOCATION</label>
-              <input
+              <select
                 value={formData.location}
                 onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                placeholder="e.g. Champakulam, Chengannur"
-                className="w-full rounded-lg border border-[var(--hairline)] bg-[var(--bg-inset)] px-3 py-2.5 text-[13px] text-[var(--ink)] placeholder:text-[var(--ink-faint)] focus:border-[var(--brand-line)] focus:outline-none transition-colors"
-              />
+                className="w-full rounded-lg border border-[var(--hairline)] bg-[var(--bg-inset)] px-3 py-2.5 text-[13px] text-[var(--ink)] focus:border-[var(--brand-line)] focus:outline-none transition-colors"
+              >
+                <option value="" disabled>Select a town...</option>
+                {towns.map((t: any) => (
+                  <option key={t.id} value={t.id}>{t.name}</option>
+                ))}
+              </select>
             </div>
           </div>
 
