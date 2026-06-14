@@ -1,0 +1,27 @@
+# Environment variables (CRITICAL)
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+traces/
+*.log
+
+# Node & React
+node_modules/
+dist/
+build/
+.vite/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/

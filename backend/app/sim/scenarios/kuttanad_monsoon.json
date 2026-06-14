@@ -1,0 +1,1685 @@
+{
+  "city_name": "Kuttanad, Alappuzha",
+  "region": "Kerala, India",
+  "scenario": "Kuttanad Monsoon Deluge",
+  "description": "August monsoon over the Pamba catchment. Reservoirs spill into Kuttanad's below-sea-level polders while the Thanneermukkom bund and Thottappally spillway struggle to hold back Vembanad Lake. Modelled on the 2018 Kerala floods.",
+  "provenance": "Geography, place names and flood-control structures are real (Kuttanad, Alappuzha district). Population and hydrology are plausible synthetic values for simulation.",
+  "seed": 2018,
+  "ticks": 60,
+  "water_sources": [
+    "chengannur",
+    "pandanad",
+    "kainakary"
+  ],
+  "base_surge_rate_m": 0.11,
+  "rainfall_curve": [
+    4.0,
+    4.1,
+    4.4,
+    5.0,
+    6.2,
+    8.6,
+    12.5,
+    18.0,
+    24.6,
+    31.2,
+    36.2,
+    38.0,
+    36.2,
+    31.2,
+    24.6,
+    18.0,
+    12.5,
+    8.7,
+    6.5,
+    5.7,
+    6.2,
+    8.2,
+    12.5,
+    19.7,
+    30.1,
+    43.2,
+    57.3,
+    70.1,
+    79.7,
+    85.3,
+    87.0,
+    85.6,
+    81.5,
+    74.5,
+    64.4,
+    52.1,
+    39.1,
+    27.3,
+    18.0,
+    11.5,
+    7.6,
+    5.6,
+    4.6,
+    4.2,
+    4.1,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0
+  ],
+  "nodes": [
+    {
+      "id": "alappuzha_town",
+      "name": "Alappuzha Town",
+      "x": 148.8,
+      "y": 325.6,
+      "elevation_m": 1.0,
+      "population": 174000,
+      "lat": 9.4981,
+      "lon": 76.3388,
+      "osm": {
+        "hospitals": 21,
+        "clinics": 15,
+        "schools": 61,
+        "colleges": 5,
+        "worship": 171,
+        "community": 5,
+        "hospital_names": [
+          "Sanjos Hospital and Research Center, Arattuvazhi",
+          "Urban Primary Health Centre, Mullathu Valappu",
+          "Urban Primary Health Centre, Nehrutrophy"
+        ],
+        "shelter_names": [
+          "St. Joseph's Higher Secondary School For Girls",
+          "Ali Muhamedsha Madrssa",
+          "Government Higher Secondary School For Girls Alpy"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_hospital": true
+    },
+    {
+      "id": "vandanam",
+      "name": "Vandanam",
+      "x": 169.9,
+      "y": 373.7,
+      "elevation_m": 2.0,
+      "population": 16000,
+      "lat": 9.452,
+      "lon": 76.349,
+      "osm": {
+        "hospitals": 6,
+        "clinics": 2,
+        "schools": 15,
+        "colleges": 4,
+        "worship": 21,
+        "community": 2,
+        "hospital_names": [
+          "Govt Ayurveda Panchakarma Hospital, Kaithavana",
+          "Sreerudra Ayurveda Multi Speciality Hospital",
+          "Primary Health Centre Punnapra North"
+        ],
+        "shelter_names": [
+          "Jyoti Nikethan High School",
+          "Kalarcode Government LP School",
+          "brightland school"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_hospital": true
+    },
+    {
+      "id": "punnapra",
+      "name": "Punnapra",
+      "x": 172.0,
+      "y": 393.2,
+      "elevation_m": 0.8,
+      "population": 22000,
+      "lat": 9.4333,
+      "lon": 76.35,
+      "osm": {
+        "hospitals": 3,
+        "clinics": 0,
+        "schools": 8,
+        "colleges": 3,
+        "worship": 27,
+        "community": 0,
+        "hospital_names": [
+          "Government Medical College Hospital Alappuzha",
+          "Medical College Hospital Campus Alappuzha",
+          "Health Sub Center"
+        ],
+        "shelter_names": [
+          "Aravukadu private industrial training institute",
+          "SDV Government upper Primary School",
+          "Aravukadu Governtment School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "ambalappuzha",
+      "name": "Ambalappuzha",
+      "x": 208.7,
+      "y": 445.3,
+      "elevation_m": 1.5,
+      "population": 24000,
+      "lat": 9.3833,
+      "lon": 76.3678,
+      "osm": {
+        "hospitals": 9,
+        "clinics": 1,
+        "schools": 11,
+        "colleges": 1,
+        "worship": 27,
+        "community": 0,
+        "hospital_names": [
+          "Dr. Jaya's Sreepadam Ayurveda Panchakarma Hospital",
+          "Primary Health Center, Ambalapuzha North",
+          "Medical College Health Unit Ambalapuzha"
+        ],
+        "shelter_names": [
+          "Kkkpm Government School",
+          "Model HSS Ambalappuzha",
+          "Maria montessorri Campus"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "purakkad",
+      "name": "Purakkad",
+      "x": 213.3,
+      "y": 474.8,
+      "elevation_m": 0.6,
+      "population": 9000,
+      "lat": 9.355,
+      "lon": 76.37,
+      "osm": {
+        "hospitals": 1,
+        "clinics": 0,
+        "schools": 3,
+        "colleges": 0,
+        "worship": 15,
+        "community": 0,
+        "hospital_names": [
+          "Primary Health Centre, Purakkad"
+        ],
+        "shelter_names": [
+          "S N M Higher Secondary School Purakkad",
+          "Little Flower Lower Primary School Purakkad",
+          "SVD Upper Primary School Purakkad"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "thottappally",
+      "name": "Thottappally Spillway",
+      "x": 243.9,
+      "y": 512.6,
+      "elevation_m": 0.4,
+      "population": 3000,
+      "lat": 9.3188,
+      "lon": 76.3848,
+      "osm": {
+        "hospitals": 27,
+        "clinics": 4,
+        "schools": 59,
+        "colleges": 7,
+        "worship": 102,
+        "community": 2,
+        "hospital_names": [
+          "Community Health Centre Thrikkunnapuzha",
+          "Community Health Centre Thrikkunnapuzha",
+          "Primary Health Centre 24x7 Arattupuzha"
+        ],
+        "shelter_names": [
+          "tagore school",
+          "Govt. Upper Primary School Erickavu",
+          "Mohammadan Lower Primary School Arattupuzha"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_pump_station": true
+    },
+    {
+      "id": "cherthala",
+      "name": "Cherthala",
+      "x": 143.1,
+      "y": 131.0,
+      "elevation_m": 3.2,
+      "population": 45000,
+      "lat": 9.6847,
+      "lon": 76.336,
+      "osm": {
+        "hospitals": 24,
+        "clinics": 4,
+        "schools": 61,
+        "colleges": 8,
+        "worship": 157,
+        "community": 6,
+        "hospital_names": [
+          "Prathyasa Msgr Joseph Kandathil Memorial Cancer Research Centre",
+          "Kinder Women's Hospital and Fertility Centre (P) Ltd.",
+          "Saint Rita's Mental Hospital And Counselling Center"
+        ],
+        "shelter_names": [
+          "Layfalo public school",
+          "GOVT.LPS thirunalloor",
+          "Mary Matha English Medium Nursery School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_shelter": true,
+      "shelter_capacity": 16000
+    },
+    {
+      "id": "muhamma",
+      "name": "Muhamma",
+      "x": 193.7,
+      "y": 213.7,
+      "elevation_m": 1.2,
+      "population": 18000,
+      "lat": 9.6054,
+      "lon": 76.3605,
+      "osm": {
+        "hospitals": 13,
+        "clinics": 3,
+        "schools": 44,
+        "colleges": 4,
+        "worship": 120,
+        "community": 1,
+        "hospital_names": [
+          "Primary Health Center  Mararikulam North",
+          "Govt. Ayurveda Dispensary Kanjikkuzhy",
+          "Primary Health Center- Mannancherry"
+        ],
+        "shelter_names": [
+          "Sivananda yoga Aleppey",
+          "Pollethai School",
+          "KE carmel"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "thanneermukkom",
+      "name": "Thanneermukkom Bund",
+      "x": 295.9,
+      "y": 146.3,
+      "elevation_m": 0.3,
+      "population": 5000,
+      "lat": 9.67,
+      "lon": 76.41,
+      "osm": {
+        "hospitals": 36,
+        "clinics": 11,
+        "schools": 71,
+        "colleges": 10,
+        "worship": 196,
+        "community": 27,
+        "hospital_names": [
+          "Government Ayurveda Dispensary, Thalayazham",
+          "House of Divine Providence Hospital (HDP)",
+          "Government Ayurveda Dispensary, TV Puram"
+        ],
+        "shelter_names": [
+          "St. Thomas Higher Secondary School Pala",
+          "Technical School Pala",
+          "Asramam Government LPS Puliyanoor"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_pump_station": true
+    },
+    {
+      "id": "kumarakom",
+      "name": "Kumarakom",
+      "x": 338.3,
+      "y": 223.4,
+      "elevation_m": 1.5,
+      "population": 14000,
+      "lat": 9.5961,
+      "lon": 76.4305,
+      "osm": {
+        "hospitals": 73,
+        "clinics": 9,
+        "schools": 134,
+        "colleges": 15,
+        "worship": 312,
+        "community": 13,
+        "hospital_names": [
+          "Institute of Child Health and Childrens Hospital Kottayam",
+          "Chirayu Ayurvedic Speciality Clinic And Treatment Centre",
+          "Government Homeo and Ayurvedic Hospital Kumarakom"
+        ],
+        "shelter_names": [
+          "Mary Mount Public School",
+          "Devi Vilasam School",
+          "ബേക്കർ മെമ്മോറിയൽ ഗേൾസ് ഹയർ സെക്കന്ററി സ്കൂൾ"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_shelter": true,
+      "shelter_capacity": 16000
+    },
+    {
+      "id": "kainakary",
+      "name": "Kainakary",
+      "x": 248.0,
+      "y": 345.9,
+      "elevation_m": -2.2,
+      "population": 12000,
+      "lat": 9.4786,
+      "lon": 76.3868,
+      "osm": {
+        "hospitals": 4,
+        "clinics": 0,
+        "schools": 15,
+        "colleges": 0,
+        "worship": 11,
+        "community": 0,
+        "hospital_names": [
+          "Primary Health Center Kuppapuram",
+          "Primary Health Center Kainakary",
+          "St. Antony's Hospital"
+        ],
+        "shelter_names": [
+          "ANGANAVADY",
+          "ANGANAVADY",
+          "ANGANAVADY"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "nedumudy",
+      "name": "Nedumudy",
+      "x": 287.7,
+      "y": 382.2,
+      "elevation_m": -1.5,
+      "population": 16000,
+      "lat": 9.4438,
+      "lon": 76.406,
+      "osm": {
+        "hospitals": 1,
+        "clinics": 1,
+        "schools": 4,
+        "colleges": 0,
+        "worship": 9,
+        "community": 0,
+        "hospital_names": [
+          "Dr. Aby's speciality"
+        ],
+        "shelter_names": [
+          "GNS LP SCHOOL, NEDUMUDY",
+          "ANGANAVADY",
+          "Government Lower Primary Girls School Ponga"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "pulincunnu",
+      "name": "Pulincunnu",
+      "x": 316.6,
+      "y": 370.5,
+      "elevation_m": -1.8,
+      "population": 11000,
+      "lat": 9.455,
+      "lon": 76.42,
+      "osm": {
+        "hospitals": 2,
+        "clinics": 0,
+        "schools": 4,
+        "colleges": 2,
+        "worship": 12,
+        "community": 0,
+        "hospital_names": [
+          "Taluk Headquarters Hospital Pulinkunnu"
+        ],
+        "shelter_names": [
+          "Little Flower Girls High School, Pulinkunnu",
+          "ST JOSEPH SCHOOL",
+          "Government UP School Chathurthyakary"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "neelamperoor",
+      "name": "Neelamperoor",
+      "x": 492.8,
+      "y": 327.3,
+      "elevation_m": -1.3,
+      "population": 6000,
+      "lat": 9.4965,
+      "lon": 76.5053,
+      "osm": {
+        "hospitals": 73,
+        "clinics": 39,
+        "schools": 239,
+        "colleges": 33,
+        "worship": 543,
+        "community": 37,
+        "hospital_names": [
+          "Inter University Centre For BioMedical Research & Superspeciality Hospital",
+          "Inter-University Center for Biomedical Research & Superspeciality Hospital",
+          "National Homeopathy Research Institute In Mental Health"
+        ],
+        "shelter_names": [
+          "Sacred Heart Girl's Higher Secondary School",
+          "St. Mary's Boys' HSS",
+          "Kuruvikkoodu LP School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "champakulam",
+      "name": "Champakulam",
+      "x": 299.0,
+      "y": 419.5,
+      "elevation_m": -2.0,
+      "population": 13000,
+      "lat": 9.4081,
+      "lon": 76.4115,
+      "osm": {
+        "hospitals": 2,
+        "clinics": 0,
+        "schools": 8,
+        "colleges": 0,
+        "worship": 7,
+        "community": 0,
+        "hospital_names": [
+          "Community Health Centre Chempupuram",
+          "Govt. Hospital Champakulam"
+        ],
+        "shelter_names": [
+          "St.Marys HSS Champakulam",
+          "Fr. Thomas Porukara Central School",
+          "BBM High School Vaisyambhagom"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "edathua",
+      "name": "Edathua",
+      "x": 434.7,
+      "y": 463.3,
+      "elevation_m": -1.2,
+      "population": 11000,
+      "lat": 9.3661,
+      "lon": 76.4772,
+      "osm": {
+        "hospitals": 16,
+        "clinics": 1,
+        "schools": 32,
+        "colleges": 2,
+        "worship": 54,
+        "community": 0,
+        "hospital_names": [
+          "Veeyapuram Primary Health Centre",
+          "Community Health Centre Edathuva",
+          "Kallarackal Pneuma Health Centre"
+        ],
+        "shelter_names": [
+          "St. Thomas Higher Secondary School",
+          "T.M.T. High School, Thalavady",
+          "ASM School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_shelter": true,
+      "shelter_capacity": 8000
+    },
+    {
+      "id": "kavalam",
+      "name": "Kavalam",
+      "x": 390.1,
+      "y": 348.4,
+      "elevation_m": -2.0,
+      "population": 9000,
+      "lat": 9.4762,
+      "lon": 76.4556,
+      "osm": {
+        "hospitals": 0,
+        "clinics": 0,
+        "schools": 10,
+        "colleges": 0,
+        "worship": 25,
+        "community": 0,
+        "hospital_names": [],
+        "shelter_names": [
+          "SH UP School kannady",
+          "Govt.Technical High School Kavalam",
+          "A J John Memorial Higher Secondary School Kainady"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "ramankary",
+      "name": "Ramankary",
+      "x": 412.8,
+      "y": 393.2,
+      "elevation_m": -1.6,
+      "population": 10000,
+      "lat": 9.4333,
+      "lon": 76.4666,
+      "osm": {
+        "hospitals": 1,
+        "clinics": 1,
+        "schools": 5,
+        "colleges": 0,
+        "worship": 4,
+        "community": 0,
+        "hospital_names": [
+          "Primary Health Center Muttar"
+        ],
+        "shelter_names": [
+          "Government LPS",
+          "NSS Higher Secondary School Ramankary",
+          "Government Upper Primary School Vezhapra"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "mankombu",
+      "name": "Mankombu",
+      "x": 378.6,
+      "y": 407.0,
+      "elevation_m": -1.9,
+      "population": 7000,
+      "lat": 9.42,
+      "lon": 76.45,
+      "osm": {
+        "hospitals": 1,
+        "clinics": 0,
+        "schools": 2,
+        "colleges": 0,
+        "worship": 7,
+        "community": 0,
+        "hospital_names": [
+          "Primary Health Center Ramankari"
+        ],
+        "shelter_names": [
+          "Mary Matha Lower Primary School Punnakunnam",
+          "Government High School Thekkekkara",
+          "Puthukary St. Xavier's Church"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "thakazhi",
+      "name": "Thakazhi",
+      "x": 337.2,
+      "y": 438.3,
+      "elevation_m": -1.4,
+      "population": 15000,
+      "lat": 9.39,
+      "lon": 76.43,
+      "osm": {
+        "hospitals": 1,
+        "clinics": 1,
+        "schools": 7,
+        "colleges": 0,
+        "worship": 6,
+        "community": 0,
+        "hospital_names": [
+          "R.B.M. Hospital"
+        ],
+        "shelter_names": [
+          "Dbhss Thakazhy High School, Alappuzha",
+          "Holy Family Lower Primary School Kunnumma",
+          "Devi Vilasom High School Kandankary"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "muttar",
+      "name": "Muttar",
+      "x": 481.8,
+      "y": 407.0,
+      "elevation_m": -1.7,
+      "population": 8000,
+      "lat": 9.42,
+      "lon": 76.5,
+      "osm": {
+        "hospitals": 4,
+        "clinics": 0,
+        "schools": 8,
+        "colleges": 0,
+        "worship": 9,
+        "community": 0,
+        "hospital_names": [
+          "Community Health Centre, Chathenkary",
+          "Community Health Centre Kurathikad",
+          "Community Health Centre Veliyanad"
+        ],
+        "shelter_names": [
+          "St. George's High School",
+          "LPS school chathnkery",
+          "Government St.John's Lower Primary School , Mepral"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "veliyanad",
+      "name": "Veliyanad",
+      "x": 421.7,
+      "y": 378.6,
+      "elevation_m": -1.0,
+      "population": 9000,
+      "lat": 9.4473,
+      "lon": 76.4709,
+      "osm": {
+        "hospitals": 2,
+        "clinics": 0,
+        "schools": 6,
+        "colleges": 0,
+        "worship": 14,
+        "community": 0,
+        "hospital_names": [
+          "Primary Health Centre, Neelamperoor",
+          "Chc Veliyanad"
+        ],
+        "shelter_names": [
+          "NSS High School, Veliyanadu",
+          "Government Lower Primary School Kumarankary",
+          "Government Upper Primary School Narakathara"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "changanassery",
+      "name": "Changanassery",
+      "x": 565.1,
+      "y": 379.4,
+      "elevation_m": 4.5,
+      "population": 52000,
+      "lat": 9.4465,
+      "lon": 76.5403,
+      "osm": {
+        "hospitals": 53,
+        "clinics": 22,
+        "schools": 151,
+        "colleges": 18,
+        "worship": 322,
+        "community": 27,
+        "hospital_names": [
+          "The Homoeopathic Multi Speciality Hospital & Research Centre",
+          "Thengana Medical Mission Hospital and Research Centre",
+          "Karunnya Medical Centre and Eye Hospital,Karukachal"
+        ],
+        "shelter_names": [
+          "St. Mary's High School",
+          "St. Mary's LP School",
+          "St. Mary's Convent"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_shelter": true,
+      "is_hospital": true,
+      "shelter_capacity": 16000
+    },
+    {
+      "id": "thiruvalla",
+      "name": "Thiruvalla",
+      "x": 639.5,
+      "y": 441.8,
+      "elevation_m": 8.0,
+      "population": 57000,
+      "lat": 9.3867,
+      "lon": 76.5763,
+      "osm": {
+        "hospitals": 52,
+        "clinics": 14,
+        "schools": 172,
+        "colleges": 23,
+        "worship": 246,
+        "community": 26,
+        "hospital_names": [
+          "Pushpagiri Institute Of Medical Science And Research Centre",
+          "Sudarshanam Ayurveda Eye Hospital & Panchakarma Centre",
+          "Chaithanya Eye Hospital and Research Institute"
+        ],
+        "shelter_names": [
+          "NSS High School",
+          "SC Seminary High School",
+          "CMS Higher Secondary School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_hospital": true
+    },
+    {
+      "id": "chengannur",
+      "name": "Chengannur",
+      "x": 717.1,
+      "y": 513.5,
+      "elevation_m": 5.5,
+      "population": 38000,
+      "lat": 9.3179,
+      "lon": 76.6139,
+      "osm": {
+        "hospitals": 26,
+        "clinics": 4,
+        "schools": 84,
+        "colleges": 16,
+        "worship": 143,
+        "community": 12,
+        "hospital_names": [
+          "Indukantham Ayurveda Hospital and Panchakarma Centre",
+          "Government Ayurvedic dispensary, Chemmathmukk",
+          "Government Ayurveda Dispensary Puliyoor"
+        ],
+        "shelter_names": [
+          "Government Upper Primary School",
+          "VivekanandaVidyaPeedam",
+          "MMAR School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_shelter": true,
+      "is_hospital": true,
+      "shelter_capacity": 16000
+    },
+    {
+      "id": "pandanad",
+      "name": "Pandanad",
+      "x": 640.7,
+      "y": 505.0,
+      "elevation_m": 2.5,
+      "population": 14000,
+      "lat": 9.3261,
+      "lon": 76.5769,
+      "osm": {
+        "hospitals": 13,
+        "clinics": 8,
+        "schools": 57,
+        "colleges": 4,
+        "worship": 117,
+        "community": 8,
+        "hospital_names": [
+          "St. Gregorios Medical Mission Hospital",
+          "Commuity Health Centre Pandanadu",
+          "Primary Health Center, Kadamboor"
+        ],
+        "shelter_names": [
+          "Nair Samajam Higher Secondary School",
+          "Parumala Seminary LP School",
+          "Thiruvanvandoor School Ground"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "aranmula",
+      "name": "Aranmula",
+      "x": 865.5,
+      "y": 504.3,
+      "elevation_m": 6.5,
+      "population": 12000,
+      "lat": 9.3268,
+      "lon": 76.6857,
+      "osm": {
+        "hospitals": 87,
+        "clinics": 20,
+        "schools": 240,
+        "colleges": 17,
+        "worship": 397,
+        "community": 23,
+        "hospital_names": [
+          "Biocare Certified Medical Laboratory;Family Health Centre",
+          "Chackalayil Ayurveda Paramparya Sidha Marma Hospital",
+          "Pathanamthitta District Homeo Hospital,Vellayil"
+        ],
+        "shelter_names": [
+          "Marthoma Senior Secondary School",
+          "St. Thomas Higher Secondary School",
+          "Government LP School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      }
+    },
+    {
+      "id": "mavelikkara",
+      "name": "Mavelikkara",
+      "x": 564.9,
+      "y": 583.8,
+      "elevation_m": 7.0,
+      "population": 31000,
+      "lat": 9.2505,
+      "lon": 76.5402,
+      "osm": {
+        "hospitals": 54,
+        "clinics": 25,
+        "schools": 211,
+        "colleges": 11,
+        "worship": 407,
+        "community": 29,
+        "hospital_names": [
+          "SANJEEVANI MULTI SPECIALITY HOSPITAL, CHERIYANAD, CHENGANNUR",
+          "Thomman Parambil Samuel Memorial ENT Centre & General Clinic",
+          "Chingoli Ayurveda Hospital And Research Centre"
+        ],
+        "shelter_names": [
+          "Infant Jesus School",
+          "Jawahar Navodaya Vidyalaya",
+          "MSS High School"
+        ],
+        "source": "OpenStreetMap / OpenDataKerala (ODbL)"
+      },
+      "is_shelter": true,
+      "shelter_capacity": 16000
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_alappuzha_town_vandanam",
+      "a": "alappuzha_town",
+      "b": "vandanam",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.77,
+      "mode": "road",
+      "distance_km": 7.02,
+      "duration_min": 9.1
+    },
+    {
+      "id": "e_vandanam_punnapra",
+      "a": "vandanam",
+      "b": "punnapra",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.75,
+      "mode": "road",
+      "distance_km": 2.8,
+      "duration_min": 4.7
+    },
+    {
+      "id": "e_alappuzha_town_punnapra",
+      "a": "alappuzha_town",
+      "b": "punnapra",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.75,
+      "mode": "road",
+      "distance_km": 8.33,
+      "duration_min": 9.7
+    },
+    {
+      "id": "e_punnapra_ambalappuzha",
+      "a": "punnapra",
+      "b": "ambalappuzha",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.75,
+      "mode": "road",
+      "distance_km": 7.56,
+      "duration_min": 8.6
+    },
+    {
+      "id": "e_ambalappuzha_purakkad",
+      "a": "ambalappuzha",
+      "b": "purakkad",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.72,
+      "mode": "road",
+      "distance_km": 4.72,
+      "duration_min": 7.4
+    },
+    {
+      "id": "e_purakkad_thottappally",
+      "a": "purakkad",
+      "b": "thottappally",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.7,
+      "mode": "road",
+      "distance_km": 5.09,
+      "duration_min": 7.5
+    },
+    {
+      "id": "e_ambalappuzha_thottappally",
+      "a": "ambalappuzha",
+      "b": "thottappally",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.7,
+      "mode": "road",
+      "distance_km": 8.73,
+      "duration_min": 9.9
+    },
+    {
+      "id": "e_alappuzha_town_cherthala",
+      "a": "alappuzha_town",
+      "b": "cherthala",
+      "capacity_per_tick": 200,
+      "travel_ticks": 3,
+      "flooded_threshold_m": 0.77,
+      "mode": "road",
+      "distance_km": 22.17,
+      "duration_min": 20.1
+    },
+    {
+      "id": "e_cherthala_muhamma",
+      "a": "cherthala",
+      "b": "muhamma",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.79,
+      "mode": "road",
+      "distance_km": 11.73,
+      "duration_min": 11.2
+    },
+    {
+      "id": "e_muhamma_thanneermukkom",
+      "a": "muhamma",
+      "b": "thanneermukkom",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.69,
+      "mode": "road",
+      "distance_km": 11.68,
+      "duration_min": 12.9
+    },
+    {
+      "id": "e_cherthala_thanneermukkom",
+      "a": "cherthala",
+      "b": "thanneermukkom",
+      "capacity_per_tick": 200,
+      "travel_ticks": 3,
+      "flooded_threshold_m": 0.69,
+      "mode": "road",
+      "distance_km": 13.81,
+      "duration_min": 15.4
+    },
+    {
+      "id": "e_thanneermukkom_kumarakom",
+      "a": "thanneermukkom",
+      "b": "kumarakom",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.69,
+      "mode": "road",
+      "distance_km": 11.05,
+      "duration_min": 11.0
+    },
+    {
+      "id": "e_muhamma_kainakary",
+      "a": "muhamma",
+      "b": "kainakary",
+      "capacity_per_tick": 200,
+      "travel_ticks": 4,
+      "flooded_threshold_m": 0.39,
+      "mode": "road",
+      "distance_km": 22.95,
+      "duration_min": 23.1
+    },
+    {
+      "id": "e_thanneermukkom_kainakary",
+      "a": "thanneermukkom",
+      "b": "kainakary",
+      "capacity_per_tick": 200,
+      "travel_ticks": 6,
+      "flooded_threshold_m": 0.39,
+      "mode": "road",
+      "distance_km": 34.45,
+      "duration_min": 35.8
+    },
+    {
+      "id": "e_alappuzha_town_nedumudy",
+      "a": "alappuzha_town",
+      "b": "nedumudy",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.47,
+      "mode": "road",
+      "distance_km": 11.63,
+      "duration_min": 12.1
+    },
+    {
+      "id": "e_kumarakom_neelamperoor",
+      "a": "kumarakom",
+      "b": "neelamperoor",
+      "capacity_per_tick": 200,
+      "travel_ticks": 4,
+      "flooded_threshold_m": 0.49,
+      "mode": "road",
+      "distance_km": 23.66,
+      "duration_min": 26.1
+    },
+    {
+      "id": "e_kainakary_nedumudy",
+      "a": "kainakary",
+      "b": "nedumudy",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.39,
+      "mode": "road",
+      "distance_km": 5.89,
+      "duration_min": 6.9
+    },
+    {
+      "id": "e_kainakary_pulincunnu",
+      "a": "kainakary",
+      "b": "pulincunnu",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.39,
+      "mode": "ferry",
+      "distance_km": 4.49,
+      "duration_min": 15.0
+    },
+    {
+      "id": "e_nedumudy_pulincunnu",
+      "a": "nedumudy",
+      "b": "pulincunnu",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.43,
+      "mode": "ferry",
+      "distance_km": 1.98,
+      "duration_min": 6.6
+    },
+    {
+      "id": "e_pulincunnu_neelamperoor",
+      "a": "pulincunnu",
+      "b": "neelamperoor",
+      "capacity_per_tick": 200,
+      "travel_ticks": 6,
+      "flooded_threshold_m": 0.43,
+      "mode": "road",
+      "distance_km": 15.39,
+      "duration_min": 33.4
+    },
+    {
+      "id": "e_neelamperoor_kavalam",
+      "a": "neelamperoor",
+      "b": "kavalam",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 7.4,
+      "duration_min": 8.1
+    },
+    {
+      "id": "e_pulincunnu_kavalam",
+      "a": "pulincunnu",
+      "b": "kavalam",
+      "capacity_per_tick": 200,
+      "travel_ticks": 4,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 7.99,
+      "duration_min": 25.3
+    },
+    {
+      "id": "e_kavalam_veliyanad",
+      "a": "kavalam",
+      "b": "veliyanad",
+      "capacity_per_tick": 200,
+      "travel_ticks": 4,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 5.83,
+      "duration_min": 22.4
+    },
+    {
+      "id": "e_nedumudy_champakulam",
+      "a": "nedumudy",
+      "b": "champakulam",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 5.3,
+      "duration_min": 5.9
+    },
+    {
+      "id": "e_champakulam_edathua",
+      "a": "champakulam",
+      "b": "edathua",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 10.47,
+      "duration_min": 11.8
+    },
+    {
+      "id": "e_edathua_kavalam",
+      "a": "edathua",
+      "b": "kavalam",
+      "capacity_per_tick": 200,
+      "travel_ticks": 6,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 20.09,
+      "duration_min": 36.2
+    },
+    {
+      "id": "e_edathua_ramankary",
+      "a": "edathua",
+      "b": "ramankary",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.46,
+      "mode": "road",
+      "distance_km": 10.25,
+      "duration_min": 11.6
+    },
+    {
+      "id": "e_ramankary_mankombu",
+      "a": "ramankary",
+      "b": "mankombu",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.42,
+      "mode": "road",
+      "distance_km": 3.86,
+      "duration_min": 7.2
+    },
+    {
+      "id": "e_mankombu_thakazhi",
+      "a": "mankombu",
+      "b": "thakazhi",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.42,
+      "mode": "road",
+      "distance_km": 6.56,
+      "duration_min": 10.6
+    },
+    {
+      "id": "e_thakazhi_champakulam",
+      "a": "thakazhi",
+      "b": "champakulam",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 3.77,
+      "duration_min": 5.1
+    },
+    {
+      "id": "e_ramankary_muttar",
+      "a": "ramankary",
+      "b": "muttar",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.45,
+      "mode": "road",
+      "distance_km": 5.5,
+      "duration_min": 6.9
+    },
+    {
+      "id": "e_muttar_veliyanad",
+      "a": "muttar",
+      "b": "veliyanad",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.45,
+      "mode": "road",
+      "distance_km": 5.82,
+      "duration_min": 7.5
+    },
+    {
+      "id": "e_edathua_mankombu",
+      "a": "edathua",
+      "b": "mankombu",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.42,
+      "mode": "road",
+      "distance_km": 10.28,
+      "duration_min": 14.1
+    },
+    {
+      "id": "e_nedumudy_edathua",
+      "a": "nedumudy",
+      "b": "edathua",
+      "capacity_per_tick": 200,
+      "travel_ticks": 3,
+      "flooded_threshold_m": 0.47,
+      "mode": "road",
+      "distance_km": 16.14,
+      "duration_min": 16.8
+    },
+    {
+      "id": "e_thakazhi_mankombu",
+      "a": "thakazhi",
+      "b": "mankombu",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.42,
+      "mode": "road",
+      "distance_km": 6.56,
+      "duration_min": 10.7
+    },
+    {
+      "id": "e_veliyanad_pandanad",
+      "a": "veliyanad",
+      "b": "pandanad",
+      "capacity_per_tick": 200,
+      "travel_ticks": 5,
+      "flooded_threshold_m": 0.53,
+      "mode": "road",
+      "distance_km": 28.69,
+      "duration_min": 27.6
+    },
+    {
+      "id": "e_kavalam_pandanad",
+      "a": "kavalam",
+      "b": "pandanad",
+      "capacity_per_tick": 200,
+      "travel_ticks": 5,
+      "flooded_threshold_m": 0.41,
+      "mode": "road",
+      "distance_km": 30.8,
+      "duration_min": 30.7
+    },
+    {
+      "id": "e_muttar_mavelikkara",
+      "a": "muttar",
+      "b": "mavelikkara",
+      "capacity_per_tick": 200,
+      "travel_ticks": 5,
+      "flooded_threshold_m": 0.45,
+      "mode": "road",
+      "distance_km": 25.91,
+      "duration_min": 28.7
+    },
+    {
+      "id": "e_ramankary_mavelikkara",
+      "a": "ramankary",
+      "b": "mavelikkara",
+      "capacity_per_tick": 200,
+      "travel_ticks": 5,
+      "flooded_threshold_m": 0.46,
+      "mode": "road",
+      "distance_km": 28.38,
+      "duration_min": 30.3
+    },
+    {
+      "id": "e_neelamperoor_changanassery",
+      "a": "neelamperoor",
+      "b": "changanassery",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.49,
+      "mode": "road",
+      "distance_km": 9.83,
+      "duration_min": 9.7
+    },
+    {
+      "id": "e_pandanad_chengannur",
+      "a": "pandanad",
+      "b": "chengannur",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 0.95,
+      "mode": "road",
+      "distance_km": 5.1,
+      "duration_min": 5.5
+    },
+    {
+      "id": "e_changanassery_chengannur",
+      "a": "changanassery",
+      "b": "chengannur",
+      "capacity_per_tick": 200,
+      "travel_ticks": 3,
+      "flooded_threshold_m": 1.19,
+      "mode": "road",
+      "distance_km": 17.8,
+      "duration_min": 15.4
+    },
+    {
+      "id": "e_changanassery_thiruvalla",
+      "a": "changanassery",
+      "b": "thiruvalla",
+      "capacity_per_tick": 200,
+      "travel_ticks": 1,
+      "flooded_threshold_m": 1.19,
+      "mode": "road",
+      "distance_km": 8.28,
+      "duration_min": 7.5
+    },
+    {
+      "id": "e_chengannur_thiruvalla",
+      "a": "chengannur",
+      "b": "thiruvalla",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 1.31,
+      "mode": "road",
+      "distance_km": 10.15,
+      "duration_min": 9.4
+    },
+    {
+      "id": "e_chengannur_aranmula",
+      "a": "chengannur",
+      "b": "aranmula",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 1.31,
+      "mode": "road",
+      "distance_km": 9.77,
+      "duration_min": 11.4
+    },
+    {
+      "id": "e_aranmula_mavelikkara",
+      "a": "aranmula",
+      "b": "mavelikkara",
+      "capacity_per_tick": 200,
+      "travel_ticks": 4,
+      "flooded_threshold_m": 1.43,
+      "mode": "road",
+      "distance_km": 23.63,
+      "duration_min": 24.2
+    },
+    {
+      "id": "e_pandanad_mavelikkara",
+      "a": "pandanad",
+      "b": "mavelikkara",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.95,
+      "mode": "road",
+      "distance_km": 11.58,
+      "duration_min": 13.5
+    },
+    {
+      "id": "e_changanassery_pandanad",
+      "a": "changanassery",
+      "b": "pandanad",
+      "capacity_per_tick": 200,
+      "travel_ticks": 3,
+      "flooded_threshold_m": 0.95,
+      "mode": "road",
+      "distance_km": 19.18,
+      "duration_min": 17.8
+    },
+    {
+      "id": "e_thiruvalla_aranmula",
+      "a": "thiruvalla",
+      "b": "aranmula",
+      "capacity_per_tick": 200,
+      "travel_ticks": 3,
+      "flooded_threshold_m": 1.43,
+      "mode": "road",
+      "distance_km": 18.26,
+      "duration_min": 18.8
+    },
+    {
+      "id": "e_thottappally_thakazhi",
+      "a": "thottappally",
+      "b": "thakazhi",
+      "capacity_per_tick": 200,
+      "travel_ticks": 5,
+      "flooded_threshold_m": 0.48,
+      "mode": "ferry",
+      "distance_km": 9.34,
+      "duration_min": 31.1
+    },
+    {
+      "id": "e_thakazhi_mavelikkara",
+      "a": "thakazhi",
+      "b": "mavelikkara",
+      "capacity_per_tick": 200,
+      "travel_ticks": 5,
+      "flooded_threshold_m": 0.48,
+      "mode": "road",
+      "distance_km": 28.72,
+      "duration_min": 30.4
+    },
+    {
+      "id": "e_ambalappuzha_thakazhi",
+      "a": "ambalappuzha",
+      "b": "thakazhi",
+      "capacity_per_tick": 200,
+      "travel_ticks": 2,
+      "flooded_threshold_m": 0.48,
+      "mode": "road",
+      "distance_km": 12.42,
+      "duration_min": 14.5
+    }
+  ],
+  "units": [
+    {
+      "id": "boat_1",
+      "type": "boat",
+      "location": "alappuzha_town",
+      "capacity": 40,
+      "speed": 1
+    },
+    {
+      "id": "boat_2",
+      "type": "boat",
+      "location": "nedumudy",
+      "capacity": 40,
+      "speed": 1
+    },
+    {
+      "id": "boat_3",
+      "type": "boat",
+      "location": "champakulam",
+      "capacity": 40,
+      "speed": 1
+    },
+    {
+      "id": "boat_4",
+      "type": "boat",
+      "location": "edathua",
+      "capacity": 40,
+      "speed": 1
+    },
+    {
+      "id": "boat_5",
+      "type": "boat",
+      "location": "kainakary",
+      "capacity": 40,
+      "speed": 1
+    },
+    {
+      "id": "boat_6",
+      "type": "boat",
+      "location": "pandanad",
+      "capacity": 40,
+      "speed": 1
+    },
+    {
+      "id": "bus_1",
+      "type": "bus",
+      "location": "cherthala",
+      "capacity": 60,
+      "speed": 1
+    },
+    {
+      "id": "bus_2",
+      "type": "bus",
+      "location": "changanassery",
+      "capacity": 60,
+      "speed": 1
+    },
+    {
+      "id": "bus_3",
+      "type": "bus",
+      "location": "chengannur",
+      "capacity": 60,
+      "speed": 1
+    },
+    {
+      "id": "bus_4",
+      "type": "bus",
+      "location": "mavelikkara",
+      "capacity": 60,
+      "speed": 1
+    },
+    {
+      "id": "amb_1",
+      "type": "ambulance",
+      "location": "vandanam",
+      "capacity": 4,
+      "speed": 2
+    },
+    {
+      "id": "amb_2",
+      "type": "ambulance",
+      "location": "alappuzha_town",
+      "capacity": 4,
+      "speed": 2
+    },
+    {
+      "id": "amb_3",
+      "type": "ambulance",
+      "location": "thiruvalla",
+      "capacity": 4,
+      "speed": 2
+    },
+    {
+      "id": "rt_1",
+      "type": "rescue_team",
+      "location": "chengannur",
+      "capacity": 12,
+      "speed": 1
+    },
+    {
+      "id": "rt_2",
+      "type": "rescue_team",
+      "location": "edathua",
+      "capacity": 12,
+      "speed": 1
+    },
+    {
+      "id": "rt_3",
+      "type": "rescue_team",
+      "location": "alappuzha_town",
+      "capacity": 12,
+      "speed": 1
+    }
+  ],
+  "injects": [
+    {
+      "id": "imd_red",
+      "tick": 5,
+      "severity": "high",
+      "headline": "IMD red alert: extreme rainfall forecast over the Pamba catchment",
+      "effect": {
+        "surge_rate_m": 0.18
+      }
+    },
+    {
+      "id": "kakki_release",
+      "tick": 9,
+      "severity": "critical",
+      "headline": "Shutters opened at Kakki reservoir; surge racing down the Pamba toward Chengannur",
+      "effect": {
+        "water_spike": {
+          "chengannur": 0.9,
+          "pandanad": 0.7
+        }
+      }
+    },
+    {
+      "id": "pandanad_bridge",
+      "tick": 14,
+      "severity": "high",
+      "headline": "Pandanad approach road submerged; eastern link severed",
+      "effect": {
+        "destroy_edge": "e_changanassery_pandanad"
+      }
+    },
+    {
+      "id": "bund_overtop",
+      "tick": 18,
+      "severity": "critical",
+      "headline": "Thanneermukkom bund overtopped; backwater pushing into central Kuttanad",
+      "effect": {
+        "add_water_source": "thanneermukkom"
+      }
+    },
+    {
+      "id": "grid_down",
+      "tick": 22,
+      "severity": "high",
+      "headline": "KSEB substation flooded; power out across the central polders",
+      "effect": {
+        "power_outage": [
+          "nedumudy",
+          "champakulam",
+          "kainakary",
+          "kavalam"
+        ]
+      }
+    },
+    {
+      "id": "comms_degraded",
+      "tick": 26,
+      "severity": "critical",
+      "headline": "Mobile towers failing in inundated zones; reaching trapped families is getting harder",
+      "effect": {
+        "cell_degradation": 45
+      }
+    },
+    {
+      "id": "edathua_crowd",
+      "tick": 30,
+      "severity": "high",
+      "headline": "Edathua relief camp swelling as boats bring in evacuees from Champakulam",
+      "effect": {
+        "crowd_surge": {
+          "target": "edathua",
+          "people": 1800
+        }
+      }
+    },
+    {
+      "id": "fuel_slick",
+      "tick": 35,
+      "severity": "medium",
+      "headline": "Diesel and sewage contamination reported in floodwater near Punnapra",
+      "effect": {
+        "contaminate": [
+          "punnapra"
+        ]
+      }
+    },
+    {
+      "id": "vandanam_gen",
+      "tick": 40,
+      "severity": "critical",
+      "headline": "Backup generator faltering at TD Medical College, Vandanam",
+      "effect": {
+        "hospital_generator_down": "vandanam"
+      }
+    },
+    {
+      "id": "easing",
+      "tick": 52,
+      "severity": "low",
+      "headline": "Rain easing; Thottappally spillway clearing water to the Arabian Sea",
+      "effect": {
+        "surge_rate_m": -0.09
+      }
+    }
+  ]
+}

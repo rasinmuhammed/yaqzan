@@ -1,0 +1,3197 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-13T05:51:12Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 245583686,
+  "lat": 9.2844934,
+  "lon": 76.4562679,
+  "tags": {
+    "name": "Haripad",
+    "name:ar": "هاريباد",
+    "name:hi": "हरिप्पाड",
+    "name:kn": "ಹರಿಪ್ಪಾಡ್",
+    "name:ml": "ഹരിപ്പാട്",
+    "name:ta": "ஹரிப்பாடு",
+    "place": "town",
+    "population": "10000",
+    "postal_code": "690514",
+    "wikidata": "Q500806",
+    "wikimedia_commons": "Category:Haripad",
+    "wikipedia": "en:Haripad"
+  }
+},
+{
+  "type": "node",
+  "id": 245584105,
+  "lat": 9.4923271,
+  "lon": 76.3291487,
+  "tags": {
+    "name": "Alappuzha",
+    "name:ar": "الابوزها",
+    "name:bn": "আলাপ্পুঝা",
+    "name:en": "Alappuzha",
+    "name:fa": "آلاپوژا",
+    "name:he": "אלאפוזה",
+    "name:hi": "आलाप्पुड़ा",
+    "name:kn": "ಆಲಪ್ಪುಳ",
+    "name:ko": "알라푸자",
+    "name:ml": "ആലപ്പുഴ",
+    "name:mr": "आलप्पुळा",
+    "name:pt": "Alapé",
+    "name:ru": "Алаппужа",
+    "name:ta": "ஆலப்புழா",
+    "name:te": "ఆలప్పుళ",
+    "name:zh": "阿勒皮",
+    "place": "city",
+    "population": "177000",
+    "postal_code": "688001",
+    "wikidata": "Q585026",
+    "wikipedia": "en:Alappuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 245584504,
+  "lat": 9.5960545,
+  "lon": 76.4305378,
+  "tags": {
+    "name": "Kumarakom",
+    "name:ar": "کوماراکوم",
+    "name:hi": "कुमरकम",
+    "name:kn": "ಕುಮಾರಕಂ",
+    "name:ml": "കുമരകം",
+    "name:ta": "குமரகம்",
+    "place": "village",
+    "postal_code": "686563",
+    "wikidata": "Q3521576",
+    "wikimedia_commons": "Category:Kumarakom",
+    "wikipedia": "en:Kumarakom"
+  }
+},
+{
+  "type": "node",
+  "id": 281358055,
+  "lat": 9.3799326,
+  "lon": 76.3634769,
+  "tags": {
+    "name": "Ambalapuzha",
+    "name:ml": "അമ്പലപ്പുഴ",
+    "place": "village",
+    "postal_code": "688561"
+  }
+},
+{
+  "type": "node",
+  "id": 297681854,
+  "lat": 9.5915640,
+  "lon": 76.5221599,
+  "tags": {
+    "capital": "5",
+    "name": "Kottayam",
+    "name:ar": "كوتايام",
+    "name:bn": "কোট্টায়াম",
+    "name:en": "Kottayam",
+    "name:fa": "کوتایام",
+    "name:he": "קוטיים",
+    "name:hi": "कोट्टयम",
+    "name:kn": "ಕೋಟ್ಟಯಂ",
+    "name:ml": "കോട്ടയം",
+    "name:mr": "कोट्टयम",
+    "name:pt": "Cotaiam",
+    "name:ru": "Коттаям",
+    "name:ta": "கோட்டயம்",
+    "name:te": "కోట్టయం",
+    "place": "city",
+    "wikidata": "Q659887",
+    "wikipedia": "en:Kottayam"
+  }
+},
+{
+  "type": "node",
+  "id": 307508617,
+  "lat": 9.4020713,
+  "lon": 76.6677200,
+  "tags": {
+    "name": "Vennikulam",
+    "name:ml": "വെണ്ണികുളം",
+    "place": "village",
+    "wikidata": "Q30621481",
+    "wikipedia": "en:Vennikulam"
+  }
+},
+{
+  "type": "node",
+  "id": 345211038,
+  "lat": 9.4919443,
+  "lon": 76.3336515,
+  "tags": {
+    "name": "Vellakinar",
+    "name:ml": "വെള്ളക്കിണര്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 418995475,
+  "lat": 9.4465151,
+  "lon": 76.5403096,
+  "tags": {
+    "alt_name": "Changanasseri",
+    "alt_name:ta": "சங்கனாச்சேரி",
+    "name": "Changanassery",
+    "name:ar": "شانجاناشري",
+    "name:en": "Changanassery",
+    "name:kn": "ಚಙ್ಙನಾಶ್ಶೇರಿ",
+    "name:ml": "ചങ്ങനാശ്ശേരി",
+    "name:ta": "சங்ஙனாஸ்ஸேரி",
+    "place": "town",
+    "wikidata": "Q889300",
+    "wikipedia": "en:Changanassery"
+  }
+},
+{
+  "type": "node",
+  "id": 425164768,
+  "lat": 9.4246528,
+  "lon": 76.5849735,
+  "tags": {
+    "alt_name": "Paippadu;Paippad",
+    "name": "Paipad",
+    "name:ml": "പായിപ്പാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 425164777,
+  "lat": 9.4349643,
+  "lon": 76.6103113,
+  "tags": {
+    "name": "Kunnamthanam",
+    "name:en": "Kunnamthanam",
+    "name:ml": "കുന്നന്താനം",
+    "place": "village",
+    "wikidata": "Q6444918",
+    "wikipedia": "en:Kunnamthanam"
+  }
+},
+{
+  "type": "node",
+  "id": 425248530,
+  "lat": 9.4058829,
+  "lon": 76.6093008,
+  "tags": {
+    "name": "Kaniyanpara",
+    "name:ml": "കണിയാൻപാറ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 425248537,
+  "lat": 9.3861307,
+  "lon": 76.6064537,
+  "tags": {
+    "is_in": "Kaviyoor",
+    "name": "Manackachira",
+    "name:ml": "മനക്കച്ചിറ",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 594862430,
+  "lat": 9.4333100,
+  "lon": 76.3500200,
+  "tags": {
+    "name": "Punnapra",
+    "name:ml": "പുന്നപ്ര",
+    "place": "village",
+    "wikidata": "Q7260459",
+    "wikimedia_commons": "Category:Punnapra",
+    "wikipedia": "en:Punnapra"
+  }
+},
+{
+  "type": "node",
+  "id": 594863825,
+  "lat": 9.4333100,
+  "lon": 76.4665600,
+  "tags": {
+    "name": "Ramankari",
+    "name:ml": "രാമങ്കരി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 594876732,
+  "lat": 9.5833400,
+  "lon": 76.5499900,
+  "tags": {
+    "name": "Manganam",
+    "name:en": "Manganam",
+    "name:ml": "മാങ്ങാനം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 594884210,
+  "lat": 9.4333100,
+  "lon": 76.7166900,
+  "tags": {
+    "name": "Elamattur",
+    "name:ml": "ഏളമറ്റൂര്‍",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 594884345,
+  "lat": 9.5656334,
+  "lon": 76.6443645,
+  "tags": {
+    "name": "Pampady",
+    "name:en": "Pampady",
+    "name:hi": "पांबाडी",
+    "name:ml": "പാമ്പാടി",
+    "name:ta": "பாம்பாடி",
+    "place": "town",
+    "wikidata": "Q7129395",
+    "wikipedia": "en:Pampady"
+  }
+},
+{
+  "type": "node",
+  "id": 622251014,
+  "lat": 9.3847784,
+  "lon": 76.6150126,
+  "tags": {
+    "is_in": "Kaviyoor",
+    "name": "Thottabhagam",
+    "name:ml": "തോട്ടഭാഗം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 622251551,
+  "lat": 9.4198370,
+  "lon": 76.5980627,
+  "tags": {
+    "name": "Anjilithanam",
+    "name:ml": "ആഞ്ഞിലിത്താനം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 649325171,
+  "lat": 9.4747646,
+  "lon": 76.5770747,
+  "tags": {
+    "name": "Thengana",
+    "name:ml": "തെങ്ങണ",
+    "place": "town"
+  }
+},
+{
+  "type": "node",
+  "id": 649325174,
+  "lat": 9.4808408,
+  "lon": 76.6058271,
+  "tags": {
+    "name": "Mammood",
+    "name:en": "Mammood",
+    "name:ml": "മാമ്മൂട്",
+    "place": "village",
+    "wikidata": "Q6745844",
+    "wikipedia": "en:Mammood"
+  }
+},
+{
+  "type": "node",
+  "id": 649325177,
+  "lat": 9.5631978,
+  "lon": 76.6995577,
+  "tags": {
+    "name": "Vazhoor",
+    "name:en": "Vazhoor",
+    "name:ml": "വാഴൂര്‍",
+    "place": "town",
+    "wikidata": "Q7917621",
+    "wikipedia": "en:Vazhoor"
+  }
+},
+{
+  "type": "node",
+  "id": 649325180,
+  "lat": 9.5664064,
+  "lon": 76.7058641,
+  "tags": {
+    "name": "Kodungoor",
+    "name:ml": "കൊടുങ്ങൂർ",
+    "place": "village",
+    "wikidata": "Q6425472",
+    "wikipedia": "en:Kodungoor"
+  }
+},
+{
+  "type": "node",
+  "id": 1446285533,
+  "lat": 9.5173224,
+  "lon": 76.5719694,
+  "tags": {
+    "name": "Vakathanam",
+    "name:en": "Vakathanam",
+    "name:ml": "വാകത്താനം",
+    "place": "village",
+    "wikidata": "Q7908975",
+    "wikipedia": "en:Vakathanam"
+  }
+},
+{
+  "type": "node",
+  "id": 1511950685,
+  "lat": 9.6054265,
+  "lon": 76.3605383,
+  "tags": {
+    "junction": "yes",
+    "name": "Muhamma",
+    "name:ml": "മുഹമ്മ",
+    "place": "village",
+    "wikidata": "Q2475685"
+  }
+},
+{
+  "type": "node",
+  "id": 1653599986,
+  "lat": 9.5593525,
+  "lon": 76.5715284,
+  "tags": {
+    "name": "Puthuppally",
+    "name:en": "Puthuppally",
+    "name:ml": "പുതുപ്പള്ളി",
+    "name:ta": "புதுப்பள்ளி",
+    "place": "town",
+    "wikidata": "Q7262268",
+    "wikimedia_commons": "Category:Puthuppally, Kottayam",
+    "wikipedia": "en:Puthuppally, Kottayam"
+  }
+},
+{
+  "type": "node",
+  "id": 1668582976,
+  "lat": 9.5829338,
+  "lon": 76.6083590,
+  "tags": {
+    "name": "Velloor",
+    "name:en": "Velloor",
+    "name:ml": "വെള്ളൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1682779066,
+  "lat": 9.3178608,
+  "lon": 76.6139049,
+  "tags": {
+    "name": "Chengannur",
+    "name:ar": "تشنجننور",
+    "name:hi": "चेंगन्नूर",
+    "name:kn": "ಚೆಂಗನ್ನೂರು",
+    "name:ml": "ചെങ്ങന്നൂര്‍",
+    "name:ru": "Ченганнур",
+    "name:ta": "செங்கன்னூர்",
+    "name:te": "చెంగన్నూరు",
+    "place": "town",
+    "wikidata": "Q888384",
+    "wikimedia_commons": "Category:Chengannur",
+    "wikipedia": "en:Chengannur"
+  }
+},
+{
+  "type": "node",
+  "id": 1682779068,
+  "lat": 9.3867448,
+  "lon": 76.5762652,
+  "tags": {
+    "name": "Thiruvalla",
+    "name:ar": "تيرووللا",
+    "name:hi": "तिरुवल्ला",
+    "name:kn": "ತಿರುವಲ್ಲ",
+    "name:ml": "തിരുവല്ല",
+    "name:ru": "Тирувалла",
+    "name:ta": "திருவல்லா",
+    "name:te": "తిరువల్ల",
+    "place": "town",
+    "wikidata": "Q2336443",
+    "wikipedia": "en:Thiruvalla"
+  }
+},
+{
+  "type": "node",
+  "id": 1862573525,
+  "lat": 9.3685345,
+  "lon": 76.5147535,
+  "tags": {
+    "name": "Neeretupuram",
+    "name:ml": "നീരേറ്റുപുറം",
+    "place": "village",
+    "wikidata": "Q6986936",
+    "wikipedia": "en:Neerattupuram"
+  }
+},
+{
+  "type": "node",
+  "id": 1952475733,
+  "lat": 9.3554110,
+  "lon": 76.6760396,
+  "tags": {
+    "name": "Pullad",
+    "name:ml": "പുല്ലാട്",
+    "place": "village",
+    "wikidata": "Q13479856",
+    "wikipedia": "en:Pullad"
+  }
+},
+{
+  "type": "node",
+  "id": 2136390820,
+  "lat": 9.4845621,
+  "lon": 76.3835538,
+  "tags": {
+    "name": "Kadavu",
+    "name:ml": "കടവ്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2136390823,
+  "lat": 9.4785813,
+  "lon": 76.3868499,
+  "tags": {
+    "name": "Kainakary",
+    "name:ml": "കൈനകരി",
+    "place": "village",
+    "wikidata": "Q6348080"
+  }
+},
+{
+  "type": "node",
+  "id": 2136390825,
+  "lat": 9.4372481,
+  "lon": 76.4287912,
+  "tags": {
+    "alt_name:en": "Moncompu",
+    "alt_name_1:en": "Moncombu",
+    "name": "Mancombu",
+    "name:ml": "മാങ്കൊമ്പ്",
+    "place": "village",
+    "wikidata": "Q3529977",
+    "wikimedia_commons": "Category:Moncompu",
+    "wikipedia": "en:Monkombu"
+  }
+},
+{
+  "type": "node",
+  "id": 2136390826,
+  "lat": 9.4518647,
+  "lon": 76.3889326,
+  "tags": {
+    "name": "Ponga",
+    "name:ml": "പൊങ്ങ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2136390827,
+  "lat": 9.4514113,
+  "lon": 76.4407988,
+  "tags": {
+    "alt_name": "Pulincunnu",
+    "alt_name:en": "Pulincunnoo",
+    "name": "Pullincunoo",
+    "name:ml": "പുളിങ്കുന്ന്",
+    "place": "village",
+    "wikidata": "Q7259345",
+    "wikipedia": "en:Pulinkunnoo"
+  }
+},
+{
+  "type": "node",
+  "id": 2278443893,
+  "lat": 9.5973259,
+  "lon": 76.5274487,
+  "tags": {
+    "name": "Nagampadam",
+    "name:en": "Nagampadam",
+    "name:ml": "നാഗമ്പടം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2444946668,
+  "lat": 9.5285490,
+  "lon": 76.5149070,
+  "tags": {
+    "name": "Pallom",
+    "name:en": "Pallom",
+    "name:ml": "പള്ളം",
+    "place": "village",
+    "wikidata": "Q7127725",
+    "wikipedia": "en:Pallom"
+  }
+},
+{
+  "type": "node",
+  "id": 2444958392,
+  "lat": 9.5247631,
+  "lon": 76.5247268,
+  "tags": {
+    "name": "Chingavanam",
+    "name:en": "Chingavanam",
+    "name:ml": "ചിങ്ങവനം",
+    "place": "suburb",
+    "wikidata": "Q16258126",
+    "wikipedia": "en:Chingavanam"
+  }
+},
+{
+  "type": "node",
+  "id": 2496510950,
+  "lat": 9.2288737,
+  "lon": 76.6270488,
+  "tags": {
+    "name": "Edappon",
+    "name:ml": "ഇടപ്പോൺ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2497048978,
+  "lat": 9.2504893,
+  "lon": 76.5402433,
+  "tags": {
+    "name": "Mavelikkara",
+    "name:ar": "ماويليكرا",
+    "name:bn": "মাবেলিক্কর",
+    "name:hi": "मावेलिक्कारा",
+    "name:kn": "ಮಾವೇಲಿಕ್ಕರ",
+    "name:ml": "മാവേലിക്കര",
+    "name:mr": "मावेलीक्करा",
+    "name:or": "ମାବେଲିକ୍କାରା",
+    "name:pl": "Mavelikara",
+    "name:ru": "Мавеликкара",
+    "name:ta": "மாவேலிக்கரை",
+    "name:te": "మావెలిక్కర",
+    "name:ur": "ماویلی کرا",
+    "name:zh": "马韦利克卡拉",
+    "place": "town",
+    "wikidata": "Q2283384",
+    "wikipedia": "en:Mavelikkara"
+  }
+},
+{
+  "type": "node",
+  "id": 2641311673,
+  "lat": 9.3369731,
+  "lon": 76.7064286,
+  "tags": {
+    "description": "Kozhencherry is a census town in Pathanamthitta district of Central Travancore region (South Central Kerala) in Kerala state, South India.",
+    "int_name": "Kozhenchery",
+    "is_in:district": "Pathanamthitta",
+    "name": "Kozhencherry",
+    "name:ar": "كوجنجيري",
+    "name:en": "Kozhencherry",
+    "name:hi": "कोष़न्जेरी",
+    "name:kn": "ಕೊಜೆಂಚೇರಿ",
+    "name:ml": "കോഴഞ്ചേരി",
+    "name:ta": "கோழஞ்சேரி",
+    "name:te": "కోజెంచేరి",
+    "place": "town",
+    "population": "12021",
+    "wikidata": "Q6435231",
+    "wikipedia": "en:Kozhencherry"
+  }
+},
+{
+  "type": "node",
+  "id": 2728196027,
+  "lat": 9.3829181,
+  "lon": 76.6408905,
+  "tags": {
+    "name": "Eraviperoor",
+    "name:ml": "ഇരവിപേരൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2728196042,
+  "lat": 9.3394410,
+  "lon": 76.6978518,
+  "tags": {
+    "name": "Maramon",
+    "name:ml": "മാരാമണ്‍",
+    "name:ta": "மாராமன்",
+    "place": "village",
+    "wikidata": "Q6754750",
+    "wikimedia_commons": "Category:Maramon",
+    "wikipedia": "en:Maramon"
+  }
+},
+{
+  "type": "node",
+  "id": 2728196044,
+  "lat": 9.2812598,
+  "lon": 76.6549255,
+  "tags": {
+    "name": "Karakkad",
+    "name:ml": "കാരയ്ക്കാട്",
+    "place": "village",
+    "wikidata": "Q56435698"
+  }
+},
+{
+  "type": "node",
+  "id": 2728196049,
+  "lat": 9.3408421,
+  "lon": 76.6925263,
+  "tags": {
+    "name": "Chettimukku",
+    "name:ml": "ചെട്ടിമുക്ക്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2905479315,
+  "lat": 9.2251208,
+  "lon": 76.6781249,
+  "tags": {
+    "is_in": "Kerala;KL;India;IN",
+    "name": "Pandalam",
+    "name:ar": "باندالام",
+    "name:hi": "पंदलम",
+    "name:kn": "ಪಂದಳಂ",
+    "name:ml": "പന്തളം",
+    "name:ru": "Пандалам",
+    "name:ta": "பந்தளம்",
+    "name:te": "పందళం",
+    "place": "town",
+    "wikidata": "Q3531011",
+    "wikimedia_commons": "Category:Pandalam",
+    "wikipedia": "en:Pandalam"
+  }
+},
+{
+  "type": "node",
+  "id": 2905481028,
+  "lat": 9.4381446,
+  "lon": 76.5442466,
+  "tags": {
+    "comment": "May not be the exact location",
+    "junction": "yes",
+    "name": "Perunna",
+    "name:en": "Perunna",
+    "name:ml": "പെരുന്ന",
+    "place": "suburb",
+    "wikidata": "Q7171106",
+    "wikipedia": "en:Perunna"
+  }
+},
+{
+  "type": "node",
+  "id": 2905502454,
+  "lat": 9.5010259,
+  "lon": 76.5251119,
+  "tags": {
+    "comment": "May not be the exact location",
+    "is_in": "Kottayam;Kerala;KL;India;IN",
+    "name": "Kurichi",
+    "name:en": "Kurichi",
+    "name:ml": "കുറിച്ചി",
+    "place": "village",
+    "wikidata": "Q6445992",
+    "wikipedia": "en:Kurichy"
+  }
+},
+{
+  "type": "node",
+  "id": 2905502455,
+  "lat": 9.5554641,
+  "lon": 76.5135334,
+  "tags": {
+    "comment": "May not be the exact location",
+    "is_in": "Kottayam;Kerala;KL;India;IN",
+    "name": "Nattakom",
+    "name:en": "Nattakom",
+    "name:ml": "നാട്ടകം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2908534137,
+  "lat": 9.2275362,
+  "lon": 76.5167148,
+  "tags": {
+    "name": "Chettikulangara",
+    "name:ml": "ചെട്ടികുളങ്ങര",
+    "place": "village",
+    "wikidata": "Q5094201",
+    "wikipedia": "en:Chettikulangara"
+  }
+},
+{
+  "type": "node",
+  "id": 2908540336,
+  "lat": 9.2513897,
+  "lon": 76.5214803,
+  "tags": {
+    "name": "Thattarambalam",
+    "name:ml": "തട്ടാരമ്പലം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2908786364,
+  "lat": 9.3174015,
+  "lon": 76.5338634,
+  "tags": {
+    "name": "Mannar",
+    "name:ml": "മാന്നാർ",
+    "place": "village",
+    "wikidata": "Q13564556",
+    "wikipedia": "en:Mannar, Alappuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 2908799242,
+  "lat": 9.3274911,
+  "lon": 76.5383899,
+  "tags": {
+    "name": "Parumala",
+    "name:hi": "परुमला",
+    "name:ml": "പരുമല",
+    "name:ta": "பருமலை",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2909635970,
+  "lat": 9.6052898,
+  "lon": 76.7006078,
+  "tags": {
+    "comment": "May not be exact location",
+    "is_in": "Kottayam;Kerala;KL;India;IN",
+    "is_in:country": "india",
+    "is_in:district": "kottayam",
+    "is_in:state": "Kerala",
+    "name": "Anikkadu",
+    "name:en": "Anikkadu",
+    "name:ml": "ആനിക്കാട്",
+    "place": "village",
+    "wikidata": "Q4764482",
+    "wikipedia": "en:Anicad (Kottayam)"
+  }
+},
+{
+  "type": "node",
+  "id": 2909635971,
+  "lat": 9.6034760,
+  "lon": 76.6825375,
+  "tags": {
+    "comment": "May not be exact location",
+    "is_in:country": "india",
+    "is_in:district": "kottayam",
+    "is_in:state": "Kerala",
+    "name": "Pallickathodu",
+    "name:en": "Pallickathodu",
+    "name:ml": "പള്ളിക്കത്തോട്",
+    "place": "village",
+    "wikidata": "Q7127863",
+    "wikipedia": "en:Pallickathode"
+  }
+},
+{
+  "type": "node",
+  "id": 2914448593,
+  "lat": 9.6081825,
+  "lon": 76.6122767,
+  "tags": {
+    "name": "Areeparambu",
+    "name:en": "Areeparambu",
+    "name:ml": "അരീപ്പറമ്പ്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2914448595,
+  "lat": 9.6112552,
+  "lon": 76.6029315,
+  "tags": {
+    "name": "Oravakkal",
+    "name:en": "Oravakkal",
+    "name:ml": "ഒറവക്കൽ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2917049475,
+  "lat": 9.5873934,
+  "lon": 76.5429708,
+  "tags": {
+    "name": "Kanjikuzhi",
+    "name:en": "Kanjikuzhi",
+    "name:ml": "കഞ്ഞിക്കുഴി",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2917197208,
+  "lat": 9.5410817,
+  "lon": 76.5859717,
+  "tags": {
+    "name": "Pariyaram",
+    "name:en": "Pariyaram",
+    "name:ml": "പരിയാരം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2917221862,
+  "lat": 9.5330062,
+  "lon": 76.6018106,
+  "tags": {
+    "name": "Thottakadu",
+    "name:en": "Thottakadu",
+    "name:ml": "തോട്ടക്കാട്",
+    "place": "village",
+    "wikidata": "Q7796918"
+  }
+},
+{
+  "type": "node",
+  "id": 2917286073,
+  "lat": 9.5011646,
+  "lon": 76.6383610,
+  "tags": {
+    "name": "Karukachal",
+    "name:en": "Karukachal",
+    "name:ml": "കറുകച്ചാൽ",
+    "name:ta": "கருகச்சால்",
+    "place": "town",
+    "wikidata": "Q1531311",
+    "wikimedia_commons": "Category:Karukachal",
+    "wikipedia": "en:Karukachal"
+  }
+},
+{
+  "type": "node",
+  "id": 2917300182,
+  "lat": 9.4635588,
+  "lon": 76.6362508,
+  "tags": {
+    "name": "Nedungadappally",
+    "name:en": "Nedungadappally",
+    "name:ml": "നെടുങ്ങാടപ്പള്ളി",
+    "place": "village",
+    "wikidata": "Q15261459",
+    "wikimedia_commons": "Category:Nedungadappally",
+    "wikipedia": "en:Nedungadappally"
+  }
+},
+{
+  "type": "node",
+  "id": 2917322139,
+  "lat": 9.4459505,
+  "lon": 76.6553440,
+  "tags": {
+    "name": "Mallappally",
+    "name:ml": "മല്ലപ്പള്ളി",
+    "name:ta": "மல்லப்பள்ளி",
+    "place": "town",
+    "wikidata": "Q6744066",
+    "wikimedia_commons": "Category:Mallapally",
+    "wikipedia": "en:Mallapally"
+  }
+},
+{
+  "type": "node",
+  "id": 2917426371,
+  "lat": 9.2532380,
+  "lon": 76.5454917,
+  "tags": {
+    "name": "Puthiyacavu",
+    "name:ml": "പുതിയകാവ്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2918242306,
+  "lat": 9.2499173,
+  "lon": 76.5782824,
+  "tags": {
+    "name": "Eravankara",
+    "name:ml": "ഇറവങ്കര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2918264646,
+  "lat": 9.3270906,
+  "lon": 76.6579026,
+  "tags": {
+    "name": "Malakkara",
+    "name:ml": "മലക്കര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2920441949,
+  "lat": 9.3820022,
+  "lon": 76.3873734,
+  "tags": {
+    "name": "Karumadi",
+    "name:ml": "കരുമാടി",
+    "place": "village",
+    "wikidata": "Q6373630",
+    "wikipedia": "en:Karumady"
+  }
+},
+{
+  "type": "node",
+  "id": 2920441974,
+  "lat": 9.3727932,
+  "lon": 76.4127498,
+  "tags": {
+    "name": "Thakazhy",
+    "name:ml": "തകഴി",
+    "place": "village",
+    "wikidata": "Q7709356",
+    "wikimedia_commons": "Category:Thakazhi",
+    "wikipedia": "en:Thakazhy"
+  }
+},
+{
+  "type": "node",
+  "id": 3009061748,
+  "lat": 9.6191014,
+  "lon": 76.7085675,
+  "tags": {
+    "name": "Chengalam",
+    "name:ml": "ചെങ്ങളം",
+    "place": "village",
+    "wikidata": "Q5091280",
+    "wikipedia": "en:Chengalam"
+  }
+},
+{
+  "type": "node",
+  "id": 3244448708,
+  "lat": 9.6094013,
+  "lon": 76.7017016,
+  "tags": {
+    "name": "Perumbara",
+    "name:en": "Perumbara",
+    "name:ml": "പെരുമ്പാറ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 3268594536,
+  "lat": 9.4585600,
+  "lon": 76.7111239,
+  "tags": {
+    "name": "Kulathoormoozhi",
+    "name:ml": "കുളത്തൂർമൂഴി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 3268632904,
+  "lat": 9.5092242,
+  "lon": 76.6646618,
+  "tags": {
+    "junction": "yes",
+    "name": "Nedumkunnam",
+    "name:ml": "നെടുംങ്കുന്നം",
+    "place": "village",
+    "wikidata": "Q12063662",
+    "wikimedia_commons": "Category:Nedumkunnam",
+    "wikipedia": "en:Nedumkunnam"
+  }
+},
+{
+  "type": "node",
+  "id": 3268643162,
+  "lat": 9.4698970,
+  "lon": 76.7134294,
+  "tags": {
+    "name": "Thazhathu vadakara",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 3274434774,
+  "lat": 9.5370149,
+  "lon": 76.3272131,
+  "tags": {
+    "alt_name": "Pathirapally",
+    "name": "Pathirappally",
+    "name:ml": "പാതിരപ്പള്ളി",
+    "place": "village",
+    "wikidata": "Q7144786"
+  }
+},
+{
+  "type": "node",
+  "id": 3283724514,
+  "lat": 9.5266412,
+  "lon": 76.6450731,
+  "tags": {
+    "name": "Manthuruthy",
+    "name:en": "Manthuruthy",
+    "name:ml": "മാന്തുരുത്തി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 3501450215,
+  "lat": 9.4594645,
+  "lon": 76.5546589,
+  "tags": {
+    "name": "Kurishummoodu",
+    "name:en": "Kurishummoodu",
+    "name:ml": "കുരിശുംമൂട്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3720163539,
+  "lat": 9.2069159,
+  "lon": 76.5968603,
+  "tags": {
+    "name": "Chunakkara",
+    "name:ml": "ചുനക്കര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 3875801457,
+  "lat": 9.5881304,
+  "lon": 76.4893880,
+  "tags": {
+    "name": "Illikkal",
+    "name:en": "Illikkal",
+    "name:ml": "ഇല്ലിക്കൽ",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3896939450,
+  "lat": 9.5410150,
+  "lon": 76.6927886,
+  "tags": {
+    "name": "Kanam",
+    "name:en": "Kanam",
+    "name:ml": "കാനം",
+    "place": "village",
+    "wikidata": "Q2323500",
+    "wikipedia": "en:Kanam (Kerala)"
+  }
+},
+{
+  "type": "node",
+  "id": 3950645838,
+  "lat": 9.4917125,
+  "lon": 76.3262008,
+  "tags": {
+    "name": "Zakariya Bazar",
+    "name:ml": "സക്കറിയ ബസാര്‍",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3950646466,
+  "lat": 9.4859616,
+  "lon": 76.3268336,
+  "tags": {
+    "name": "Vattappally",
+    "name:ml": "വട്ടപ്പള്ളി",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3950671677,
+  "lat": 9.4995409,
+  "lon": 76.3287537,
+  "tags": {
+    "name": "Shava kotta palam",
+    "name:ml": "ശവകോട്ടപ്പാലം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 3950709121,
+  "lat": 9.4985499,
+  "lon": 76.3415027,
+  "tags": {
+    "name": "Mullakkal",
+    "name:ml": "മുല്ലക്കല്‍",
+    "place": "suburb",
+    "wikidata": "Q6934118",
+    "wikipedia": "en:Mullakkal"
+  }
+},
+{
+  "type": "node",
+  "id": 3960116857,
+  "lat": 9.5339390,
+  "lon": 76.6712969,
+  "tags": {
+    "name": "Kangazha",
+    "name:en": "Kangazha",
+    "name:ml": "കങ്ങഴ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 3981239205,
+  "lat": 9.4521739,
+  "lon": 76.3420650,
+  "tags": {
+    "name": "Paravoor",
+    "name:ml": "പരവൂർ",
+    "place": "village",
+    "wikidata": "Q7136285",
+    "wikipedia": "en:Paravur, Alappuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 4009501006,
+  "lat": 9.4979269,
+  "lon": 76.3337824,
+  "tags": {
+    "alt_name": "Vazhichery;Vazhicherri",
+    "name": "Vazhicherry",
+    "name:ml": "വഴിച്ചേരി",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4487003997,
+  "lat": 9.5087580,
+  "lon": 76.6939967,
+  "tags": {
+    "name": "Pathanad",
+    "name:ml": "പത്തനാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 4494263059,
+  "lat": 9.5932828,
+  "lon": 76.7143232,
+  "tags": {
+    "name": "Elampally, Neyyattusserry",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 4586273674,
+  "lat": 9.5985255,
+  "lon": 76.6456438,
+  "tags": {
+    "name": "Kooroppada",
+    "name:en": "Kooroppada",
+    "name:ml": "കൂരോപ്പട",
+    "place": "village",
+    "wikidata": "Q6430772",
+    "wikipedia": "en:Kooroppada"
+  }
+},
+{
+  "type": "node",
+  "id": 4621834760,
+  "lat": 9.2151944,
+  "lon": 76.4593003,
+  "tags": {
+    "name": "Muthukulam",
+    "name:ml": "മുതുകുളം",
+    "place": "village",
+    "wikidata": "Q13114146",
+    "wikimedia_commons": "Category:Muthukulam",
+    "wikipedia": "en:Muthukulam"
+  }
+},
+{
+  "type": "node",
+  "id": 4832296179,
+  "lat": 9.5880083,
+  "lon": 76.5823671,
+  "tags": {
+    "alt_name": "Manarcaud;Manarkad",
+    "name": "Manarcadu",
+    "name:en": "Manarcadu",
+    "name:ml": "മണർകാട്",
+    "name:ta": "மணற்காடு",
+    "place": "town",
+    "wikidata": "Q6746958",
+    "wikimedia_commons": "Category:Manarcaud",
+    "wikipedia": "en:Manarcaud"
+  }
+},
+{
+  "type": "node",
+  "id": 4841649123,
+  "lat": 9.4620626,
+  "lon": 76.5600549,
+  "tags": {
+    "name": "Valiyakulam",
+    "name:en": "Valiyakulam",
+    "name:ml": "വലിയകുളം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 5830101090,
+  "lat": 9.5645675,
+  "lon": 76.6652641,
+  "tags": {
+    "alt_name": "12th Mile",
+    "alt_name:ml": "പന്ത്രണ്ടാം മൈൽ",
+    "name": "Kothala",
+    "name:en": "Kothala",
+    "name:ml": "കോത്തല",
+    "place": "village",
+    "wikidata": "Q6433983",
+    "wikipedia": "en:Kothala"
+  }
+},
+{
+  "type": "node",
+  "id": 5831631336,
+  "lat": 9.3187932,
+  "lon": 76.3847530,
+  "tags": {
+    "name": "Thottappally",
+    "name:ml": "തോട്ടപ്പള്ളി",
+    "place": "village",
+    "wikidata": "Q7796931"
+  }
+},
+{
+  "type": "node",
+  "id": 6403695570,
+  "lat": 9.6174363,
+  "lon": 76.5327349,
+  "tags": {
+    "name": "Kumaranalloor",
+    "name:en": "Kumaranalloor",
+    "name:ml": "കുമാരനല്ലൂർ",
+    "place": "suburb",
+    "wikidata": "Q6443550",
+    "wikipedia": "en:Kumaranalloor"
+  }
+},
+{
+  "type": "node",
+  "id": 7085803527,
+  "lat": 9.6121459,
+  "lon": 76.4997932,
+  "tags": {
+    "name": "Aymanam",
+    "name:en": "Aymanam",
+    "name:ml": "അയ്മനം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7310317679,
+  "lat": 9.5705238,
+  "lon": 76.3286125,
+  "tags": {
+    "name": "Kalavoor",
+    "name:ml": "കലവൂർ",
+    "place": "village",
+    "wikidata": "Q3530107",
+    "wikimedia_commons": "Category:Kalavoor",
+    "wikipedia": "en:Kalavoor"
+  }
+},
+{
+  "type": "node",
+  "id": 7334080826,
+  "lat": 9.5593950,
+  "lon": 76.6815896,
+  "tags": {
+    "name": "Pulickal Kavala",
+    "name:en": "Pulickal Kavala",
+    "name:ml": "പുളിക്കല്‍കവല",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7460509415,
+  "lat": 9.2977753,
+  "lon": 76.6868261,
+  "tags": {
+    "name": "Kidangannur",
+    "name:ml": "കിടങ്ങന്നൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7471594067,
+  "lat": 9.3253115,
+  "lon": 76.3781516,
+  "tags": {
+    "name": "Matheri",
+    "name:ml": "മാത്തേരി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7517790178,
+  "lat": 9.3425922,
+  "lon": 76.5351039,
+  "tags": {
+    "name": "Kadapra",
+    "name:ml": "കടപ്ര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7518925972,
+  "lat": 9.2920509,
+  "lon": 76.6474603,
+  "tags": {
+    "name": "Mulakuzha",
+    "name:ml": "മുളക്കുഴ",
+    "place": "village",
+    "wikidata": "Q15260201",
+    "wikipedia": "en:Mulakuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 7610014071,
+  "lat": 9.2213682,
+  "lon": 76.7136068,
+  "tags": {
+    "name": "Thumpamon",
+    "name:hi": "थुम्पमण",
+    "name:ml": "തുമ്പമൺ",
+    "name:ta": "தும்பமன்",
+    "name:te": "తుంపమన్",
+    "place": "village",
+    "population": "98705",
+    "wikidata": "Q7798860",
+    "wikimedia_commons": "Category:Thumpamon",
+    "wikipedia": "en:Thumpamon"
+  }
+},
+{
+  "type": "node",
+  "id": 7611799946,
+  "lat": 9.2640971,
+  "lon": 76.7114301,
+  "tags": {
+    "name": "Elavumthitta",
+    "name:ml": "ഇലവുംതിട്ട",
+    "place": "village",
+    "wikidata": "Q5353628",
+    "wikimedia_commons": "Category:Elavumthitta",
+    "wikipedia": "en:Elavumthitta"
+  }
+},
+{
+  "type": "node",
+  "id": 7611799947,
+  "lat": 9.2743342,
+  "lon": 76.6932679,
+  "tags": {
+    "name": "Mezhuveli",
+    "name:ml": "മെഴുവേലി",
+    "place": "village",
+    "wikidata": "Q15253284",
+    "wikipedia": "en:Mezhuveli"
+  }
+},
+{
+  "type": "node",
+  "id": 7611799948,
+  "lat": 9.2434458,
+  "lon": 76.6719736,
+  "tags": {
+    "name": "Kulanada",
+    "name:en": "Kulanada",
+    "name:ml": "കുളനട",
+    "place": "village",
+    "wikidata": "Q6442784",
+    "wikipedia": "en:Kulanada"
+  }
+},
+{
+  "type": "node",
+  "id": 7613296620,
+  "lat": 9.2496029,
+  "lon": 76.7098740,
+  "tags": {
+    "name": "Ramanchira",
+    "name:ml": "രാമൻചിറ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7613296622,
+  "lat": 9.2363774,
+  "lon": 76.6957787,
+  "tags": {
+    "name": "Ulanadu",
+    "name:ml": "ഉളനാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7615923488,
+  "lat": 9.2549515,
+  "lon": 76.5873341,
+  "tags": {
+    "name": "Kollakadavu",
+    "name:ml": "കൊല്ലക്കടവ്",
+    "place": "village",
+    "wikidata": "Q6427341",
+    "wikipedia": "en:Kollakadavu"
+  }
+},
+{
+  "type": "node",
+  "id": 7615923489,
+  "lat": 9.5776878,
+  "lon": 76.5432188,
+  "tags": {
+    "name": "Devalokam",
+    "name:en": "Devalokam",
+    "name:ml": "ദേവലോകം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7615923495,
+  "lat": 9.2479867,
+  "lon": 76.6158215,
+  "tags": {
+    "name": "Venmony",
+    "name:ml": "വെൺമണി",
+    "place": "village",
+    "wikidata": "Q12989426",
+    "wikipedia": "en:Venmony"
+  }
+},
+{
+  "type": "node",
+  "id": 7804833861,
+  "lat": 9.3268100,
+  "lon": 76.6856956,
+  "tags": {
+    "name": "Aranmula",
+    "name:hi": "आरन्मुला",
+    "name:ml": "ആറന്മുള",
+    "name:ru": "Аранмула",
+    "place": "village",
+    "wikidata": "Q4784130",
+    "wikipedia": "en:Aranmula"
+  }
+},
+{
+  "type": "node",
+  "id": 7813276051,
+  "lat": 9.2303724,
+  "lon": 76.5993376,
+  "tags": {
+    "name": "Vettiyar",
+    "name:ml": "വെട്ടിയാർ",
+    "place": "village",
+    "wikidata": "Q7923827",
+    "wikipedia": "en:Vettiyar"
+  }
+},
+{
+  "type": "node",
+  "id": 7813304389,
+  "lat": 9.2336824,
+  "lon": 76.5907858,
+  "tags": {
+    "name": "Mankamkuzhy",
+    "name:en": "Mankamkuzhy",
+    "name:ml": "മാങ്കാംകുഴി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7813304390,
+  "lat": 9.2450626,
+  "lon": 76.5851460,
+  "tags": {
+    "name": "Kochalumoodu",
+    "name:ml": "കൊച്ചാലുമ്മൂട്",
+    "name:ta": "கொச்சாலும்மூடு",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7813929324,
+  "lat": 9.3047698,
+  "lon": 76.6587901,
+  "tags": {
+    "name": "Kurichimuttom",
+    "name:ml": "കുറിച്ചിമുട്ടം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7813929325,
+  "lat": 9.3248028,
+  "lon": 76.6768567,
+  "tags": {
+    "name": "Edayaranmula",
+    "name:ml": "ഇടയാറന്മുള",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7813929326,
+  "lat": 9.3209326,
+  "lon": 76.6749318,
+  "tags": {
+    "addr:postcode": "689532",
+    "name": "Thuruthimala",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7813929327,
+  "lat": 9.3180060,
+  "lon": 76.6836851,
+  "tags": {
+    "name": "Thottapuzhassery",
+    "name:ml": "തോട്ടപ്പുഴശേരി",
+    "place": "village",
+    "wikidata": "Q7796930",
+    "wikipedia": "en:Thottapuzhassery"
+  }
+},
+{
+  "type": "node",
+  "id": 7813929329,
+  "lat": 9.3104594,
+  "lon": 76.6759277,
+  "tags": {
+    "name": "Erumakkadu",
+    "name:ml": "എരുമക്കാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7817373789,
+  "lat": 9.3896274,
+  "lon": 76.6523101,
+  "tags": {
+    "name": "Puramattom",
+    "name:ml": "പുറമറ്റം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7817373827,
+  "lat": 9.3841323,
+  "lon": 76.5898857,
+  "tags": {
+    "name": "Manjadi",
+    "name:ml": "മഞ്ഞാടി",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7843245130,
+  "lat": 9.3223327,
+  "lon": 76.6330163,
+  "tags": {
+    "name": "Puthencavu",
+    "name:ml": "പുത്തൻകാവ്",
+    "place": "village",
+    "wikidata": "Q7262215",
+    "wikipedia": "en:Puthencavu"
+  }
+},
+{
+  "type": "node",
+  "id": 7843245136,
+  "lat": 9.3709710,
+  "lon": 76.5789803,
+  "tags": {
+    "name": "Thukalassery",
+    "name:ml": "തുകലശ്ശേരി",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7843245137,
+  "lat": 9.3666313,
+  "lon": 76.5842261,
+  "tags": {
+    "name": "Thirumoolapuram",
+    "name:ml": "തിരുമൂലപുരം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 7843245138,
+  "lat": 9.3587884,
+  "lon": 76.5881013,
+  "tags": {
+    "name": "Kuttoor",
+    "name:ml": "കുറ്റൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 7843245139,
+  "lat": 9.3369438,
+  "lon": 76.6025196,
+  "tags": {
+    "alt_name": "Kallisserry;Kallishery",
+    "name": "Kallissery",
+    "name:ml": "കല്ലിശേരി",
+    "place": "village",
+    "wikidata": "Q6353866",
+    "wikipedia": "en:Kallissery"
+  }
+},
+{
+  "type": "node",
+  "id": 8025713668,
+  "lat": 9.2111418,
+  "lon": 76.4964393,
+  "tags": {
+    "addr:street": "Bhagavathipady-Kareelakulangara road",
+    "alt_name": "Pathiyur",
+    "government": "village_office",
+    "name": "Pathiyoor",
+    "name:ml": "പത്തിയൂർ",
+    "place": "village",
+    "wikidata": "Q15265662"
+  }
+},
+{
+  "type": "node",
+  "id": 8255003107,
+  "lat": 9.6192366,
+  "lon": 76.4756311,
+  "tags": {
+    "name": "Parippu",
+    "name:en": "Parippu",
+    "name:ml": "പരിപ്പ്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8259228302,
+  "lat": 9.4459456,
+  "lon": 76.3995045,
+  "tags": {
+    "name": "Poopalli",
+    "name:ml": "പൂപ്പള്ളി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8259228303,
+  "lat": 9.4080630,
+  "lon": 76.4115308,
+  "tags": {
+    "name": "Champakulam",
+    "name:ml": "ചമ്പക്കുളം",
+    "place": "village",
+    "wikidata": "Q5069924"
+  }
+},
+{
+  "type": "node",
+  "id": 8325616106,
+  "lat": 9.3813667,
+  "lon": 76.6705733,
+  "tags": {
+    "name": "Pattakkala",
+    "name:ml": "പാട്ടക്കാല",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8504500401,
+  "lat": 9.5811456,
+  "lon": 76.4742489,
+  "tags": {
+    "name": "Thiruvarppu",
+    "name:en": "Thiruvarppu",
+    "name:ml": "തിരുവാർപ്പ്",
+    "place": "suburb",
+    "wikidata": "Q7785525",
+    "wikipedia": "en:Thiruvarpu"
+  }
+},
+{
+  "type": "node",
+  "id": 8556638232,
+  "lat": 9.2833466,
+  "lon": 76.4400206,
+  "tags": {
+    "name": "Kumarapuram",
+    "name:ml": "കുമാരപുരം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8941941819,
+  "lat": 9.2922495,
+  "lon": 76.7068127,
+  "tags": {
+    "name": "Kuzhikala",
+    "name:ml": "കുഴിക്കാല",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8943608184,
+  "lat": 9.3973381,
+  "lon": 76.6345009,
+  "tags": {
+    "name": "Kallooppara",
+    "name:ml": "കല്ലൂപ്പാറ",
+    "place": "village",
+    "population": "17719",
+    "wikidata": "Q6353921",
+    "wikipedia": "en:Kallooppara"
+  }
+},
+{
+  "type": "node",
+  "id": 8954592368,
+  "lat": 9.2022384,
+  "lon": 76.6761775,
+  "tags": {
+    "name": "Poozhikad",
+    "name:ml": "പൂഴിക്കാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8954592369,
+  "lat": 9.3445480,
+  "lon": 76.6513056,
+  "tags": {
+    "name": "Koipuram",
+    "name:ml": "കോയിപ്പുറം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8954592370,
+  "lat": 9.4309296,
+  "lon": 76.6726233,
+  "tags": {
+    "alt_name:ml": "കീഴ്വായ്പൂര്",
+    "name": "Keezhvaipur",
+    "name:ml": "കീഴ്വായ്പൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 8987954179,
+  "lat": 9.4761775,
+  "lon": 76.4555815,
+  "tags": {
+    "name": "Kavalam",
+    "name:en": "Kavalam",
+    "name:ml": "കാവാലം",
+    "place": "village",
+    "wikidata": "Q6379045",
+    "wikimedia_commons": "Category:Kavalam",
+    "wikipedia": "en:Kavalam"
+  }
+},
+{
+  "type": "node",
+  "id": 8992527483,
+  "lat": 9.2699673,
+  "lon": 76.6119831,
+  "tags": {
+    "name": "Kodukulanji",
+    "name:ml": "കോടുകുളഞ്ഞി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9042458133,
+  "lat": 9.6033648,
+  "lon": 76.6269833,
+  "tags": {
+    "name": "Avathamkunnu",
+    "name:en": "Avathamkunnu",
+    "name:ml": "അവതാംകുന്ന്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9237526382,
+  "lat": 9.3260722,
+  "lon": 76.5768622,
+  "tags": {
+    "alt_name": "Pandavar Nadu",
+    "name": "Pandanad",
+    "name:ml": "പാണ്ടനാട്",
+    "place": "village",
+    "wikidata": "Q7130486",
+    "wikipedia": "en:Pandanad"
+  }
+},
+{
+  "type": "node",
+  "id": 9237526383,
+  "lat": 9.3159818,
+  "lon": 76.7094344,
+  "tags": {
+    "name": "Mallapuzhassery",
+    "name:ml": "മല്ലപ്പുഴശ്ശേരി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9237526384,
+  "lat": 9.3057485,
+  "lon": 76.7110241,
+  "tags": {
+    "name": "Punnakkad",
+    "name:ml": "പുന്നക്കാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9237526414,
+  "lat": 9.3437311,
+  "lon": 76.5230985,
+  "tags": {
+    "name": "Niranam",
+    "name:ml": "നിരണം",
+    "place": "village",
+    "wikidata": "Q12064156",
+    "wikimedia_commons": "Category:Niranam",
+    "wikipedia": "en:Niranam"
+  }
+},
+{
+  "type": "node",
+  "id": 9393743114,
+  "lat": 9.4738609,
+  "lon": 76.6281905,
+  "tags": {
+    "name": "Santhipuram",
+    "name:en": "Santhipuram",
+    "name:ml": "ശാന്തിപുരം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9393759989,
+  "lat": 9.4562977,
+  "lon": 76.6256345,
+  "tags": {
+    "name": "Mukkoor",
+    "name:en": "Mukkoor",
+    "name:ml": "മുക്കൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9502758030,
+  "lat": 9.4561726,
+  "lon": 76.6209277,
+  "tags": {
+    "name": "Palackathakidi",
+    "name:en": "Palackathakidi",
+    "name:ml": "പാലയ്ക്കാത്തകിടി",
+    "place": "village",
+    "postal_code": "689581"
+  }
+},
+{
+  "type": "node",
+  "id": 9527403764,
+  "lat": 9.4785048,
+  "lon": 76.5822899,
+  "tags": {
+    "name": "Perumpanachy",
+    "name:en": "Perumpanachy",
+    "name:ml": "പെരുമ്പനച്ചി",
+    "place": "village",
+    "wikidata": "Q7171071",
+    "wikipedia": "en:Perumpanachy"
+  }
+},
+{
+  "type": "node",
+  "id": 9570929814,
+  "lat": 9.4720639,
+  "lon": 76.6718756,
+  "tags": {
+    "name": "Noorommavu",
+    "place": "village",
+    "wikidata": "Q101143675"
+  }
+},
+{
+  "type": "node",
+  "id": 9572582503,
+  "lat": 9.4780660,
+  "lon": 76.6416396,
+  "tags": {
+    "name": "Kochuparambu",
+    "name:en": "Kochuparambu",
+    "name:ml": "കൊച്ചുപറമ്പ്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9651025728,
+  "lat": 9.4338265,
+  "lon": 76.6273287,
+  "tags": {
+    "name": "Chengaroor",
+    "name:ml": "ചെങ്ങരൂര്‍",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9651043899,
+  "lat": 9.4449457,
+  "lon": 76.6218952,
+  "tags": {
+    "name": "Pulinthanam",
+    "name:en": "Pulinthanam",
+    "name:ml": "പുളിന്താനം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 9689313965,
+  "lat": 9.4691919,
+  "lon": 76.4660816,
+  "tags": {
+    "name": "Narakathara",
+    "name:en": "Narakathara",
+    "name:ml": "നാരകത്തറ",
+    "place": "village",
+    "postal_code": "688506",
+    "wikidata": "Q6965299",
+    "wikipedia": "en:Narakathara"
+  }
+},
+{
+  "type": "node",
+  "id": 9691484845,
+  "lat": 9.4584285,
+  "lon": 76.4948810,
+  "tags": {
+    "alt_name": "Kumaramkary",
+    "alt_name:ml": "കുമരങ്കരി",
+    "name": "Kumarankary",
+    "name:en": "Kumarankary",
+    "name:ml": "കുമരങ്കരി;കുമരംകരി",
+    "place": "village",
+    "wikidata": "Q28174232"
+  }
+},
+{
+  "type": "node",
+  "id": 9713022294,
+  "lat": 9.4964567,
+  "lon": 76.5052632,
+  "tags": {
+    "name": "Neelamperoor",
+    "name:en": "Neelamperoor",
+    "name:ml": "നീലംപേരൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10048634966,
+  "lat": 9.5720641,
+  "lon": 76.3476045,
+  "tags": {
+    "name": "Mannancherry",
+    "name:ml": "മണ്ണഞ്ചേരി",
+    "place": "village",
+    "wikidata": "Q6750744"
+  }
+},
+{
+  "type": "node",
+  "id": 10051928460,
+  "lat": 9.6087607,
+  "lon": 76.3339506,
+  "tags": {
+    "alias": "Kanjikkuzhy",
+    "name": "Kanjikkuzhi",
+    "name:ml": "കഞ്ഞിക്കുഴി",
+    "place": "village",
+    "wikidata": "Q13110882"
+  }
+},
+{
+  "type": "node",
+  "id": 10052022702,
+  "lat": 9.3833013,
+  "lon": 76.3678474,
+  "tags": {
+    "name": "Ambalappuzha",
+    "name:kn": "ಅಂಬಲಪ್ಪುಝ",
+    "name:ml": "അമ്പലപ്പുഴ",
+    "name:ta": "அம்பலப்புழா",
+    "place": "town",
+    "wikidata": "Q4740987",
+    "wikimedia_commons": "Category:Ambalappuzha",
+    "wikipedia": "en:Ambalappuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 10143187334,
+  "lat": 9.3542852,
+  "lon": 76.6234922,
+  "tags": {
+    "name": "Othera",
+    "name:ml": "ഓതറ",
+    "place": "village",
+    "wikidata": "Q7108656",
+    "wikipedia": "en:Othera"
+  }
+},
+{
+  "type": "node",
+  "id": 10143187335,
+  "lat": 9.3338188,
+  "lon": 76.6496799,
+  "tags": {
+    "name": "Nellickal",
+    "name:ml": "നെല്ലിക്കൽ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10143187336,
+  "lat": 9.3147976,
+  "lon": 76.6487953,
+  "tags": {
+    "name": "Neervilakom",
+    "name:ml": "നീർവിളാകം",
+    "place": "village",
+    "wikidata": "Q6986964",
+    "wikipedia": "en:Neervilakom"
+  }
+},
+{
+  "type": "node",
+  "id": 10213956203,
+  "lat": 9.2588920,
+  "lon": 76.6594901,
+  "tags": {
+    "name": "Manthuka",
+    "name:ml": "മാന്തുക",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10213956204,
+  "lat": 9.2576361,
+  "lon": 76.6767811,
+  "tags": {
+    "name": "Ullannoor",
+    "name:ml": "ഉള്ളന്നൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10213956208,
+  "lat": 9.2586139,
+  "lon": 76.4109943,
+  "tags": {
+    "name": "Thrikkunnapuzha",
+    "name:ml": "തൃക്കുന്നപ്പുഴ",
+    "place": "village",
+    "wikidata": "Q7798165",
+    "wikipedia": "en:Thrikkunnapuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 10213956209,
+  "lat": 9.2594714,
+  "lon": 76.4641226,
+  "tags": {
+    "name": "Nangiarkulangara",
+    "name:ml": "നങ്ങ്യാർകുളങ്ങര",
+    "name:ta": "நங்கியார்குளங்கரை",
+    "place": "town",
+    "wikidata": "Q2646185",
+    "wikipedia": "en:Nangiarkulangara"
+  }
+},
+{
+  "type": "node",
+  "id": 10213956210,
+  "lat": 9.2386096,
+  "lon": 76.4709765,
+  "tags": {
+    "name": "Cheppad",
+    "name:ml": "ചേപ്പാട്",
+    "place": "village",
+    "wikidata": "Q5091726",
+    "wikimedia_commons": "Category:Cheppad",
+    "wikipedia": "en:Cheppad"
+  }
+},
+{
+  "type": "node",
+  "id": 10288032080,
+  "lat": 9.3838759,
+  "lon": 76.7101824,
+  "tags": {
+    "name": "Thadiyoor",
+    "name:ml": "തടിയൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10574432901,
+  "lat": 9.2051686,
+  "lon": 76.5240419,
+  "tags": {
+    "alt_name": "Perungala",
+    "alt_name:ml": "പെരുങ്ങാല",
+    "description": "Comprises of Erezha South, Koippallikarazhma , Menampally and Nadackavu regions",
+    "name": "Peringala",
+    "name:ml": "പെരിങ്ങാല",
+    "place": "village",
+    "wikidata": "Q7171095"
+  }
+},
+{
+  "type": "node",
+  "id": 10574432902,
+  "lat": 9.3103540,
+  "lon": 76.6001538,
+  "tags": {
+    "name": "Perissery",
+    "name:ml": "പെരിശ്ശേരി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10574432903,
+  "lat": 9.3011801,
+  "lon": 76.5869772,
+  "tags": {
+    "name": "Puliyoor",
+    "name:ml": "പുലിയൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 10574432904,
+  "lat": 9.3772752,
+  "lon": 76.5577876,
+  "tags": {
+    "name": "Kavumbhagom",
+    "name:ml": "കാവുംഭാഗം",
+    "place": "suburb",
+    "wikidata": "Q6379363"
+  }
+},
+{
+  "type": "node",
+  "id": 10893796033,
+  "lat": 9.3674124,
+  "lon": 76.6568494,
+  "tags": {
+    "alt_name:en": "Kombanad",
+    "name": "Kumbanad",
+    "name:kn": "ಕುಂಬನಾದ",
+    "name:ml": "കുമ്പനാട്",
+    "name:ta": "கும்பநாடு",
+    "place": "town",
+    "wikidata": "Q6443709",
+    "wikimedia_commons": "Category:Kumbanad",
+    "wikipedia": "en:Kumbanad"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822301,
+  "lat": 9.5502557,
+  "lon": 76.5617219,
+  "tags": {
+    "name": "Eravinalloor",
+    "name:en": "Eravinalloor",
+    "name:ml": "ഇരവിനല്ലൂർ",
+    "place": "village",
+    "wikidata": "Q5385067",
+    "wikipedia": "en:Eravinalloor"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822302,
+  "lat": 9.5296406,
+  "lon": 76.5406613,
+  "tags": {
+    "name": "Paruthumpara",
+    "name:en": "Paruthumpara",
+    "name:ml": "പരുത്തുംപാറ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822303,
+  "lat": 9.5147711,
+  "lon": 76.5393836,
+  "tags": {
+    "name": "Kuzhimattom",
+    "name:en": "Kuzhimattom",
+    "name:ml": "കുഴിമറ്റം",
+    "place": "village",
+    "wikidata": "Q6449216",
+    "wikipedia": "en:Kuzhimattom"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822304,
+  "lat": 9.4832063,
+  "lon": 76.5257188,
+  "tags": {
+    "name": "Thuruthy",
+    "name:en": "Thuruthy",
+    "name:ml": "തുരുത്തി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822305,
+  "lat": 9.4166567,
+  "lon": 76.5498236,
+  "tags": {
+    "name": "Idinjillam",
+    "name:ml": "ഇടിഞ്ഞില്ലം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822306,
+  "lat": 9.3985843,
+  "lon": 76.5661186,
+  "tags": {
+    "name": "Muthoor",
+    "name:ml": "മുത്തൂർ",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822307,
+  "lat": 9.4391495,
+  "lon": 76.5656883,
+  "tags": {
+    "name": "Thrikkodithanam",
+    "name:en": "Thrikkodithanam",
+    "name:ml": "തൃക്കൊടിത്താനം",
+    "place": "village",
+    "wikidata": "Q7798160",
+    "wikipedia": "en:Thrikkodithanam"
+  }
+},
+{
+  "type": "node",
+  "id": 11169822308,
+  "lat": 9.4256564,
+  "lon": 76.5620636,
+  "tags": {
+    "name": "Nalukody",
+    "name:ml": "നാലുകോടി",
+    "place": "village",
+    "wikidata": "Q16135440"
+  }
+},
+{
+  "type": "node",
+  "id": 11463481894,
+  "lat": 9.6170360,
+  "lon": 76.6439549,
+  "tags": {
+    "name": "Lakkattoor",
+    "name:ml": "ളാക്കാട്ടൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11475890344,
+  "lat": 9.6172357,
+  "lon": 76.6168967,
+  "tags": {
+    "name": "Poothirikkal",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11507875519,
+  "lat": 9.5644208,
+  "lon": 76.3091191,
+  "tags": {
+    "name": "Kattoor",
+    "name:ml": "കാട്ടൂർ",
+    "place": "village",
+    "wikidata": "Q6378354"
+  }
+},
+{
+  "type": "node",
+  "id": 11757443036,
+  "lat": 9.5660640,
+  "lon": 76.5946592,
+  "tags": {
+    "name": "Payyappady",
+    "name:ml": "പയ്യപ്പാടി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11758917816,
+  "lat": 9.4103341,
+  "lon": 76.4547920,
+  "tags": {
+    "alt_name": "Kodupunna",
+    "name": "Koduppunna",
+    "name:ml": "കൊടുപ്പുന്ന",
+    "place": "village",
+    "wikidata": "Q15143915",
+    "wikipedia": "en:Koduppunna"
+  }
+},
+{
+  "type": "node",
+  "id": 11759372196,
+  "lat": 9.3661184,
+  "lon": 76.4772034,
+  "tags": {
+    "name": "Edathua",
+    "name:ml": "എടത്വാ",
+    "place": "village",
+    "wikidata": "Q116177757"
+  }
+},
+{
+  "type": "node",
+  "id": 11762371942,
+  "lat": 9.5968399,
+  "lon": 76.5019850,
+  "tags": {
+    "name": "Kummanam",
+    "name:ml": "കുമ്മനം",
+    "place": "village",
+    "wikidata": "Q6443959"
+  }
+},
+{
+  "type": "node",
+  "id": 11762371943,
+  "lat": 9.5821741,
+  "lon": 76.4988038,
+  "tags": {
+    "name": "Veloor",
+    "name:ml": "വേളൂർ",
+    "place": "village",
+    "wikidata": "Q7919308"
+  }
+},
+{
+  "type": "node",
+  "id": 11782243393,
+  "lat": 9.2897167,
+  "lon": 76.6715272,
+  "tags": {
+    "name": "Elimukku",
+    "name:ml": "എളിമുക്ക്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11812414720,
+  "lat": 9.3181270,
+  "lon": 76.4437672,
+  "tags": {
+    "name": "Ayaparampu",
+    "name:ml": "ആയാപറമ്പ്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11813224374,
+  "lat": 9.2945936,
+  "lon": 76.6023272,
+  "tags": {
+    "name": "Ala",
+    "name:ml": "ആലാ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11817141146,
+  "lat": 9.2197238,
+  "lon": 76.5487073,
+  "tags": {
+    "name": "Thekkekara",
+    "name:ml": "തേക്കക്കര",
+    "place": "village",
+    "wikidata": "Q7780979"
+  }
+},
+{
+  "type": "node",
+  "id": 11817179173,
+  "lat": 9.2520417,
+  "lon": 76.5052213,
+  "tags": {
+    "name": "Karippuzha",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11826398360,
+  "lat": 9.5305009,
+  "lon": 76.3367349,
+  "tags": {
+    "name": "Aryad",
+    "name:ml": "ആര്യാട്",
+    "place": "village",
+    "wikidata": "Q4802627"
+  }
+},
+{
+  "type": "node",
+  "id": 11826461852,
+  "lat": 9.3051971,
+  "lon": 76.4469975,
+  "tags": {
+    "name": "Cheruthana",
+    "name:ml": "ചെറുതന",
+    "place": "village",
+    "wikidata": "Q5092630"
+  }
+},
+{
+  "type": "node",
+  "id": 11826462516,
+  "lat": 9.2878255,
+  "lon": 76.5247239,
+  "tags": {
+    "name": "Thripperumthura",
+    "name:ml": "തൃപ്പെരുന്തുറ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11826462527,
+  "lat": 9.2718399,
+  "lon": 76.5363708,
+  "tags": {
+    "name": "Chennithala",
+    "name:ml": "ചെന്നിത്തല",
+    "place": "village",
+    "wikidata": "Q5091513"
+  }
+},
+{
+  "type": "node",
+  "id": 11826538457,
+  "lat": 9.5420932,
+  "lon": 76.3422722,
+  "tags": {
+    "name": "Komalapuram",
+    "name:ml": "കോമളപുരം",
+    "place": "village",
+    "wikidata": "Q2243908"
+  }
+},
+{
+  "type": "node",
+  "id": 11826598942,
+  "lat": 9.6017171,
+  "lon": 76.3145021,
+  "tags": {
+    "alt_name": "Mararikulam",
+    "name": "Mararikkulam",
+    "name:ml": "മാരാരിക്കുളം",
+    "place": "village",
+    "wikidata": "Q3530118"
+  }
+},
+{
+  "type": "node",
+  "id": 11826808428,
+  "lat": 9.5169054,
+  "lon": 76.3339447,
+  "tags": {
+    "name": "Aryad South",
+    "name:ml": "ആര്യാട് തെക്ക്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11834278021,
+  "lat": 9.3432746,
+  "lon": 76.5788008,
+  "tags": {
+    "name": "Thiruvanvandoor",
+    "name:ml": "തിരുവന്‍വണ്ടൂര്‍",
+    "place": "village",
+    "wikidata": "Q7785521"
+  }
+},
+{
+  "type": "node",
+  "id": 11870288393,
+  "lat": 9.5201962,
+  "lon": 76.3186695,
+  "tags": {
+    "name": "Thumpoly",
+    "place": "village",
+    "wikidata": "Q7798865"
+  }
+},
+{
+  "type": "node",
+  "id": 11870635835,
+  "lat": 9.5424809,
+  "lon": 76.3113890,
+  "tags": {
+    "name": "Omanappuzha",
+    "name:ml": "ഓമനപ്പുഴ",
+    "place": "village",
+    "wikidata": "Q13110856"
+  }
+},
+{
+  "type": "node",
+  "id": 11876087826,
+  "lat": 9.3715502,
+  "lon": 76.5194685,
+  "tags": {
+    "alt_name": "Nedumpram",
+    "name": "Nedumpuram",
+    "name:ml": "നെടുമ്പുറം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11899322268,
+  "lat": 9.4205301,
+  "lon": 76.4944567,
+  "tags": {
+    "name": "Kidangara",
+    "name:ml": "കിടങ്ങറ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11914508423,
+  "lat": 9.4472958,
+  "lon": 76.4708729,
+  "tags": {
+    "name": "Veliyanadu",
+    "name:ml": "വെളിയനാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 11914588298,
+  "lat": 9.4356657,
+  "lon": 76.4849454,
+  "tags": {
+    "alt_name": "Kunnamkary",
+    "alt_name_2": "Kunnankary",
+    "name": "Kunnamkari",
+    "name:ml": "കുന്നംകരി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 12474186945,
+  "lat": 9.5003469,
+  "lon": 76.5519065,
+  "tags": {
+    "name": "Pathamuttom",
+    "name:ml": "പത്താമുറ്റം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 12874394015,
+  "lat": 9.2484750,
+  "lon": 76.4519015,
+  "tags": {
+    "name": "Chingoli",
+    "name:ml": "ചിങ്ങോലി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 12878437124,
+  "lat": 9.5685870,
+  "lon": 76.6019154,
+  "tags": {
+    "name": "Vennimala",
+    "name:ml": "വെന്നിമല",
+    "place": "village",
+    "wikidata": "Q85812944"
+  }
+},
+{
+  "type": "node",
+  "id": 12916842515,
+  "lat": 9.4052710,
+  "lon": 76.6963397,
+  "tags": {
+    "alt_name": "Valakuzhi, Valakkuzhy",
+    "name": "Valakuzhy",
+    "name:ml": "വാളക്കുഴി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 12916917031,
+  "lat": 9.3954031,
+  "lon": 76.6877540,
+  "tags": {
+    "name": "Thelliyoor",
+    "name:ml": "തെള്ളിയൂർ",
+    "place": "village",
+    "wikidata": "Q7781040"
+  }
+},
+{
+  "type": "node",
+  "id": 13021382536,
+  "lat": 9.3209473,
+  "lon": 76.6230319,
+  "tags": {
+    "name": "Angadikkal",
+    "name:ml": "അങ്ങാടിക്കൽ",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13028073237,
+  "lat": 9.3138522,
+  "lon": 76.5408654,
+  "tags": {
+    "name": "Kurattikkadu",
+    "name:ml": "കുരട്ടിക്കാട്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13597631682,
+  "lat": 9.3422566,
+  "lon": 76.7151836,
+  "tags": {
+    "name": "Melukara",
+    "name:ml": "മേലുകര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13597631684,
+  "lat": 9.3526634,
+  "lon": 76.6933446,
+  "tags": {
+    "name": "Thottapuzhassery",
+    "name:ml": "തോട്ടപ്പുഴശ്ശേരി",
+    "place": "village",
+    "wikidata": "Q7796930",
+    "wikipedia": "en:Thottapuzhassery"
+  }
+},
+{
+  "type": "node",
+  "id": 13597631686,
+  "lat": 9.3287940,
+  "lon": 76.6461078,
+  "tags": {
+    "name": "Arattupuzha",
+    "name:ml": "ആറാട്ടുപുഴ",
+    "place": "village",
+    "wikidata": "Q4784449",
+    "wikipedia": "en:Arattupuzha"
+  }
+},
+{
+  "type": "node",
+  "id": 13597631687,
+  "lat": 9.3631654,
+  "lon": 76.6283717,
+  "tags": {
+    "name": "Kozhimala",
+    "name:ml": "കോഴിമല",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13597631688,
+  "lat": 9.3758462,
+  "lon": 76.6123136,
+  "tags": {
+    "name": "Vallamkulam",
+    "name:ml": "വള്ളംകുളം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13597631690,
+  "lat": 9.3102523,
+  "lon": 76.6373470,
+  "tags": {
+    "name": "Piralassery",
+    "name:ml": "പിരളശ്ശേരി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13621880623,
+  "lat": 9.2304203,
+  "lon": 76.7153200,
+  "tags": {
+    "name": "Muttathukonam",
+    "name:ml": "മുട്ടത്തുകോണം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13646953122,
+  "lat": 9.3359177,
+  "lon": 76.6758741,
+  "tags": {
+    "name": "Poovathoor",
+    "name:ml": "പൂവത്തൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13646953125,
+  "lat": 9.4231250,
+  "lon": 76.6623566,
+  "tags": {
+    "name": "Thuruthicad",
+    "name:ml": "തുരുത്തിക്കാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13646953126,
+  "lat": 9.4073313,
+  "lon": 76.5842425,
+  "tags": {
+    "name": "Kizhakken Muthoor",
+    "name:ml": "കിഴക്കന്‍ മുത്തൂര്‍",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13646953130,
+  "lat": 9.3621057,
+  "lon": 76.5633563,
+  "tags": {
+    "name": "Venpala",
+    "name:ml": "വെൺപാല",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13646953131,
+  "lat": 9.3661385,
+  "lon": 76.5001970,
+  "tags": {
+    "name": "Thalavady",
+    "name:ml": "തലവടി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633376,
+  "lat": 9.4468002,
+  "lon": 76.5973915,
+  "tags": {
+    "name": "Manthanam",
+    "name:ml": "മാന്താനം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633378,
+  "lat": 9.3800474,
+  "lon": 76.5438844,
+  "tags": {
+    "name": "Peringara",
+    "name:ml": "പെരിങ്ങര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633379,
+  "lat": 9.3951154,
+  "lon": 76.5346069,
+  "tags": {
+    "name": "Mepral",
+    "name:ml": "മേപ്രാൽ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633381,
+  "lat": 9.4588813,
+  "lon": 76.6021119,
+  "tags": {
+    "name": "Venkotta",
+    "name:ml": "വെങ്കോട്ട",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633383,
+  "lat": 9.4571771,
+  "lon": 76.5336692,
+  "tags": {
+    "name": "Mathumoola",
+    "name:ml": "മതുമൂല",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633384,
+  "lat": 9.4463168,
+  "lon": 76.5299088,
+  "tags": {
+    "name": "Vandipetta",
+    "name:ml": "വണ്ടിപ്പേട്ട",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633385,
+  "lat": 9.4442258,
+  "lon": 76.5536428,
+  "tags": {
+    "name": "Fathimapuram",
+    "name:ml": "ഫാത്തിമാപുരം",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633387,
+  "lat": 9.3970902,
+  "lon": 76.6128778,
+  "tags": {
+    "name": "Kaviyoor",
+    "name:ml": "കവിയൂർ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13737633388,
+  "lat": 9.4243708,
+  "lon": 76.6178396,
+  "tags": {
+    "name": "Mundiappally",
+    "name:ml": "മുണ്ടിയപ്പള്ളി",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13754634655,
+  "lat": 9.2602734,
+  "lon": 76.6360253,
+  "tags": {
+    "name": "Kozhuvalloor",
+    "name:ml": "കൊഴുവല്ലൂര്‍",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13754634656,
+  "lat": 9.2938459,
+  "lon": 76.6946306,
+  "tags": {
+    "name": "Perumkunnil Junction",
+    "name:ml": "പെരുംകുന്നില്‍ ജങ്ക്ഷൻ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13763334106,
+  "lat": 9.5613152,
+  "lon": 76.5423365,
+  "tags": {
+    "name": "Kollad",
+    "name:ml": "കൊല്ലാട്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13763334110,
+  "lat": 9.4551539,
+  "lon": 76.5659037,
+  "tags": {
+    "name": "Kodinattumkunnu",
+    "name:ml": "കൊടിനാട്ടുംകുന്ന്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13763334111,
+  "lat": 9.4693885,
+  "lon": 76.5454407,
+  "tags": {
+    "name": "Vadakkekara",
+    "name:ml": "വടക്കേക്കര",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13763334115,
+  "lat": 9.5506075,
+  "lon": 76.6095834,
+  "tags": {
+    "name": "Meenadom",
+    "name:ml": "മീനടം",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13763334116,
+  "lat": 9.5417915,
+  "lon": 76.6449235,
+  "tags": {
+    "name": "South Pampady",
+    "name:ml": "പാമ്പാടി തെക്ക്",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13763334118,
+  "lat": 9.5529033,
+  "lon": 76.6587244,
+  "tags": {
+    "name": "Orvayal",
+    "name:ml": "ഓർവയൽ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13763405687,
+  "lat": 9.2223355,
+  "lon": 76.6586158,
+  "tags": {
+    "name": "Cherickal",
+    "name:ml": "ചേരിക്കൽ",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13787560491,
+  "lat": 9.2531663,
+  "lon": 76.5653349,
+  "tags": {
+    "name": "Thazhakara",
+    "name:ml": "തഴക്കര",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13791029000,
+  "lat": 9.2993507,
+  "lon": 76.6680045,
+  "tags": {
+    "name": "Vallana",
+    "name:ml": "വല്ലന",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 13791077002,
+  "lat": 9.3315491,
+  "lon": 76.6061826,
+  "tags": {
+    "name": "Mundancavu",
+    "name:ml": "മുണ്ടൻകാവ്",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 13791077003,
+  "lat": 9.3094910,
+  "lon": 76.5646930,
+  "tags": {
+    "name": "Budhanoor",
+    "name:ml": "ബുധനൂർ",
+    "place": "village"
+  }
+}
+
+  ]
+}

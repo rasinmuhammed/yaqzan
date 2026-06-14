@@ -1,0 +1,5323 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-13T10:42:44Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 193603402,
+  "lat": 9.5338575,
+  "lon": 76.3829596,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306126061,
+  "lat": 9.4398391,
+  "lon": 76.4777243,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306126932,
+  "lat": 9.4490185,
+  "lon": 76.4463355,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306127145,
+  "lat": 9.4498783,
+  "lon": 76.4463779,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306127222,
+  "lat": 9.4758695,
+  "lon": 76.4548693,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Thattassery Junkar Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306146630,
+  "lat": 9.4688456,
+  "lon": 76.4641608,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306146957,
+  "lat": 9.4763632,
+  "lon": 76.4553733,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kavalam",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306147022,
+  "lat": 9.4690335,
+  "lon": 76.4650870,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Krishnapuram Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 997591145,
+  "lat": 9.6677898,
+  "lon": 76.5557469,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Kerala state road transport coperation bus stand ettumanoor",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1379605602,
+  "lat": 9.6197015,
+  "lon": 76.3830499,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Pathiramanal Island",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1473144982,
+  "lat": 9.5013672,
+  "lon": 76.3524852,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1497881070,
+  "lat": 9.5964495,
+  "lon": 76.4304857,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "cargo": "passengers",
+    "ferry": "yes",
+    "name": "Kumarakam Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2136300364,
+  "lat": 9.4823970,
+  "lon": 76.4019669,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2291876211,
+  "lat": 9.6354156,
+  "lon": 76.6065123,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Ayarkkunnam Private Bus Station",
+    "name:ml": "അയർക്കുന്നം ബസ് സ്റ്റാൻഡ്",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2595663595,
+  "lat": 9.5357456,
+  "lon": 76.4057229,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kayiyhara",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2605819078,
+  "lat": 9.3371345,
+  "lon": 76.7049673,
+  "tags": {
+    "addr:city": "Kozhencherry",
+    "addr:street": "Kozhencherry-Ranni road",
+    "amenity": "bus_station",
+    "bus": "yes",
+    "internet_access": "no",
+    "name": "Kozhencherry Private Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2875692897,
+  "lat": 9.4456858,
+  "lon": 76.5409609,
+  "tags": {
+    "amenity": "bus_station",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "lit": "yes",
+    "name": "Changanassery",
+    "name:ml": "ചങ്ങനാശ്ശേരി",
+    "public_transport": "station",
+    "ref": "52",
+    "shelter": "yes",
+    "short_name": "CHR"
+  }
+},
+{
+  "type": "node",
+  "id": 2883013286,
+  "lat": 9.7127516,
+  "lon": 76.6846347,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Old Municipal Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2917357737,
+  "lat": 9.4460338,
+  "lon": 76.6573806,
+  "tags": {
+    "amenity": "bus_station",
+    "name": "Mallappally Bus Stand"
+  }
+},
+{
+  "type": "node",
+  "id": 2918459142,
+  "lat": 9.3280699,
+  "lon": 76.6843549,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 2920194581,
+  "lat": 9.4435115,
+  "lon": 76.5442370,
+  "tags": {
+    "addr:city": "changanacherry",
+    "addr:housenumber": "private bus stand no:1",
+    "addr:postcode": "686105",
+    "addr:street": "bus stand",
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Changanassery Perunna Private Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3399829255,
+  "lat": 9.3167488,
+  "lon": 76.3899562,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "fixme": "position not identified",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3874212336,
+  "lat": 9.6747841,
+  "lon": 76.3927097,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Thaneermukkom Boat Jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 3927476349,
+  "lat": 9.6050461,
+  "lon": 76.3658903,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Muhamma Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3928900181,
+  "lat": 9.4999667,
+  "lon": 76.3491955,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3928900189,
+  "lat": 9.5000680,
+  "lon": 76.3483376,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Bus Stand Boat Jetty",
+    "name:ko": "유람선 선착장",
+    "name:ml": "ഫെറി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3928914753,
+  "lat": 9.4604331,
+  "lon": 76.3957839,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 3928919957,
+  "lat": 9.4559567,
+  "lon": 76.3980678,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Palli Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3928919962,
+  "lat": 9.4810955,
+  "lon": 76.3876815,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3928919963,
+  "lat": 9.4605378,
+  "lon": 76.3947503,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 3928919968,
+  "lat": 9.4736922,
+  "lon": 76.3873998,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Nangachiveedu Jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 3929973240,
+  "lat": 9.5151181,
+  "lon": 76.3828603,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929973241,
+  "lat": 9.5167065,
+  "lon": 76.3838557,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976927,
+  "lat": 9.5074827,
+  "lon": 76.3704422,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976928,
+  "lat": 9.5152618,
+  "lon": 76.3786054,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976929,
+  "lat": 9.5061411,
+  "lon": 76.3696826,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "S.N Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976930,
+  "lat": 9.5035181,
+  "lon": 76.3698205,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976932,
+  "lat": 9.5087048,
+  "lon": 76.3699731,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Grameena Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976933,
+  "lat": 9.5119736,
+  "lon": 76.3726675,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Maanikam",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976934,
+  "lat": 9.5020388,
+  "lon": 76.3687145,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976935,
+  "lat": 9.5176825,
+  "lon": 76.3783926,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976936,
+  "lat": 9.5021411,
+  "lon": 76.3672151,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Azheeckal Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976937,
+  "lat": 9.4987284,
+  "lon": 76.3669263,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Punchiri Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3929976939,
+  "lat": 9.5003360,
+  "lon": 76.3574465,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "a",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3951434588,
+  "lat": 9.4850082,
+  "lon": 76.3226246,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Alappuzha Railway Station",
+    "name:ml": "ആലപ്പുഴ റെയിൽവേ സ്റ്റേഷൻ",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4415494793,
+  "lat": 9.5219045,
+  "lon": 76.5734398,
+  "tags": {
+    "addr:postcode": "686538",
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Njaliakuzhi Bus Stand",
+    "name:en": "Njaliakuzhi Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4494013048,
+  "lat": 9.2435979,
+  "lon": 76.6325588,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4681347805,
+  "lat": 9.6455490,
+  "lon": 76.4786558,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "internet_access": "no",
+    "name": "Maniaparambu Jetty",
+    "network": "Kerala State Water Transport Department",
+    "operator": "SWTD",
+    "public_transport": "station",
+    "website": "https://swtd.kerala.gov.in"
+  }
+},
+{
+  "type": "node",
+  "id": 4681386914,
+  "lat": 9.6464564,
+  "lon": 76.4655210,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 4681392395,
+  "lat": 9.6451183,
+  "lon": 76.4589183,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 4681402505,
+  "lat": 9.6427904,
+  "lon": 76.4518758,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 4681404155,
+  "lat": 9.6422641,
+  "lon": 76.4510419,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 4681412960,
+  "lat": 9.6405218,
+  "lon": 76.4453307,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 4681414228,
+  "lat": 9.6395519,
+  "lon": 76.4428881,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 4681420727,
+  "lat": 9.6384995,
+  "lon": 76.4306448,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Cheepunkal jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4681432957,
+  "lat": 9.6448127,
+  "lon": 76.4102728,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name:he": "תחנה תחבורה ציבורית"
+  }
+},
+{
+  "type": "node",
+  "id": 4784963299,
+  "lat": 9.5684775,
+  "lon": 76.4861896,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kanjiram Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4829735633,
+  "lat": 9.2244689,
+  "lon": 76.6770026,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "പന്തളം",
+    "name:en": "Pandalam",
+    "operator": "KSRTC",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4829744731,
+  "lat": 9.3111920,
+  "lon": 76.5353918,
+  "tags": {
+    "amenity": "bus_station",
+    "name": "PrivateBusStation",
+    "name:en": "PrivateBusStation"
+  }
+},
+{
+  "type": "node",
+  "id": 4850938513,
+  "lat": 9.4689578,
+  "lon": 76.4077234,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4850938824,
+  "lat": 9.4510288,
+  "lon": 76.4047187,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5351967521,
+  "lat": 9.4969680,
+  "lon": 76.3786178,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Ferry stop",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5803788158,
+  "lat": 9.6220598,
+  "lon": 76.3759714,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Pathiramanal FS",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5852931168,
+  "lat": 9.4517125,
+  "lon": 76.4068002,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5853015435,
+  "lat": 9.4790444,
+  "lon": 76.3879036,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5853166295,
+  "lat": 9.4499499,
+  "lon": 76.4413591,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5853460155,
+  "lat": 9.2439375,
+  "lon": 76.6327807,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577652,
+  "lat": 9.4693163,
+  "lon": 76.3880493,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Chirayil"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577656,
+  "lat": 9.4794926,
+  "lon": 76.3871773,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Road Mukku",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577657,
+  "lat": 9.4646215,
+  "lon": 76.3926081,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Josephi"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577662,
+  "lat": 9.4438403,
+  "lon": 76.4050734,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577665,
+  "lat": 9.5027016,
+  "lon": 76.3830538,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577666,
+  "lat": 9.4883569,
+  "lon": 76.3853566,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577667,
+  "lat": 9.5019630,
+  "lon": 76.3824537,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577668,
+  "lat": 9.5066809,
+  "lon": 76.3834026,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577669,
+  "lat": 9.4871483,
+  "lon": 76.3844686,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577671,
+  "lat": 9.4847527,
+  "lon": 76.3859023,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577674,
+  "lat": 9.4721339,
+  "lon": 76.3864884,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577676,
+  "lat": 9.4978948,
+  "lon": 76.3853887,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577677,
+  "lat": 9.4919667,
+  "lon": 76.3846182,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "N.S.S. Boatjetty"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577678,
+  "lat": 9.5115834,
+  "lon": 76.3842005,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 5863577679,
+  "lat": 9.4933116,
+  "lon": 76.3852841,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5865915384,
+  "lat": 9.4504231,
+  "lon": 76.4115074,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5865921902,
+  "lat": 9.4600510,
+  "lon": 76.4103151,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5973873052,
+  "lat": 9.5777301,
+  "lon": 76.5191093,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kodimatha Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5973874994,
+  "lat": 9.5635324,
+  "lon": 76.4675130,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Vettikad Boat Jetty",
+    "name:ml": "വെട്ടിക്കാട് ബോട്ട് ജെട്ടി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5984286637,
+  "lat": 9.4524418,
+  "lon": 76.4080017,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6237476485,
+  "lat": 9.5769290,
+  "lon": 76.4351363,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Attipeedika Bus Stand",
+    "name:ml": "അട്ടിപ്പീടിക",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6251739252,
+  "lat": 9.5006230,
+  "lon": 76.3533545,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Nehru Trophy Ferry Station",
+    "name:ml": "നെഹ്റു ട്രോഫി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6251739267,
+  "lat": 9.5007644,
+  "lon": 76.3532523,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "NTFS",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6898348375,
+  "lat": 9.2248312,
+  "lon": 76.6778201,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "private bus station pandalam",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7158022161,
+  "lat": 9.5436261,
+  "lon": 76.4064289,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7158030648,
+  "lat": 9.5284367,
+  "lon": 76.4060603,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7158044323,
+  "lat": 9.5585485,
+  "lon": 76.4522632,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7158085825,
+  "lat": 9.5265587,
+  "lon": 76.4047013,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Vembanad",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7158095167,
+  "lat": 9.5701840,
+  "lon": 76.4927041,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "mapillary": "1200190430839087",
+    "name": "Pathinanchil Kadavu",
+    "name:ml": "15-ൽ കടവ്",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7158099892,
+  "lat": 9.5509879,
+  "lon": 76.4348250,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Krishnankutty Moola",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7201164051,
+  "lat": 9.5696697,
+  "lon": 76.6398576,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Pampady Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7252196529,
+  "lat": 9.5645883,
+  "lon": 76.4719876,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7252196554,
+  "lat": 9.5744396,
+  "lon": 76.5090109,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Karapuzha Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7252196567,
+  "lat": 9.5856314,
+  "lon": 76.5187297,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7252211085,
+  "lat": 9.5593419,
+  "lon": 76.5065573,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kottayam Port",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7290666392,
+  "lat": 9.4817956,
+  "lon": 76.3866279,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7305284372,
+  "lat": 9.5704685,
+  "lon": 76.7169812,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "elampally",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7305381127,
+  "lat": 9.5297333,
+  "lon": 76.4659998,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7305381132,
+  "lat": 9.5274187,
+  "lon": 76.4427370,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7305381138,
+  "lat": 9.5289246,
+  "lon": 76.4353360,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201794,
+  "lat": 9.5539063,
+  "lon": 76.4401882,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201801,
+  "lat": 9.5502291,
+  "lon": 76.4254913,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201804,
+  "lat": 9.5464196,
+  "lon": 76.4184322,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201811,
+  "lat": 9.5410530,
+  "lon": 76.4032071,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201815,
+  "lat": 9.5373378,
+  "lon": 76.3927529,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201820,
+  "lat": 9.5260247,
+  "lon": 76.3852372,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201824,
+  "lat": 9.5312335,
+  "lon": 76.4046805,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7311201833,
+  "lat": 9.5392986,
+  "lon": 76.4043172,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7324324347,
+  "lat": 9.5573955,
+  "lon": 76.5727024,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Puthuppally Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7325550887,
+  "lat": 9.7088480,
+  "lon": 76.6728613,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "kottaramattam bus terminal",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7462779262,
+  "lat": 9.4453829,
+  "lon": 76.5406697,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Kerala State Road Transport Corporation Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7464698941,
+  "lat": 9.3186083,
+  "lon": 76.6096763,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Chengannur Private Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7473576392,
+  "lat": 9.5691246,
+  "lon": 76.3294085,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "kalavoor bus station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7483947288,
+  "lat": 9.4762276,
+  "lon": 76.4546014,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Thattasherry Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7485285930,
+  "lat": 9.4344849,
+  "lon": 76.5345666,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Manakkachira Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7499988791,
+  "lat": 9.4470579,
+  "lon": 76.5420423,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Changanassery Private Bus Stand No. 1",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7516356807,
+  "lat": 9.5080416,
+  "lon": 76.5267122,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Mandiram",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 7663505358,
+  "lat": 9.3828290,
+  "lon": 76.3551601,
+  "tags": {
+    "addr:postcode": "688561",
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Ambalapuzha Junction Bus Stop",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8065752810,
+  "lat": 9.4396231,
+  "lon": 76.4786789,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8255003108,
+  "lat": 9.6192318,
+  "lon": 76.4758931,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Parippu",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8280662767,
+  "lat": 9.5543933,
+  "lon": 76.6289276,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Bmm school bus station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8286625791,
+  "lat": 9.6322970,
+  "lon": 76.5213911,
+  "tags": {
+    "amenity": "bus_station",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "yes",
+    "name": "Medical College bus Terminal",
+    "passenger_information_display": "yes",
+    "public_transport": "station",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8345433432,
+  "lat": 9.2244588,
+  "lon": 76.6775722,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Pandalam Private Bus Stop",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8345433447,
+  "lat": 9.3184770,
+  "lon": 76.6130267,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Chengannur KSRTC Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8349704344,
+  "lat": 9.2251020,
+  "lon": 76.6778471,
+  "tags": {
+    "amenity": "bus_station"
+  }
+},
+{
+  "type": "node",
+  "id": 8399235736,
+  "lat": 9.6019645,
+  "lon": 76.6825499,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Pallickathodu bus stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8504627253,
+  "lat": 9.5787840,
+  "lon": 76.4719415,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Thiruvarpu",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8543100128,
+  "lat": 9.5590198,
+  "lon": 76.4923105,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "internet_access": "no",
+    "name": "Malarikal",
+    "network": "Private",
+    "public_transport": "station",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8561362588,
+  "lat": 9.4609144,
+  "lon": 76.4310977,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "departures_board": "yes",
+    "highway": "bus_stop",
+    "name": "Kayalpuram Pally",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 8565472973,
+  "lat": 9.4499217,
+  "lon": 76.4464093,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8565472996,
+  "lat": 9.4471864,
+  "lon": 76.4388257,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8788724490,
+  "lat": 9.5905855,
+  "lon": 76.5214253,
+  "tags": {
+    "addr:city": "Kottayam",
+    "addr:street": "Thirunakkara",
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Old Bus Stand",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8864989562,
+  "lat": 9.5030111,
+  "lon": 76.6413880,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Karukachal Bus station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8946209354,
+  "lat": 9.5649810,
+  "lon": 76.4189619,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "internet_access": "no",
+    "name": "Naalupanku House Boat Terminal",
+    "name:ml": "നാലുപങ്ക് ഹൗസ് ബോട്ട് ടെര്‍മിനല്",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8957309169,
+  "lat": 9.6677258,
+  "lon": 76.5316913,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9090736311,
+  "lat": 9.6490080,
+  "lon": 76.3821104,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kannankara",
+    "operator": "Government",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9363096385,
+  "lat": 9.4488959,
+  "lon": 76.4463698,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pulinkunnu",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9363643219,
+  "lat": 9.3864759,
+  "lon": 76.5746058,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Thiruvalla KSRTC Terminal",
+    "public_transport": "station",
+    "survey:date": "2021-12-24"
+  }
+},
+{
+  "type": "node",
+  "id": 9365045366,
+  "lat": 9.5858048,
+  "lon": 76.5234380,
+  "tags": {
+    "amenity": "bus_station",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "name": "KSRTC Kottayam",
+    "passenger_information_display": "yes",
+    "public_transport": "station",
+    "ref": "5",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9442675997,
+  "lat": 9.4765609,
+  "lon": 76.4558450,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kavalam",
+    "name:ml": "കാവാലം",
+    "operator": "KSRTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10011165922,
+  "lat": 9.7144326,
+  "lon": 76.3447751,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "no",
+    "historic": "ruins",
+    "name": "Boat Jetty",
+    "public_transport": "station",
+    "wikidata": "Q122171171",
+    "wikimedia_commons": "Category:Vayalar old jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 10063039009,
+  "lat": 9.4860540,
+  "lon": 76.3995031,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063045563,
+  "lat": 9.4822498,
+  "lon": 76.3936543,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063056868,
+  "lat": 9.4815818,
+  "lon": 76.3991120,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063056889,
+  "lat": 9.4842053,
+  "lon": 76.4030769,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063057836,
+  "lat": 9.4836770,
+  "lon": 76.4067719,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063057837,
+  "lat": 9.4842264,
+  "lon": 76.4088208,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063059137,
+  "lat": 9.4854627,
+  "lon": 76.4078986,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063061375,
+  "lat": 9.4703483,
+  "lon": 76.4064029,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063061385,
+  "lat": 9.4583758,
+  "lon": 76.4097782,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063067533,
+  "lat": 9.4834434,
+  "lon": 76.4085221,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Venattukadu",
+    "name:ml": "വേണാട്ടുകാട്",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063067937,
+  "lat": 9.4761052,
+  "lon": 76.4067376,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063079176,
+  "lat": 9.4636083,
+  "lon": 76.4094131,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063093563,
+  "lat": 9.4543688,
+  "lon": 76.4094880,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063093564,
+  "lat": 9.4531133,
+  "lon": 76.4076323,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063646075,
+  "lat": 9.4067493,
+  "lon": 76.4117561,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Champakulam",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063720750,
+  "lat": 9.4064363,
+  "lon": 76.4126578,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063768408,
+  "lat": 9.4105733,
+  "lon": 76.4118398,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063817738,
+  "lat": 9.4128155,
+  "lon": 76.4124775,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063817739,
+  "lat": 9.4166441,
+  "lon": 76.4097412,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063817741,
+  "lat": 9.4192733,
+  "lon": 76.4081117,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063817742,
+  "lat": 9.4252426,
+  "lon": 76.4056849,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063824171,
+  "lat": 9.4213814,
+  "lon": 76.4055036,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063828008,
+  "lat": 9.4343082,
+  "lon": 76.4044277,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063845168,
+  "lat": 9.4309261,
+  "lon": 76.4043966,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10063951805,
+  "lat": 9.4533304,
+  "lon": 76.3976437,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 10063968020,
+  "lat": 9.4518049,
+  "lon": 76.4018642,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10068075091,
+  "lat": 9.5092283,
+  "lon": 76.3598016,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 10068075092,
+  "lat": 9.5048718,
+  "lon": 76.3654127,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Kavunkal boat jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 10068075093,
+  "lat": 9.5084199,
+  "lon": 76.3607455,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 10068090158,
+  "lat": 9.4834608,
+  "lon": 76.3859363,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 10068116801,
+  "lat": 9.4885647,
+  "lon": 76.3817595,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kolathu Jetty",
+    "name:ml": "കോലത്തു ജെട്ടി",
+    "public_transport": "station",
+    "wikimedia_commons": "File:Kolathu Jetty.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 10068116802,
+  "lat": 9.4883583,
+  "lon": 76.3840724,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Muttel Boat Jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 10068154433,
+  "lat": 9.4991426,
+  "lon": 76.3657847,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10068156111,
+  "lat": 9.4919795,
+  "lon": 76.3652101,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Bharghavan Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10068169637,
+  "lat": 9.4893288,
+  "lon": 76.3804622,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10068170715,
+  "lat": 9.4858058,
+  "lon": 76.3666026,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Irumpanam Boat Jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 10068175445,
+  "lat": 9.4860212,
+  "lon": 76.3695615,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "Valyiakary Boat Jetty"
+  }
+},
+{
+  "type": "node",
+  "id": 10068180758,
+  "lat": 9.4965824,
+  "lon": 76.3660738,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Nurse Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10068182242,
+  "lat": 9.4893480,
+  "lon": 76.3660367,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 10068191879,
+  "lat": 9.4990828,
+  "lon": 76.3632634,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Zero jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10068198039,
+  "lat": 9.5000140,
+  "lon": 76.3506600,
+  "tags": {
+    "amenity": "ferry_terminal"
+  }
+},
+{
+  "type": "node",
+  "id": 10068205647,
+  "lat": 9.4998290,
+  "lon": 76.3518960,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10264409948,
+  "lat": 9.4777836,
+  "lon": 76.4541545,
+  "tags": {
+    "alt_name": "Palliyarakave",
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Palliyarakkavu Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10264422872,
+  "lat": 9.4701692,
+  "lon": 76.4593055,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kopital",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10284344109,
+  "lat": 9.5137482,
+  "lon": 76.4072845,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Renganath",
+    "operator": "Inland navigation department",
+    "public_transport": "station",
+    "survey:date": "2022-12-24"
+  }
+},
+{
+  "type": "node",
+  "id": 10284409209,
+  "lat": 9.5119606,
+  "lon": 76.3545542,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station",
+    "survey:date": "2022-12-24"
+  }
+},
+{
+  "type": "node",
+  "id": 10635502868,
+  "lat": 9.6676837,
+  "lon": 76.5560180,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "internet_access": "no",
+    "name": "KSRTC BUS STATION",
+    "operator": "KSRTC",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11378921414,
+  "lat": 9.4767690,
+  "lon": 76.3871139,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11378921416,
+  "lat": 9.4666332,
+  "lon": 76.3900218,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11380708210,
+  "lat": 9.4454719,
+  "lon": 76.4041692,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11677272262,
+  "lat": 9.4791411,
+  "lon": 76.3863412,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "name": "Kainakiri",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11806433249,
+  "lat": 9.4527892,
+  "lon": 76.4071564,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11813259485,
+  "lat": 9.3317828,
+  "lon": 76.6925568,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Parappuzha Ferry",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11818023493,
+  "lat": 9.2681969,
+  "lon": 76.5205632,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11866333526,
+  "lat": 9.3169507,
+  "lon": 76.4486876,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11876213209,
+  "lat": 9.7105287,
+  "lon": 76.3433045,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kundathil Kadavu",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11883074435,
+  "lat": 9.4791927,
+  "lon": 76.3870885,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11883116500,
+  "lat": 9.4493401,
+  "lon": 76.4125565,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11883177104,
+  "lat": 9.4609449,
+  "lon": 76.4311767,
+  "tags": {
+    "amenity": "bus_station",
+    "bus": "yes",
+    "departures_board": "yes",
+    "highway": "bus_stop",
+    "name": "Kayalpuram Pally",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11883204140,
+  "lat": 9.4477192,
+  "lon": 76.4125201,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11883204160,
+  "lat": 9.4453447,
+  "lon": 76.4139653,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11914567786,
+  "lat": 9.4615558,
+  "lon": 76.4658833,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kesariya Chruch Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11914596320,
+  "lat": 9.4397311,
+  "lon": 76.4785357,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Thachedam Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11914612049,
+  "lat": 9.4440049,
+  "lon": 76.4773183,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11919249954,
+  "lat": 9.1811534,
+  "lon": 76.4529039,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Keerikkadu Jetty",
+    "name:ml": "കീരിക്കാട് ജെട്ടി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11932692893,
+  "lat": 9.5717390,
+  "lon": 76.4984495,
+  "tags": {
+    "alt_name": "Pulinackal Jetty",
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Parochal Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12474114535,
+  "lat": 9.4879273,
+  "lon": 76.4474039,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Lisieux Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12872747399,
+  "lat": 9.2017765,
+  "lon": 76.4422574,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kanakakkunnu Jetti",
+    "name:ml": "കനകക്കുന്ന് ജെട്ടി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12874452052,
+  "lat": 9.2801023,
+  "lon": 76.4054978,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Ambalassery Kadavu",
+    "name:ml": "അമ്പലാശ്ശേരി കടവ്",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12874452069,
+  "lat": 9.2887757,
+  "lon": 76.4020062,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "K V Jetty",
+    "name:ml": "കെ. വി. ജെട്ടി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12874729008,
+  "lat": 9.4863274,
+  "lon": 76.4470998,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Nalpathil Boat Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13016857794,
+  "lat": 9.3181517,
+  "lon": 76.4438153,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Ayaparambu Kadavu",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13019508187,
+  "lat": 9.5063273,
+  "lon": 76.4805285,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Akkanady Jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13020182782,
+  "lat": 9.4899743,
+  "lon": 76.3773313,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kayalchira",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13022398730,
+  "lat": 9.3796120,
+  "lon": 76.4428413,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Thayankary Jetty",
+    "name:ml": "തായങ്കരി ജെട്ടി",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13073493427,
+  "lat": 9.4888640,
+  "lon": 76.3818003,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13078335373,
+  "lat": 9.5335382,
+  "lon": 76.5046545,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361890,
+  "lat": 9.5177208,
+  "lon": 76.3846026,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361891,
+  "lat": 9.5161149,
+  "lon": 76.3915214,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361892,
+  "lat": 9.5093358,
+  "lon": 76.3941326,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361894,
+  "lat": 9.5093020,
+  "lon": 76.4074316,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Nalayiram jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361896,
+  "lat": 9.5125707,
+  "lon": 76.4192249,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Thevarcad jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361898,
+  "lat": 9.5086398,
+  "lon": 76.4218132,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Mathikayl jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446361899,
+  "lat": 9.4990538,
+  "lon": 76.4238112,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Brothers jetty",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377404,
+  "lat": 9.4947553,
+  "lon": 76.4329609,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Mangalam center",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377406,
+  "lat": 9.4942515,
+  "lon": 76.4393825,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Moolarayiam",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377408,
+  "lat": 9.4924455,
+  "lon": 76.4412651,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Mangalamoola",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377410,
+  "lat": 9.4903634,
+  "lon": 76.4441437,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Rajapyram",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377419,
+  "lat": 9.4809179,
+  "lon": 76.4480748,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377423,
+  "lat": 9.4710217,
+  "lon": 76.4594451,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Kavalam",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377426,
+  "lat": 9.4706597,
+  "lon": 76.4585235,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Exchange",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13446377545,
+  "lat": 9.4718994,
+  "lon": 76.4568959,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13456145762,
+  "lat": 9.5273772,
+  "lon": 76.3919283,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13456145764,
+  "lat": 9.5266831,
+  "lon": 76.4067894,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Chachapen",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13456145766,
+  "lat": 9.5285183,
+  "lon": 76.4320964,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13456145768,
+  "lat": 9.5509888,
+  "lon": 76.4370411,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Swami",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13456145770,
+  "lat": 9.5669287,
+  "lon": 76.4804047,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13458060722,
+  "lat": 9.5264549,
+  "lon": 76.3980216,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13458060727,
+  "lat": 9.5185477,
+  "lon": 76.3837443,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 13798461202,
+  "lat": 9.3285560,
+  "lon": 76.4109713,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "name": "SN kadavu ferry",
+    "opening_hours": "Mo-Su 08:00-20:00"
+  }
+},
+{
+  "type": "way",
+  "id": 27882909,
+  "bounds": {
+    "minlat": 9.4490185,
+    "minlon": 76.4463355,
+    "maxlat": 9.4498783,
+    "maxlon": 76.4463779
+  },
+  "geometry": [
+    { "lat": 9.4490185, "lon": 76.4463355 },
+    { "lat": 9.4498783, "lon": 76.4463779 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "duration": "00:15",
+    "foot": "yes",
+    "motor_vehicle": "no",
+    "motorcycle": "yes",
+    "route": "ferry",
+    "toll": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 27884467,
+  "bounds": {
+    "minlat": 9.4758695,
+    "minlon": 76.4548693,
+    "maxlat": 9.4763632,
+    "maxlon": 76.4553733
+  },
+  "geometry": [
+    { "lat": 9.4758695, "lon": 76.4548693 },
+    { "lat": 9.4763632, "lon": 76.4553733 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "duration": "00:15",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "name": "Kavalam - Thattasserry Junkar Ferry",
+    "opening_hours": "07:00-21:00",
+    "route": "ferry",
+    "toll": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 27885313,
+  "bounds": {
+    "minlat": 9.4688456,
+    "minlon": 76.4641608,
+    "maxlat": 9.4690335,
+    "maxlon": 76.4650870
+  },
+  "geometry": [
+    { "lat": 9.4688456, "lon": 76.4641608 },
+    { "lat": 9.4690335, "lon": 76.4650870 }
+  ],
+  "tags": {
+    "created_by": "Potlatch 0.10e",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 27885319,
+  "bounds": {
+    "minlat": 9.4396231,
+    "minlon": 76.4777243,
+    "maxlat": 9.4398391,
+    "maxlon": 76.4786789
+  },
+  "geometry": [
+    { "lat": 9.4398391, "lon": 76.4777243 },
+    { "lat": 9.4396932, "lon": 76.4781762 },
+    { "lat": 9.4396231, "lon": 76.4786789 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 50831100,
+  "bounds": {
+    "minlat": 9.3987680,
+    "minlon": 76.3621491,
+    "maxlat": 9.4891773,
+    "maxlon": 76.3863545
+  },
+  "geometry": [
+    { "lat": 9.3987680, "lon": 76.3863545 },
+    { "lat": 9.4010895, "lon": 76.3851916 },
+    { "lat": 9.4037170, "lon": 76.3844398 },
+    { "lat": 9.4060604, "lon": 76.3828429 },
+    { "lat": 9.4099904, "lon": 76.3804482 },
+    { "lat": 9.4113691, "lon": 76.3802101 },
+    { "lat": 9.4145536, "lon": 76.3796603 },
+    { "lat": 9.4162363, "lon": 76.3793296 },
+    { "lat": 9.4175170, "lon": 76.3787180 },
+    { "lat": 9.4182861, "lon": 76.3780697 },
+    { "lat": 9.4192321, "lon": 76.3768337 },
+    { "lat": 9.4201207, "lon": 76.3758802 },
+    { "lat": 9.4212316, "lon": 76.3754210 },
+    { "lat": 9.4244229, "lon": 76.3750152 },
+    { "lat": 9.4262836, "lon": 76.3750763 },
+    { "lat": 9.4266559, "lon": 76.3750899 },
+    { "lat": 9.4281751, "lon": 76.3751453 },
+    { "lat": 9.4285642, "lon": 76.3750380 },
+    { "lat": 9.4293463, "lon": 76.3748222 },
+    { "lat": 9.4302979, "lon": 76.3740805 },
+    { "lat": 9.4314082, "lon": 76.3733603 },
+    { "lat": 9.4320081, "lon": 76.3729793 },
+    { "lat": 9.4351621, "lon": 76.3722570 },
+    { "lat": 9.4360171, "lon": 76.3716754 },
+    { "lat": 9.4377543, "lon": 76.3704939 },
+    { "lat": 9.4387959, "lon": 76.3699096 },
+    { "lat": 9.4396161, "lon": 76.3697594 },
+    { "lat": 9.4402824, "lon": 76.3698928 },
+    { "lat": 9.4404800, "lon": 76.3699323 },
+    { "lat": 9.4421456, "lon": 76.3707089 },
+    { "lat": 9.4430373, "lon": 76.3707417 },
+    { "lat": 9.4431571, "lon": 76.3707461 },
+    { "lat": 9.4437384, "lon": 76.3704085 },
+    { "lat": 9.4441190, "lon": 76.3698893 },
+    { "lat": 9.4444304, "lon": 76.3688784 },
+    { "lat": 9.4449555, "lon": 76.3671738 },
+    { "lat": 9.4449953, "lon": 76.3671372 },
+    { "lat": 9.4457610, "lon": 76.3664339 },
+    { "lat": 9.4459660, "lon": 76.3663590 },
+    { "lat": 9.4473955, "lon": 76.3658521 },
+    { "lat": 9.4477779, "lon": 76.3657165 },
+    { "lat": 9.4501223, "lon": 76.3651251 },
+    { "lat": 9.4523978, "lon": 76.3642331 },
+    { "lat": 9.4545615, "lon": 76.3628332 },
+    { "lat": 9.4569480, "lon": 76.3628617 },
+    { "lat": 9.4582287, "lon": 76.3629020 },
+    { "lat": 9.4594286, "lon": 76.3629397 },
+    { "lat": 9.4619428, "lon": 76.3629876 },
+    { "lat": 9.4636907, "lon": 76.3625885 },
+    { "lat": 9.4645664, "lon": 76.3623885 },
+    { "lat": 9.4673027, "lon": 76.3621491 },
+    { "lat": 9.4685091, "lon": 76.3624695 },
+    { "lat": 9.4694311, "lon": 76.3630688 },
+    { "lat": 9.4713971, "lon": 76.3643467 },
+    { "lat": 9.4728811, "lon": 76.3646455 },
+    { "lat": 9.4762620, "lon": 76.3643427 },
+    { "lat": 9.4770944, "lon": 76.3642800 },
+    { "lat": 9.4809715, "lon": 76.3641152 },
+    { "lat": 9.4819258, "lon": 76.3642564 },
+    { "lat": 9.4850390, "lon": 76.3642823 },
+    { "lat": 9.4871502, "lon": 76.3647332 },
+    { "lat": 9.4891773, "lon": 76.3656425 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "name": "Alappuzha to Kollam",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 50831986,
+  "bounds": {
+    "minlat": 9.2429476,
+    "minlon": 76.3898274,
+    "maxlat": 9.3188461,
+    "maxlon": 76.4200186
+  },
+  "geometry": [
+    { "lat": 9.3188461, "lon": 76.3898274 },
+    { "lat": 9.3182256, "lon": 76.3899609 },
+    { "lat": 9.3163600, "lon": 76.3903167 },
+    { "lat": 9.3144564, "lon": 76.3907395 },
+    { "lat": 9.3136093, "lon": 76.3908846 },
+    { "lat": 9.3129777, "lon": 76.3909329 },
+    { "lat": 9.3113716, "lon": 76.3911849 },
+    { "lat": 9.3096148, "lon": 76.3917039 },
+    { "lat": 9.3074909, "lon": 76.3922594 },
+    { "lat": 9.3058497, "lon": 76.3926844 },
+    { "lat": 9.3052675, "lon": 76.3928352 },
+    { "lat": 9.3050174, "lon": 76.3928801 },
+    { "lat": 9.3049492, "lon": 76.3928661 },
+    { "lat": 9.3044483, "lon": 76.3928372 },
+    { "lat": 9.3035108, "lon": 76.3932510 },
+    { "lat": 9.3029087, "lon": 76.3936274 },
+    { "lat": 9.3020188, "lon": 76.3946110 },
+    { "lat": 9.3016816, "lon": 76.3954812 },
+    { "lat": 9.3015554, "lon": 76.3960906 },
+    { "lat": 9.3010905, "lon": 76.3962323 },
+    { "lat": 9.3002509, "lon": 76.3963692 },
+    { "lat": 9.2991276, "lon": 76.3968429 },
+    { "lat": 9.2974414, "lon": 76.3979781 },
+    { "lat": 9.2961164, "lon": 76.3982991 },
+    { "lat": 9.2944509, "lon": 76.3986164 },
+    { "lat": 9.2943889, "lon": 76.3986282 },
+    { "lat": 9.2934018, "lon": 76.3987598 },
+    { "lat": 9.2917346, "lon": 76.3999367 },
+    { "lat": 9.2902876, "lon": 76.4010051 },
+    { "lat": 9.2891856, "lon": 76.4014846 },
+    { "lat": 9.2882014, "lon": 76.4018884 },
+    { "lat": 9.2862917, "lon": 76.4031923 },
+    { "lat": 9.2850046, "lon": 76.4043112 },
+    { "lat": 9.2845563, "lon": 76.4048169 },
+    { "lat": 9.2840114, "lon": 76.4053426 },
+    { "lat": 9.2821949, "lon": 76.4055310 },
+    { "lat": 9.2806638, "lon": 76.4053627 },
+    { "lat": 9.2790486, "lon": 76.4051356 },
+    { "lat": 9.2775932, "lon": 76.4052113 },
+    { "lat": 9.2760573, "lon": 76.4053341 },
+    { "lat": 9.2747692, "lon": 76.4057131 },
+    { "lat": 9.2727526, "lon": 76.4065526 },
+    { "lat": 9.2717276, "lon": 76.4069311 },
+    { "lat": 9.2704609, "lon": 76.4076017 },
+    { "lat": 9.2697865, "lon": 76.4079874 },
+    { "lat": 9.2690967, "lon": 76.4083996 },
+    { "lat": 9.2687181, "lon": 76.4086015 },
+    { "lat": 9.2684894, "lon": 76.4091067 },
+    { "lat": 9.2683654, "lon": 76.4102729 },
+    { "lat": 9.2680030, "lon": 76.4108729 },
+    { "lat": 9.2675874, "lon": 76.4110929 },
+    { "lat": 9.2663645, "lon": 76.4113858 },
+    { "lat": 9.2657822, "lon": 76.4116721 },
+    { "lat": 9.2651680, "lon": 76.4121263 },
+    { "lat": 9.2648729, "lon": 76.4128004 },
+    { "lat": 9.2644193, "lon": 76.4140360 },
+    { "lat": 9.2639953, "lon": 76.4144673 },
+    { "lat": 9.2636033, "lon": 76.4144734 },
+    { "lat": 9.2627368, "lon": 76.4138088 },
+    { "lat": 9.2615339, "lon": 76.4127909 },
+    { "lat": 9.2609786, "lon": 76.4122189 },
+    { "lat": 9.2605412, "lon": 76.4118151 },
+    { "lat": 9.2601206, "lon": 76.4117730 },
+    { "lat": 9.2595786, "lon": 76.4120422 },
+    { "lat": 9.2592042, "lon": 76.4122282 },
+    { "lat": 9.2585533, "lon": 76.4123921 },
+    { "lat": 9.2581471, "lon": 76.4125082 },
+    { "lat": 9.2580897, "lon": 76.4125246 },
+    { "lat": 9.2577062, "lon": 76.4125890 },
+    { "lat": 9.2575851, "lon": 76.4126473 },
+    { "lat": 9.2575466, "lon": 76.4126658 },
+    { "lat": 9.2575230, "lon": 76.4126778 },
+    { "lat": 9.2570943, "lon": 76.4128856 },
+    { "lat": 9.2570632, "lon": 76.4129007 },
+    { "lat": 9.2568734, "lon": 76.4129928 },
+    { "lat": 9.2555778, "lon": 76.4138677 },
+    { "lat": 9.2542487, "lon": 76.4145155 },
+    { "lat": 9.2525157, "lon": 76.4151969 },
+    { "lat": 9.2514473, "lon": 76.4153904 },
+    { "lat": 9.2506481, "lon": 76.4155418 },
+    { "lat": 9.2504633, "lon": 76.4155530 },
+    { "lat": 9.2500743, "lon": 76.4154028 },
+    { "lat": 9.2499331, "lon": 76.4153483 },
+    { "lat": 9.2495287, "lon": 76.4152559 },
+    { "lat": 9.2487553, "lon": 76.4154408 },
+    { "lat": 9.2479562, "lon": 76.4158783 },
+    { "lat": 9.2475103, "lon": 76.4163157 },
+    { "lat": 9.2467111, "lon": 76.4167868 },
+    { "lat": 9.2459961, "lon": 76.4170729 },
+    { "lat": 9.2450370, "lon": 76.4180151 },
+    { "lat": 9.2443052, "lon": 76.4188142 },
+    { "lat": 9.2435713, "lon": 76.4195848 },
+    { "lat": 9.2429476, "lon": 76.4200186 }
+  ],
+  "tags": {
+    "route": "ferry",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 50832635,
+  "bounds": {
+    "minlat": 9.0169818,
+    "minlon": 76.4200186,
+    "maxlat": 9.2429476,
+    "maxlon": 76.5233695
+  },
+  "geometry": [
+    { "lat": 9.2429476, "lon": 76.4200186 },
+    { "lat": 9.2417388, "lon": 76.4211496 },
+    { "lat": 9.2384253, "lon": 76.4240213 },
+    { "lat": 9.2355094, "lon": 76.4263628 },
+    { "lat": 9.2326598, "lon": 76.4281742 },
+    { "lat": 9.2292181, "lon": 76.4308809 },
+    { "lat": 9.2257014, "lon": 76.4326806 },
+    { "lat": 9.2165119, "lon": 76.4367672 },
+    { "lat": 9.2107464, "lon": 76.4392634 },
+    { "lat": 9.2023964, "lon": 76.4412294 },
+    { "lat": 9.1956148, "lon": 76.4436814 },
+    { "lat": 9.1907550, "lon": 76.4460892 },
+    { "lat": 9.1833548, "lon": 76.4501096 },
+    { "lat": 9.1782966, "lon": 76.4528867 },
+    { "lat": 9.1761494, "lon": 76.4536401 },
+    { "lat": 9.1739468, "lon": 76.4545709 },
+    { "lat": 9.1678599, "lon": 76.4573596 },
+    { "lat": 9.1556159, "lon": 76.4631653 },
+    { "lat": 9.1511293, "lon": 76.4651752 },
+    { "lat": 9.1469016, "lon": 76.4663535 },
+    { "lat": 9.1368291, "lon": 76.4698881 },
+    { "lat": 9.1311328, "lon": 76.4717750 },
+    { "lat": 9.1282134, "lon": 76.4727052 },
+    { "lat": 9.1258186, "lon": 76.4735266 },
+    { "lat": 9.1230180, "lon": 76.4748131 },
+    { "lat": 9.1207913, "lon": 76.4756444 },
+    { "lat": 9.1195356, "lon": 76.4759459 },
+    { "lat": 9.1186935, "lon": 76.4760804 },
+    { "lat": 9.1172349, "lon": 76.4762700 },
+    { "lat": 9.1165262, "lon": 76.4765618 },
+    { "lat": 9.1143787, "lon": 76.4778512 },
+    { "lat": 9.1107343, "lon": 76.4793027 },
+    { "lat": 9.1072294, "lon": 76.4809638 },
+    { "lat": 9.1027787, "lon": 76.4828085 },
+    { "lat": 9.0956652, "lon": 76.4855110 },
+    { "lat": 9.0917420, "lon": 76.4875265 },
+    { "lat": 9.0900342, "lon": 76.4884373 },
+    { "lat": 9.0867071, "lon": 76.4901451 },
+    { "lat": 9.0842403, "lon": 76.4913975 },
+    { "lat": 9.0817862, "lon": 76.4927890 },
+    { "lat": 9.0774336, "lon": 76.4941912 },
+    { "lat": 9.0747945, "lon": 76.4951744 },
+    { "lat": 9.0719158, "lon": 76.4965454 },
+    { "lat": 9.0699691, "lon": 76.4970890 },
+    { "lat": 9.0683834, "lon": 76.4972992 },
+    { "lat": 9.0652234, "lon": 76.4972186 },
+    { "lat": 9.0637463, "lon": 76.4975428 },
+    { "lat": 9.0622806, "lon": 76.4983235 },
+    { "lat": 9.0613593, "lon": 76.4990165 },
+    { "lat": 9.0600894, "lon": 76.5003827 },
+    { "lat": 9.0569777, "lon": 76.5031239 },
+    { "lat": 9.0547340, "lon": 76.5044046 },
+    { "lat": 9.0533200, "lon": 76.5051986 },
+    { "lat": 9.0515768, "lon": 76.5060002 },
+    { "lat": 9.0503451, "lon": 76.5063118 },
+    { "lat": 9.0486111, "lon": 76.5073606 },
+    { "lat": 9.0466926, "lon": 76.5078129 },
+    { "lat": 9.0435966, "lon": 76.5075983 },
+    { "lat": 9.0406422, "lon": 76.5083567 },
+    { "lat": 9.0377784, "lon": 76.5095566 },
+    { "lat": 9.0369360, "lon": 76.5102150 },
+    { "lat": 9.0352089, "lon": 76.5155672 },
+    { "lat": 9.0306811, "lon": 76.5174010 },
+    { "lat": 9.0271834, "lon": 76.5186122 },
+    { "lat": 9.0228933, "lon": 76.5202422 },
+    { "lat": 9.0183638, "lon": 76.5229292 },
+    { "lat": 9.0169818, "lon": 76.5233695 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 123836588,
+  "bounds": {
+    "minlat": 9.5509879,
+    "minlon": 76.3805044,
+    "maxlat": 9.6198674,
+    "maxlon": 76.4352254
+  },
+  "geometry": [
+    { "lat": 9.5509879, "lon": 76.4348250 },
+    { "lat": 9.5523498, "lon": 76.4352254 },
+    { "lat": 9.5535328, "lon": 76.4306897 },
+    { "lat": 9.5560134, "lon": 76.4235026 },
+    { "lat": 9.5579801, "lon": 76.4192622 },
+    { "lat": 9.5593267, "lon": 76.4176091 },
+    { "lat": 9.5614010, "lon": 76.4164656 },
+    { "lat": 9.5636411, "lon": 76.4139565 },
+    { "lat": 9.5657873, "lon": 76.4115525 },
+    { "lat": 9.5732274, "lon": 76.4097101 },
+    { "lat": 9.5878043, "lon": 76.4070781 },
+    { "lat": 9.5957191, "lon": 76.4026681 },
+    { "lat": 9.5969239, "lon": 76.4003862 },
+    { "lat": 9.5995104, "lon": 76.3958403 },
+    { "lat": 9.6011857, "lon": 76.3933541 },
+    { "lat": 9.6031244, "lon": 76.3904794 },
+    { "lat": 9.6056894, "lon": 76.3877030 },
+    { "lat": 9.6083585, "lon": 76.3852432 },
+    { "lat": 9.6108700, "lon": 76.3831753 },
+    { "lat": 9.6124125, "lon": 76.3820569 },
+    { "lat": 9.6140115, "lon": 76.3812008 },
+    { "lat": 9.6158305, "lon": 76.3805617 },
+    { "lat": 9.6167935, "lon": 76.3805044 },
+    { "lat": 9.6182766, "lon": 76.3808190 },
+    { "lat": 9.6185764, "lon": 76.3809271 },
+    { "lat": 9.6188366, "lon": 76.3810613 },
+    { "lat": 9.6189888, "lon": 76.3811941 },
+    { "lat": 9.6191988, "lon": 76.3814379 },
+    { "lat": 9.6195107, "lon": 76.3819735 },
+    { "lat": 9.6196629, "lon": 76.3823554 },
+    { "lat": 9.6198674, "lon": 76.3828801 },
+    { "lat": 9.6198168, "lon": 76.3829437 },
+    { "lat": 9.6197015, "lon": 76.3830499 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "name": "pathiramanal ferry",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 203622630,
+  "bounds": {
+    "minlat": 9.4815044,
+    "minlon": 76.3859023,
+    "maxlat": 9.4860520,
+    "maxlon": 76.4020049
+  },
+  "geometry": [
+    { "lat": 9.4823970, "lon": 76.4019669 },
+    { "lat": 9.4828965, "lon": 76.4020049 },
+    { "lat": 9.4843801, "lon": 76.4002797 },
+    { "lat": 9.4860520, "lon": 76.3995030 },
+    { "lat": 9.4821926, "lon": 76.3989444 },
+    { "lat": 9.4815815, "lon": 76.3991102 },
+    { "lat": 9.4815044, "lon": 76.3963631 },
+    { "lat": 9.4818574, "lon": 76.3957723 },
+    { "lat": 9.4820001, "lon": 76.3954102 },
+    { "lat": 9.4821449, "lon": 76.3947496 },
+    { "lat": 9.4822253, "lon": 76.3940358 },
+    { "lat": 9.4829475, "lon": 76.3867649 },
+    { "lat": 9.4839531, "lon": 76.3861424 },
+    { "lat": 9.4847527, "lon": 76.3859023 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "motor_vehicle": "no",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 253668199,
+  "bounds": {
+    "minlat": 9.5165653,
+    "minlon": 76.3783926,
+    "maxlat": 9.5436261,
+    "maxlon": 76.4067894
+  },
+  "geometry": [
+    { "lat": 9.5436261, "lon": 76.4064289 },
+    { "lat": 9.5428129, "lon": 76.4062489 },
+    { "lat": 9.5423600, "lon": 76.4052388 },
+    { "lat": 9.5397826, "lon": 76.4051082 },
+    { "lat": 9.5392986, "lon": 76.4043172 },
+    { "lat": 9.5390184, "lon": 76.4051738 },
+    { "lat": 9.5360262, "lon": 76.4053589 },
+    { "lat": 9.5357456, "lon": 76.4057229 },
+    { "lat": 9.5353009, "lon": 76.4053132 },
+    { "lat": 9.5315501, "lon": 76.4054065 },
+    { "lat": 9.5312335, "lon": 76.4046805 },
+    { "lat": 9.5308438, "lon": 76.4054894 },
+    { "lat": 9.5287763, "lon": 76.4056129 },
+    { "lat": 9.5284367, "lon": 76.4060603 },
+    { "lat": 9.5282791, "lon": 76.4056877 },
+    { "lat": 9.5274776, "lon": 76.4057227 },
+    { "lat": 9.5266831, "lon": 76.4067894 },
+    { "lat": 9.5268789, "lon": 76.4061790 },
+    { "lat": 9.5269830, "lon": 76.4051130 },
+    { "lat": 9.5265587, "lon": 76.4047013 },
+    { "lat": 9.5269411, "lon": 76.4041595 },
+    { "lat": 9.5268237, "lon": 76.3984750 },
+    { "lat": 9.5264549, "lon": 76.3980216 },
+    { "lat": 9.5268025, "lon": 76.3974445 },
+    { "lat": 9.5267079, "lon": 76.3928625 },
+    { "lat": 9.5273772, "lon": 76.3919283 },
+    { "lat": 9.5266742, "lon": 76.3912299 },
+    { "lat": 9.5264833, "lon": 76.3857067 },
+    { "lat": 9.5260247, "lon": 76.3852372 },
+    { "lat": 9.5264292, "lon": 76.3848133 },
+    { "lat": 9.5263600, "lon": 76.3831332 },
+    { "lat": 9.5187585, "lon": 76.3834985 },
+    { "lat": 9.5185477, "lon": 76.3837443 },
+    { "lat": 9.5183931, "lon": 76.3835105 },
+    { "lat": 9.5169609, "lon": 76.3835620 },
+    { "lat": 9.5167065, "lon": 76.3838557 },
+    { "lat": 9.5165653, "lon": 76.3833285 },
+    { "lat": 9.5174379, "lon": 76.3787032 },
+    { "lat": 9.5176825, "lon": 76.3783926 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "no",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "no",
+    "motorboat": "yes",
+    "motorcar": "no",
+    "name": "kottayam -Alappuzha ferry",
+    "route": "ferry",
+    "toll": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 344209683,
+  "bounds": {
+    "minlat": 9.4438403,
+    "minlon": 76.3529484,
+    "maxlat": 9.5176825,
+    "maxlon": 76.4052537
+  },
+  "geometry": [
+    { "lat": 9.5000481, "lon": 76.3529484 },
+    { "lat": 9.5001293, "lon": 76.3565304 },
+    { "lat": 9.5003360, "lon": 76.3574465 },
+    { "lat": 9.4994048, "lon": 76.3585566 },
+    { "lat": 9.4992674, "lon": 76.3594112 },
+    { "lat": 9.4994158, "lon": 76.3620907 },
+    { "lat": 9.4990297, "lon": 76.3656813 },
+    { "lat": 9.4987284, "lon": 76.3669263 },
+    { "lat": 9.5012150, "lon": 76.3669888 },
+    { "lat": 9.5021411, "lon": 76.3672151 },
+    { "lat": 9.5020388, "lon": 76.3687145 },
+    { "lat": 9.5028515, "lon": 76.3691638 },
+    { "lat": 9.5035181, "lon": 76.3698205 },
+    { "lat": 9.5061411, "lon": 76.3696826 },
+    { "lat": 9.5064736, "lon": 76.3697987 },
+    { "lat": 9.5074827, "lon": 76.3704422 },
+    { "lat": 9.5074980, "lon": 76.3704363 },
+    { "lat": 9.5087048, "lon": 76.3699731 },
+    { "lat": 9.5093342, "lon": 76.3704564 },
+    { "lat": 9.5102169, "lon": 76.3717441 },
+    { "lat": 9.5119736, "lon": 76.3726675 },
+    { "lat": 9.5152618, "lon": 76.3786054 },
+    { "lat": 9.5176825, "lon": 76.3783926 },
+    { "lat": 9.5167065, "lon": 76.3838557 },
+    { "lat": 9.5151181, "lon": 76.3828603 },
+    { "lat": 9.5115834, "lon": 76.3842005 },
+    { "lat": 9.5110822, "lon": 76.3833966 },
+    { "lat": 9.5070385, "lon": 76.3829344 },
+    { "lat": 9.5066809, "lon": 76.3834026 },
+    { "lat": 9.5064750, "lon": 76.3828548 },
+    { "lat": 9.5040008, "lon": 76.3823720 },
+    { "lat": 9.5028158, "lon": 76.3826590 },
+    { "lat": 9.5027016, "lon": 76.3830538 },
+    { "lat": 9.5019630, "lon": 76.3824537 },
+    { "lat": 9.5019437, "lon": 76.3829095 },
+    { "lat": 9.5002550, "lon": 76.3840513 },
+    { "lat": 9.4980581, "lon": 76.3849587 },
+    { "lat": 9.4978948, "lon": 76.3853887 },
+    { "lat": 9.4974610, "lon": 76.3851486 },
+    { "lat": 9.4936241, "lon": 76.3849088 },
+    { "lat": 9.4933116, "lon": 76.3852841 },
+    { "lat": 9.4919667, "lon": 76.3846182 },
+    { "lat": 9.4916780, "lon": 76.3850507 },
+    { "lat": 9.4883569, "lon": 76.3853566 },
+    { "lat": 9.4874433, "lon": 76.3849808 },
+    { "lat": 9.4871483, "lon": 76.3844686 },
+    { "lat": 9.4868920, "lon": 76.3847856 },
+    { "lat": 9.4856684, "lon": 76.3849924 },
+    { "lat": 9.4846727, "lon": 76.3856120 },
+    { "lat": 9.4846154, "lon": 76.3856414 },
+    { "lat": 9.4847527, "lon": 76.3859023 },
+    { "lat": 9.4843957, "lon": 76.3857592 },
+    { "lat": 9.4829634, "lon": 76.3866040 },
+    { "lat": 9.4820828, "lon": 76.3869002 },
+    { "lat": 9.4817956, "lon": 76.3866279 },
+    { "lat": 9.4818515, "lon": 76.3869780 },
+    { "lat": 9.4813413, "lon": 76.3872414 },
+    { "lat": 9.4810955, "lon": 76.3876815 },
+    { "lat": 9.4807643, "lon": 76.3873758 },
+    { "lat": 9.4795855, "lon": 76.3873972 },
+    { "lat": 9.4794926, "lon": 76.3871773 },
+    { "lat": 9.4791882, "lon": 76.3874344 },
+    { "lat": 9.4770902, "lon": 76.3875152 },
+    { "lat": 9.4767690, "lon": 76.3871139 },
+    { "lat": 9.4762011, "lon": 76.3873386 },
+    { "lat": 9.4752182, "lon": 76.3871434 },
+    { "lat": 9.4740835, "lon": 76.3871678 },
+    { "lat": 9.4736922, "lon": 76.3873998 },
+    { "lat": 9.4732862, "lon": 76.3870214 },
+    { "lat": 9.4726233, "lon": 76.3867579 },
+    { "lat": 9.4721339, "lon": 76.3864884 },
+    { "lat": 9.4714941, "lon": 76.3869570 },
+    { "lat": 9.4698528, "lon": 76.3872308 },
+    { "lat": 9.4694287, "lon": 76.3875281 },
+    { "lat": 9.4693163, "lon": 76.3880493 },
+    { "lat": 9.4688919, "lon": 76.3876276 },
+    { "lat": 9.4673455, "lon": 76.3884464 },
+    { "lat": 9.4662677, "lon": 76.3892680 },
+    { "lat": 9.4666332, "lon": 76.3900218 },
+    { "lat": 9.4659249, "lon": 76.3897857 },
+    { "lat": 9.4644597, "lon": 76.3918608 },
+    { "lat": 9.4646215, "lon": 76.3926081 },
+    { "lat": 9.4641461, "lon": 76.3923416 },
+    { "lat": 9.4639242, "lon": 76.3925712 },
+    { "lat": 9.4605378, "lon": 76.3947503 },
+    { "lat": 9.4604331, "lon": 76.3957839 },
+    { "lat": 9.4600595, "lon": 76.3956380 },
+    { "lat": 9.4575096, "lon": 76.3976759 },
+    { "lat": 9.4562457, "lon": 76.3977867 },
+    { "lat": 9.4559567, "lon": 76.3980678 },
+    { "lat": 9.4558369, "lon": 76.3977483 },
+    { "lat": 9.4545693, "lon": 76.3976630 },
+    { "lat": 9.4537526, "lon": 76.3977478 },
+    { "lat": 9.4529250, "lon": 76.3982848 },
+    { "lat": 9.4521270, "lon": 76.3991780 },
+    { "lat": 9.4515941, "lon": 76.4006135 },
+    { "lat": 9.4515613, "lon": 76.4032013 },
+    { "lat": 9.4512819, "lon": 76.4046277 },
+    { "lat": 9.4510288, "lon": 76.4047187 },
+    { "lat": 9.4511747, "lon": 76.4049310 },
+    { "lat": 9.4505311, "lon": 76.4052403 },
+    { "lat": 9.4496347, "lon": 76.4052537 },
+    { "lat": 9.4464814, "lon": 76.4045531 },
+    { "lat": 9.4457520, "lon": 76.4045614 },
+    { "lat": 9.4454719, "lon": 76.4041692 },
+    { "lat": 9.4451794, "lon": 76.4045679 },
+    { "lat": 9.4442274, "lon": 76.4045788 },
+    { "lat": 9.4438403, "lon": 76.4050734 }
+  ],
+  "tags": {
+    "bicycle": "no",
+    "foot": "yes",
+    "horse": "yes",
+    "motor_vehicle": "no",
+    "motorcar": "no",
+    "motorcycle": "no",
+    "name": "Alapuzha - Nedumudi",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 400308519,
+  "bounds": {
+    "minlat": 9.5013284,
+    "minlon": 76.3524852,
+    "maxlat": 9.5318779,
+    "maxlon": 76.3753532
+  },
+  "geometry": [
+    { "lat": 9.5318779, "lon": 76.3753532 },
+    { "lat": 9.5267290, "lon": 76.3631628 },
+    { "lat": 9.5267369, "lon": 76.3592896 },
+    { "lat": 9.5266662, "lon": 76.3587954 },
+    { "lat": 9.5265404, "lon": 76.3584288 },
+    { "lat": 9.5264304, "lon": 76.3582057 },
+    { "lat": 9.5260374, "lon": 76.3579985 },
+    { "lat": 9.5251037, "lon": 76.3576675 },
+    { "lat": 9.5248793, "lon": 76.3576180 },
+    { "lat": 9.5236856, "lon": 76.3573550 },
+    { "lat": 9.5227677, "lon": 76.3572414 },
+    { "lat": 9.5222804, "lon": 76.3571457 },
+    { "lat": 9.5215338, "lon": 76.3569306 },
+    { "lat": 9.5189479, "lon": 76.3562930 },
+    { "lat": 9.5174859, "lon": 76.3559503 },
+    { "lat": 9.5155681, "lon": 76.3555040 },
+    { "lat": 9.5146564, "lon": 76.3551533 },
+    { "lat": 9.5136433, "lon": 76.3547906 },
+    { "lat": 9.5126442, "lon": 76.3544998 },
+    { "lat": 9.5119619, "lon": 76.3543292 },
+    { "lat": 9.5114023, "lon": 76.3541571 },
+    { "lat": 9.5104906, "lon": 76.3540535 },
+    { "lat": 9.5098305, "lon": 76.3540194 },
+    { "lat": 9.5091622, "lon": 76.3539898 },
+    { "lat": 9.5086977, "lon": 76.3540062 },
+    { "lat": 9.5082662, "lon": 76.3539021 },
+    { "lat": 9.5071579, "lon": 76.3537347 },
+    { "lat": 9.5069520, "lon": 76.3537099 },
+    { "lat": 9.5062304, "lon": 76.3536232 },
+    { "lat": 9.5057289, "lon": 76.3535399 },
+    { "lat": 9.5049649, "lon": 76.3533921 },
+    { "lat": 9.5044068, "lon": 76.3533044 },
+    { "lat": 9.5035344, "lon": 76.3533681 },
+    { "lat": 9.5028034, "lon": 76.3532486 },
+    { "lat": 9.5013284, "lon": 76.3529964 },
+    { "lat": 9.5013672, "lon": 76.3524852 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "name": "NW3",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 400309887,
+  "bounds": {
+    "minlat": 9.4857733,
+    "minlon": 76.3647561,
+    "maxlat": 9.5178082,
+    "maxlon": 76.4066608
+  },
+  "geometry": [
+    { "lat": 9.5149990, "lon": 76.3937170 },
+    { "lat": 9.5145486, "lon": 76.3937815 },
+    { "lat": 9.5124079, "lon": 76.3940035 },
+    { "lat": 9.5098387, "lon": 76.3943063 },
+    { "lat": 9.5089186, "lon": 76.3944354 },
+    { "lat": 9.5086434, "lon": 76.3945948 },
+    { "lat": 9.5084784, "lon": 76.3948419 },
+    { "lat": 9.5084234, "lon": 76.3954077 },
+    { "lat": 9.5083841, "lon": 76.3971610 },
+    { "lat": 9.5080304, "lon": 76.4042380 },
+    { "lat": 9.5080932, "lon": 76.4062623 },
+    { "lat": 9.5086749, "lon": 76.4066608 },
+    { "lat": 9.5091937, "lon": 76.4066528 },
+    { "lat": 9.5131315, "lon": 76.4059276 },
+    { "lat": 9.5137839, "lon": 76.4053856 },
+    { "lat": 9.5139175, "lon": 76.4044373 },
+    { "lat": 9.5139568, "lon": 76.4028832 },
+    { "lat": 9.5142555, "lon": 76.4009386 },
+    { "lat": 9.5143577, "lon": 76.3996475 },
+    { "lat": 9.5145227, "lon": 76.3967865 },
+    { "lat": 9.5150494, "lon": 76.3944753 },
+    { "lat": 9.5155288, "lon": 76.3933595 },
+    { "lat": 9.5161690, "lon": 76.3916775 },
+    { "lat": 9.5165485, "lon": 76.3902458 },
+    { "lat": 9.5170178, "lon": 76.3877297 },
+    { "lat": 9.5172109, "lon": 76.3866700 },
+    { "lat": 9.5174866, "lon": 76.3847619 },
+    { "lat": 9.5176839, "lon": 76.3835022 },
+    { "lat": 9.5177111, "lon": 76.3830396 },
+    { "lat": 9.5178082, "lon": 76.3822818 },
+    { "lat": 9.5177610, "lon": 76.3804090 },
+    { "lat": 9.5173366, "lon": 76.3793490 },
+    { "lat": 9.5167864, "lon": 76.3789426 },
+    { "lat": 9.5153402, "lon": 76.3784644 },
+    { "lat": 9.5147900, "lon": 76.3779464 },
+    { "lat": 9.5128564, "lon": 76.3746071 },
+    { "lat": 9.5115910, "lon": 76.3732841 },
+    { "lat": 9.5102155, "lon": 76.3720090 },
+    { "lat": 9.5091544, "lon": 76.3706382 },
+    { "lat": 9.5086277, "lon": 76.3703912 },
+    { "lat": 9.5074426, "lon": 76.3702732 },
+    { "lat": 9.5061411, "lon": 76.3696826 },
+    { "lat": 9.5039916, "lon": 76.3694277 },
+    { "lat": 9.5024709, "lon": 76.3687076 },
+    { "lat": 9.5008116, "lon": 76.3672641 },
+    { "lat": 9.4973250, "lon": 76.3665178 },
+    { "lat": 9.4953288, "lon": 76.3660114 },
+    { "lat": 9.4932177, "lon": 76.3655930 },
+    { "lat": 9.4925246, "lon": 76.3656037 },
+    { "lat": 9.4908421, "lon": 76.3656144 },
+    { "lat": 9.4895722, "lon": 76.3654696 },
+    { "lat": 9.4885881, "lon": 76.3652389 },
+    { "lat": 9.4870114, "lon": 76.3647561 },
+    { "lat": 9.4864505, "lon": 76.3648151 },
+    { "lat": 9.4860242, "lon": 76.3649175 },
+    { "lat": 9.4858209, "lon": 76.3658558 },
+    { "lat": 9.4857733, "lon": 76.3681035 },
+    { "lat": 9.4859328, "lon": 76.3690245 },
+    { "lat": 9.4860185, "lon": 76.3695196 },
+    { "lat": 9.4860212, "lon": 76.3695615 },
+    { "lat": 9.4860896, "lon": 76.3706315 },
+    { "lat": 9.4865075, "lon": 76.3728469 },
+    { "lat": 9.4866357, "lon": 76.3742619 },
+    { "lat": 9.4869902, "lon": 76.3747178 },
+    { "lat": 9.4875246, "lon": 76.3749378 },
+    { "lat": 9.4879055, "lon": 76.3752972 },
+    { "lat": 9.4880484, "lon": 76.3759355 },
+    { "lat": 9.4884082, "lon": 76.3761716 },
+    { "lat": 9.4895669, "lon": 76.3765149 },
+    { "lat": 9.4898685, "lon": 76.3768958 },
+    { "lat": 9.4900167, "lon": 76.3774376 },
+    { "lat": 9.4899426, "lon": 76.3781993 },
+    { "lat": 9.4896728, "lon": 76.3793580 },
+    { "lat": 9.4890903, "lon": 76.3807828 },
+    { "lat": 9.4887029, "lon": 76.3817186 },
+    { "lat": 9.4886207, "lon": 76.3826327 },
+    { "lat": 9.4883583, "lon": 76.3840724 },
+    { "lat": 9.4883099, "lon": 76.3843379 },
+    { "lat": 9.4883569, "lon": 76.3853566 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "no",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "no",
+    "motorcycle": "no",
+    "name": "vattakkayal ferry",
+    "route": "ferry",
+    "type": "route"
+  }
+},
+{
+  "type": "way",
+  "id": 428709799,
+  "bounds": {
+    "minlat": 9.5964495,
+    "minlon": 76.3658903,
+    "maxlat": 9.6050461,
+    "maxlon": 76.4304857
+  },
+  "geometry": [
+    { "lat": 9.5964495, "lon": 76.4304857 },
+    { "lat": 9.5964957, "lon": 76.4303613 },
+    { "lat": 9.5965231, "lon": 76.4302698 },
+    { "lat": 9.5965446, "lon": 76.4301982 },
+    { "lat": 9.5965546, "lon": 76.4301647 },
+    { "lat": 9.5965668, "lon": 76.4301241 },
+    { "lat": 9.5965854, "lon": 76.4300621 },
+    { "lat": 9.5965941, "lon": 76.4299806 },
+    { "lat": 9.5966357, "lon": 76.4295912 },
+    { "lat": 9.5966315, "lon": 76.4295502 },
+    { "lat": 9.5966097, "lon": 76.4293364 },
+    { "lat": 9.5966055, "lon": 76.4292950 },
+    { "lat": 9.5965935, "lon": 76.4292499 },
+    { "lat": 9.5965072, "lon": 76.4289260 },
+    { "lat": 9.5965749, "lon": 76.4284625 },
+    { "lat": 9.5966898, "lon": 76.4282837 },
+    { "lat": 9.5968287, "lon": 76.4280676 },
+    { "lat": 9.5968381, "lon": 76.4280436 },
+    { "lat": 9.5968507, "lon": 76.4280118 },
+    { "lat": 9.5970238, "lon": 76.4275720 },
+    { "lat": 9.5972445, "lon": 76.4270112 },
+    { "lat": 9.5974966, "lon": 76.4261048 },
+    { "lat": 9.5977838, "lon": 76.4252489 },
+    { "lat": 9.5981413, "lon": 76.4239863 },
+    { "lat": 9.5985725, "lon": 76.4225437 },
+    { "lat": 9.5993097, "lon": 76.4194407 },
+    { "lat": 9.5997971, "lon": 76.4156727 },
+    { "lat": 9.6002305, "lon": 76.4120420 },
+    { "lat": 9.6007574, "lon": 76.4082636 },
+    { "lat": 9.6013439, "lon": 76.4029462 },
+    { "lat": 9.6022325, "lon": 76.3960714 },
+    { "lat": 9.6028644, "lon": 76.3902832 },
+    { "lat": 9.6034447, "lon": 76.3837711 },
+    { "lat": 9.6038949, "lon": 76.3772805 },
+    { "lat": 9.6041846, "lon": 76.3723582 },
+    { "lat": 9.6046575, "lon": 76.3682629 },
+    { "lat": 9.6050311, "lon": 76.3659902 },
+    { "lat": 9.6050461, "lon": 76.3658903 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "duration": "40",
+    "foot": "yes",
+    "from": "Kumarakom Boat Jetty",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "name": "Muhamma - Kumarakom",
+    "operator": "Kerala State Water Transport Department",
+    "route": "ferry",
+    "to": "Muhamma Boat Jetty",
+    "toll": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 474159245,
+  "bounds": {
+    "minlat": 9.6378734,
+    "minlon": 76.3821104,
+    "maxlat": 9.6490080,
+    "maxlon": 76.4786644
+  },
+  "geometry": [
+    { "lat": 9.6455604, "lon": 76.4786644 },
+    { "lat": 9.6455490, "lon": 76.4786558 },
+    { "lat": 9.6445218, "lon": 76.4785607 },
+    { "lat": 9.6449478, "lon": 76.4766445 },
+    { "lat": 9.6453907, "lon": 76.4746316 },
+    { "lat": 9.6460914, "lon": 76.4722378 },
+    { "lat": 9.6462315, "lon": 76.4710210 },
+    { "lat": 9.6461642, "lon": 76.4700828 },
+    { "lat": 9.6462259, "lon": 76.4683941 },
+    { "lat": 9.6462876, "lon": 76.4667110 },
+    { "lat": 9.6464564, "lon": 76.4655210 },
+    { "lat": 9.6462708, "lon": 76.4639760 },
+    { "lat": 9.6459120, "lon": 76.4624010 },
+    { "lat": 9.6456485, "lon": 76.4613263 },
+    { "lat": 9.6451183, "lon": 76.4589183 },
+    { "lat": 9.6447628, "lon": 76.4582047 },
+    { "lat": 9.6442359, "lon": 76.4566240 },
+    { "lat": 9.6436809, "lon": 76.4549807 },
+    { "lat": 9.6432773, "lon": 76.4537753 },
+    { "lat": 9.6427904, "lon": 76.4518758 },
+    { "lat": 9.6422641, "lon": 76.4510419 },
+    { "lat": 9.6416685, "lon": 76.4490047 },
+    { "lat": 9.6405218, "lon": 76.4453307 },
+    { "lat": 9.6395519, "lon": 76.4428881 },
+    { "lat": 9.6389946, "lon": 76.4410158 },
+    { "lat": 9.6383779, "lon": 76.4391167 },
+    { "lat": 9.6381985, "lon": 76.4381614 },
+    { "lat": 9.6379239, "lon": 76.4365466 },
+    { "lat": 9.6380192, "lon": 76.4344485 },
+    { "lat": 9.6378734, "lon": 76.4334932 },
+    { "lat": 9.6383443, "lon": 76.4316453 },
+    { "lat": 9.6385909, "lon": 76.4310710 },
+    { "lat": 9.6384995, "lon": 76.4306448 },
+    { "lat": 9.6388768, "lon": 76.4302067 },
+    { "lat": 9.6390955, "lon": 76.4285179 },
+    { "lat": 9.6396056, "lon": 76.4266017 },
+    { "lat": 9.6404408, "lon": 76.4237985 },
+    { "lat": 9.6408388, "lon": 76.4219051 },
+    { "lat": 9.6411920, "lon": 76.4201652 },
+    { "lat": 9.6438331, "lon": 76.4107465 },
+    { "lat": 9.6448127, "lon": 76.4102728 },
+    { "lat": 9.6442890, "lon": 76.4093158 },
+    { "lat": 9.6490080, "lon": 76.3821104 }
+  ],
+  "tags": {
+    "duration": "01:30",
+    "foot": "yes",
+    "motor_vehicle": "no",
+    "motorcar": "no",
+    "motorcycle": "yes",
+    "name": "Kannankara to Maniaparambu Line",
+    "operator": "SWTD Muhamma",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 620912552,
+  "bounds": {
+    "minlat": 9.4438403,
+    "minlon": 76.4046557,
+    "maxlat": 9.4527672,
+    "maxlon": 76.4115074
+  },
+  "geometry": [
+    { "lat": 9.4504231, "lon": 76.4115074 },
+    { "lat": 9.4508252, "lon": 76.4108033 },
+    { "lat": 9.4521587, "lon": 76.4094837 },
+    { "lat": 9.4526350, "lon": 76.4089848 },
+    { "lat": 9.4527672, "lon": 76.4082927 },
+    { "lat": 9.4524074, "lon": 76.4073111 },
+    { "lat": 9.4514285, "lon": 76.4059485 },
+    { "lat": 9.4505395, "lon": 76.4053745 },
+    { "lat": 9.4492801, "lon": 76.4053209 },
+    { "lat": 9.4481583, "lon": 76.4051599 },
+    { "lat": 9.4470840, "lon": 76.4048327 },
+    { "lat": 9.4460680, "lon": 76.4046557 },
+    { "lat": 9.4445493, "lon": 76.4047040 },
+    { "lat": 9.4438403, "lon": 76.4050734 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 620912554,
+  "bounds": {
+    "minlat": 9.4514219,
+    "minlon": 76.3977992,
+    "maxlat": 9.4600510,
+    "maxlon": 76.4103151
+  },
+  "geometry": [
+    { "lat": 9.4600510, "lon": 76.4103151 },
+    { "lat": 9.4583432, "lon": 76.4095527 },
+    { "lat": 9.4571844, "lon": 76.4090431 },
+    { "lat": 9.4555864, "lon": 76.4088124 },
+    { "lat": 9.4535809, "lon": 76.4084315 },
+    { "lat": 9.4530940, "lon": 76.4079970 },
+    { "lat": 9.4523056, "lon": 76.4068705 },
+    { "lat": 9.4516336, "lon": 76.4058191 },
+    { "lat": 9.4514219, "lon": 76.4052129 },
+    { "lat": 9.4516283, "lon": 76.4037913 },
+    { "lat": 9.4517129, "lon": 76.4022410 },
+    { "lat": 9.4516865, "lon": 76.4008999 },
+    { "lat": 9.4521045, "lon": 76.3996500 },
+    { "lat": 9.4529829, "lon": 76.3986039 },
+    { "lat": 9.4537978, "lon": 76.3980138 },
+    { "lat": 9.4545598, "lon": 76.3977992 },
+    { "lat": 9.4553271, "lon": 76.3978368 },
+    { "lat": 9.4559567, "lon": 76.3980678 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 777215877,
+  "bounds": {
+    "minlat": 9.4998802,
+    "minlon": 76.3483376,
+    "maxlat": 9.5777301,
+    "maxlon": 76.5191093
+  },
+  "geometry": [
+    { "lat": 9.5777301, "lon": 76.5191093 },
+    { "lat": 9.5770394, "lon": 76.5177967 },
+    { "lat": 9.5764790, "lon": 76.5160555 },
+    { "lat": 9.5760331, "lon": 76.5152476 },
+    { "lat": 9.5757784, "lon": 76.5146237 },
+    { "lat": 9.5754464, "lon": 76.5132590 },
+    { "lat": 9.5750431, "lon": 76.5117103 },
+    { "lat": 9.5744764, "lon": 76.5094761 },
+    { "lat": 9.5744396, "lon": 76.5090109 },
+    { "lat": 9.5743581, "lon": 76.5089315 },
+    { "lat": 9.5741855, "lon": 76.5083207 },
+    { "lat": 9.5737379, "lon": 76.5064392 },
+    { "lat": 9.5733735, "lon": 76.5051353 },
+    { "lat": 9.5733464, "lon": 76.5050383 },
+    { "lat": 9.5731639, "lon": 76.5041046 },
+    { "lat": 9.5728651, "lon": 76.5031876 },
+    { "lat": 9.5724525, "lon": 76.5014281 },
+    { "lat": 9.5717794, "lon": 76.4987499 },
+    { "lat": 9.5717215, "lon": 76.4985195 },
+    { "lat": 9.5717390, "lon": 76.4984495 },
+    { "lat": 9.5716907, "lon": 76.4984138 },
+    { "lat": 9.5716105, "lon": 76.4981287 },
+    { "lat": 9.5713483, "lon": 76.4971647 },
+    { "lat": 9.5707756, "lon": 76.4952054 },
+    { "lat": 9.5704298, "lon": 76.4938154 },
+    { "lat": 9.5702778, "lon": 76.4932042 },
+    { "lat": 9.5701659, "lon": 76.4927727 },
+    { "lat": 9.5701840, "lon": 76.4927041 },
+    { "lat": 9.5701304, "lon": 76.4926685 },
+    { "lat": 9.5697208, "lon": 76.4912493 },
+    { "lat": 9.5695518, "lon": 76.4905366 },
+    { "lat": 9.5691781, "lon": 76.4892285 },
+    { "lat": 9.5688664, "lon": 76.4880132 },
+    { "lat": 9.5684196, "lon": 76.4862428 },
+    { "lat": 9.5684775, "lon": 76.4861896 },
+    { "lat": 9.5683989, "lon": 76.4861635 },
+    { "lat": 9.5680527, "lon": 76.4848844 },
+    { "lat": 9.5673234, "lon": 76.4821644 },
+    { "lat": 9.5669116, "lon": 76.4805295 },
+    { "lat": 9.5669287, "lon": 76.4804047 },
+    { "lat": 9.5668616, "lon": 76.4802987 },
+    { "lat": 9.5645883, "lon": 76.4719876 },
+    { "lat": 9.5636099, "lon": 76.4681418 },
+    { "lat": 9.5635324, "lon": 76.4675130 },
+    { "lat": 9.5630851, "lon": 76.4662005 },
+    { "lat": 9.5615727, "lon": 76.4659298 },
+    { "lat": 9.5592769, "lon": 76.4568825 },
+    { "lat": 9.5585485, "lon": 76.4522632 },
+    { "lat": 9.5543411, "lon": 76.4403090 },
+    { "lat": 9.5539063, "lon": 76.4401882 },
+    { "lat": 9.5541563, "lon": 76.4397849 },
+    { "lat": 9.5540716, "lon": 76.4395447 },
+    { "lat": 9.5521855, "lon": 76.4372904 },
+    { "lat": 9.5509888, "lon": 76.4370411 },
+    { "lat": 9.5515158, "lon": 76.4360505 },
+    { "lat": 9.5509879, "lon": 76.4348250 },
+    { "lat": 9.5521617, "lon": 76.4349586 },
+    { "lat": 9.5523793, "lon": 76.4345072 },
+    { "lat": 9.5518174, "lon": 76.4327060 },
+    { "lat": 9.5508167, "lon": 76.4292574 },
+    { "lat": 9.5498647, "lon": 76.4260758 },
+    { "lat": 9.5502291, "lon": 76.4254913 },
+    { "lat": 9.5496014, "lon": 76.4253477 },
+    { "lat": 9.5471901, "lon": 76.4185429 },
+    { "lat": 9.5464196, "lon": 76.4184322 },
+    { "lat": 9.5469662, "lon": 76.4177685 },
+    { "lat": 9.5434572, "lon": 76.4070826 },
+    { "lat": 9.5436261, "lon": 76.4064289 },
+    { "lat": 9.5430385, "lon": 76.4061563 },
+    { "lat": 9.5417307, "lon": 76.4033156 },
+    { "lat": 9.5410530, "lon": 76.4032071 },
+    { "lat": 9.5415169, "lon": 76.4027256 },
+    { "lat": 9.5409072, "lon": 76.4011335 },
+    { "lat": 9.5391234, "lon": 76.3961760 },
+    { "lat": 9.5379305, "lon": 76.3929337 },
+    { "lat": 9.5373378, "lon": 76.3927529 },
+    { "lat": 9.5377048, "lon": 76.3922276 },
+    { "lat": 9.5362095, "lon": 76.3880518 },
+    { "lat": 9.5344693, "lon": 76.3830673 },
+    { "lat": 9.5338575, "lon": 76.3829596 },
+    { "lat": 9.5340281, "lon": 76.3818191 },
+    { "lat": 9.5338741, "lon": 76.3804934 },
+    { "lat": 9.5327177, "lon": 76.3778204 },
+    { "lat": 9.5264573, "lon": 76.3631628 },
+    { "lat": 9.5253463, "lon": 76.3580573 },
+    { "lat": 9.5248793, "lon": 76.3576180 },
+    { "lat": 9.5148119, "lon": 76.3552755 },
+    { "lat": 9.5107714, "lon": 76.3538571 },
+    { "lat": 9.5071277, "lon": 76.3535541 },
+    { "lat": 9.5016887, "lon": 76.3528031 },
+    { "lat": 9.5013721, "lon": 76.3525724 },
+    { "lat": 9.5013672, "lon": 76.3524852 },
+    { "lat": 9.5012831, "lon": 76.3525752 },
+    { "lat": 9.5004613, "lon": 76.3528031 },
+    { "lat": 9.5002196, "lon": 76.3528098 },
+    { "lat": 9.5000742, "lon": 76.3524261 },
+    { "lat": 9.4998802, "lon": 76.3503416 },
+    { "lat": 9.5000299, "lon": 76.3493239 },
+    { "lat": 9.4999667, "lon": 76.3491955 },
+    { "lat": 9.5000611, "lon": 76.3491147 },
+    { "lat": 9.5001698, "lon": 76.3483976 },
+    { "lat": 9.5000680, "lon": 76.3483376 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "no",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "no",
+    "motorboat": "yes",
+    "motorcar": "no",
+    "name": "Kottayam-Alappuzha ferry",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 777215878,
+  "bounds": {
+    "minlat": 9.5432627,
+    "minlon": 76.4064289,
+    "maxlat": 9.5521693,
+    "maxlon": 76.4348250
+  },
+  "geometry": [
+    { "lat": 9.5509879, "lon": 76.4348250 },
+    { "lat": 9.5520136, "lon": 76.4347863 },
+    { "lat": 9.5521693, "lon": 76.4345403 },
+    { "lat": 9.5518392, "lon": 76.4334374 },
+    { "lat": 9.5496516, "lon": 76.4259471 },
+    { "lat": 9.5502291, "lon": 76.4254913 },
+    { "lat": 9.5495289, "lon": 76.4255789 },
+    { "lat": 9.5470419, "lon": 76.4186635 },
+    { "lat": 9.5464196, "lon": 76.4184322 },
+    { "lat": 9.5467453, "lon": 76.4177877 },
+    { "lat": 9.5432627, "lon": 76.4070766 },
+    { "lat": 9.5436261, "lon": 76.4064289 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "no",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "no",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "name": "kottayam -Alappuzha ferry",
+    "route": "ferry",
+    "toll": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 777215883,
+  "bounds": {
+    "minlat": 9.5760331,
+    "minlon": 76.5152476,
+    "maxlat": 9.5856314,
+    "maxlon": 76.5187297
+  },
+  "geometry": [
+    { "lat": 9.5856314, "lon": 76.5187297 },
+    { "lat": 9.5849826, "lon": 76.5185489 },
+    { "lat": 9.5839799, "lon": 76.5182088 },
+    { "lat": 9.5838590, "lon": 76.5181678 },
+    { "lat": 9.5814495, "lon": 76.5171582 },
+    { "lat": 9.5792080, "lon": 76.5163803 },
+    { "lat": 9.5781898, "lon": 76.5159725 },
+    { "lat": 9.5769106, "lon": 76.5155357 },
+    { "lat": 9.5760331, "lon": 76.5152476 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "30 mph",
+    "minspeed": "15 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "operator": "Kottayam city",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 777215884,
+  "bounds": {
+    "minlat": 9.5272611,
+    "minlon": 76.4054643,
+    "maxlat": 9.5757784,
+    "maxlon": 76.5169809
+  },
+  "geometry": [
+    { "lat": 9.5757784, "lon": 76.5146237 },
+    { "lat": 9.5747484, "lon": 76.5145173 },
+    { "lat": 9.5741214, "lon": 76.5146692 },
+    { "lat": 9.5738895, "lon": 76.5147254 },
+    { "lat": 9.5727901, "lon": 76.5150665 },
+    { "lat": 9.5719768, "lon": 76.5152938 },
+    { "lat": 9.5702153, "lon": 76.5160246 },
+    { "lat": 9.5682492, "lon": 76.5169809 },
+    { "lat": 9.5673685, "lon": 76.5169538 },
+    { "lat": 9.5670393, "lon": 76.5162682 },
+    { "lat": 9.5669059, "lon": 76.5156366 },
+    { "lat": 9.5663709, "lon": 76.5146376 },
+    { "lat": 9.5658429, "lon": 76.5138835 },
+    { "lat": 9.5651355, "lon": 76.5134263 },
+    { "lat": 9.5644683, "lon": 76.5132459 },
+    { "lat": 9.5638188, "lon": 76.5131647 },
+    { "lat": 9.5628224, "lon": 76.5119648 },
+    { "lat": 9.5615058, "lon": 76.5104130 },
+    { "lat": 9.5605805, "lon": 76.5092221 },
+    { "lat": 9.5597442, "lon": 76.5074268 },
+    { "lat": 9.5593419, "lon": 76.5065573 },
+    { "lat": 9.5595396, "lon": 76.5057307 },
+    { "lat": 9.5597826, "lon": 76.5049414 },
+    { "lat": 9.5603225, "lon": 76.5045037 },
+    { "lat": 9.5617727, "lon": 76.5040526 },
+    { "lat": 9.5622264, "lon": 76.5035173 },
+    { "lat": 9.5625289, "lon": 76.5020678 },
+    { "lat": 9.5604820, "lon": 76.4992340 },
+    { "lat": 9.5596827, "lon": 76.4987274 },
+    { "lat": 9.5589345, "lon": 76.4988550 },
+    { "lat": 9.5581209, "lon": 76.4993423 },
+    { "lat": 9.5560194, "lon": 76.5018006 },
+    { "lat": 9.5538395, "lon": 76.5019627 },
+    { "lat": 9.5527603, "lon": 76.5030785 },
+    { "lat": 9.5516132, "lon": 76.5061847 },
+    { "lat": 9.5500196, "lon": 76.5075613 },
+    { "lat": 9.5476705, "lon": 76.5069884 },
+    { "lat": 9.5452744, "lon": 76.5059177 },
+    { "lat": 9.5413710, "lon": 76.5053448 },
+    { "lat": 9.5348046, "lon": 76.5049076 },
+    { "lat": 9.5314452, "lon": 76.5024164 },
+    { "lat": 9.5296739, "lon": 76.5000303 },
+    { "lat": 9.5294566, "lon": 76.4845775 },
+    { "lat": 9.5293856, "lon": 76.4795276 },
+    { "lat": 9.5293782, "lon": 76.4790027 },
+    { "lat": 9.5291435, "lon": 76.4662193 },
+    { "lat": 9.5297333, "lon": 76.4659998 },
+    { "lat": 9.5291359, "lon": 76.4658097 },
+    { "lat": 9.5291227, "lon": 76.4650893 },
+    { "lat": 9.5290882, "lon": 76.4632093 },
+    { "lat": 9.5290055, "lon": 76.4606287 },
+    { "lat": 9.5288737, "lon": 76.4565183 },
+    { "lat": 9.5288040, "lon": 76.4543444 },
+    { "lat": 9.5287981, "lon": 76.4541597 },
+    { "lat": 9.5286011, "lon": 76.4480179 },
+    { "lat": 9.5284446, "lon": 76.4431362 },
+    { "lat": 9.5274187, "lon": 76.4427370 },
+    { "lat": 9.5284061, "lon": 76.4419365 },
+    { "lat": 9.5282662, "lon": 76.4375730 },
+    { "lat": 9.5282186, "lon": 76.4360894 },
+    { "lat": 9.5289246, "lon": 76.4353360 },
+    { "lat": 9.5281682, "lon": 76.4345193 },
+    { "lat": 9.5277119, "lon": 76.4202496 },
+    { "lat": 9.5272611, "lon": 76.4054643 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "no",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "no",
+    "motorboat": "yes",
+    "motorcar": "no",
+    "name": "Kottayam R block ferry",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 777215885,
+  "bounds": {
+    "minlat": 9.5000481,
+    "minlon": 76.3524852,
+    "maxlat": 9.5013672,
+    "maxlon": 76.3533545
+  },
+  "geometry": [
+    { "lat": 9.5013672, "lon": 76.3524852 },
+    { "lat": 9.5012916, "lon": 76.3525792 },
+    { "lat": 9.5007146, "lon": 76.3529220 },
+    { "lat": 9.5005101, "lon": 76.3529265 },
+    { "lat": 9.5000481, "lon": 76.3529484 },
+    { "lat": 9.5006230, "lon": 76.3533545 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "30 mph",
+    "minspeed": "15 mph",
+    "motor_vehicle": "yes",
+    "name": "NTF",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 777215886,
+  "bounds": {
+    "minlat": 9.5001293,
+    "minlon": 76.3540062,
+    "maxlat": 9.5086977,
+    "maxlon": 76.3567844
+  },
+  "geometry": [
+    { "lat": 9.5086977, "lon": 76.3540062 },
+    { "lat": 9.5079890, "lon": 76.3548255 },
+    { "lat": 9.5061605, "lon": 76.3560204 },
+    { "lat": 9.5051747, "lon": 76.3564609 },
+    { "lat": 9.5029976, "lon": 76.3567844 },
+    { "lat": 9.5025839, "lon": 76.3567639 },
+    { "lat": 9.5001293, "lon": 76.3565304 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "name": "NW3",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 777897118,
+  "bounds": {
+    "minlat": 9.6197015,
+    "minlon": 76.3759714,
+    "maxlat": 9.6220598,
+    "maxlon": 76.3830499
+  },
+  "geometry": [
+    { "lat": 9.6220598, "lon": 76.3759714 },
+    { "lat": 9.6197015, "lon": 76.3830499 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorboat": "yes",
+    "motorcar": "yes",
+    "name": "Pathiramanal ferry",
+    "route": "ferry",
+    "toll": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 779488307,
+  "bounds": {
+    "minlat": 9.5007644,
+    "minlon": 76.3524852,
+    "maxlat": 9.5013672,
+    "maxlon": 76.3532523
+  },
+  "geometry": [
+    { "lat": 9.5013672, "lon": 76.3524852 },
+    { "lat": 9.5012962, "lon": 76.3525829 },
+    { "lat": 9.5010668, "lon": 76.3528678 },
+    { "lat": 9.5007644, "lon": 76.3532523 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "30 mph",
+    "minspeed": "15 mph",
+    "motor_vehicle": "yes",
+    "name": "NTF1",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1031078702,
+  "bounds": {
+    "minlat": 9.3188461,
+    "minlon": 76.3830262,
+    "maxlat": 9.3874436,
+    "maxlon": 76.3898274
+  },
+  "geometry": [
+    { "lat": 9.3874436, "lon": 76.3873074 },
+    { "lat": 9.3870774, "lon": 76.3872710 },
+    { "lat": 9.3870084, "lon": 76.3872642 },
+    { "lat": 9.3862485, "lon": 76.3871856 },
+    { "lat": 9.3852250, "lon": 76.3870010 },
+    { "lat": 9.3846512, "lon": 76.3868949 },
+    { "lat": 9.3844031, "lon": 76.3868752 },
+    { "lat": 9.3837168, "lon": 76.3867809 },
+    { "lat": 9.3832593, "lon": 76.3867337 },
+    { "lat": 9.3829104, "lon": 76.3866827 },
+    { "lat": 9.3823637, "lon": 76.3865805 },
+    { "lat": 9.3815263, "lon": 76.3864272 },
+    { "lat": 9.3812161, "lon": 76.3863997 },
+    { "lat": 9.3805725, "lon": 76.3862425 },
+    { "lat": 9.3798436, "lon": 76.3859576 },
+    { "lat": 9.3776537, "lon": 76.3854338 },
+    { "lat": 9.3764883, "lon": 76.3851767 },
+    { "lat": 9.3743323, "lon": 76.3847298 },
+    { "lat": 9.3728730, "lon": 76.3844405 },
+    { "lat": 9.3726640, "lon": 76.3844236 },
+    { "lat": 9.3704409, "lon": 76.3842433 },
+    { "lat": 9.3679036, "lon": 76.3840856 },
+    { "lat": 9.3632628, "lon": 76.3835597 },
+    { "lat": 9.3602654, "lon": 76.3833362 },
+    { "lat": 9.3570665, "lon": 76.3830404 },
+    { "lat": 9.3567211, "lon": 76.3830262 },
+    { "lat": 9.3545183, "lon": 76.3830574 },
+    { "lat": 9.3500082, "lon": 76.3835656 },
+    { "lat": 9.3484155, "lon": 76.3839597 },
+    { "lat": 9.3458489, "lon": 76.3845949 },
+    { "lat": 9.3437908, "lon": 76.3849635 },
+    { "lat": 9.3400231, "lon": 76.3856622 },
+    { "lat": 9.3394568, "lon": 76.3858008 },
+    { "lat": 9.3357537, "lon": 76.3867068 },
+    { "lat": 9.3356621, "lon": 76.3867215 },
+    { "lat": 9.3325057, "lon": 76.3872299 },
+    { "lat": 9.3306331, "lon": 76.3874516 },
+    { "lat": 9.3296054, "lon": 76.3876827 },
+    { "lat": 9.3281770, "lon": 76.3880040 },
+    { "lat": 9.3258501, "lon": 76.3885328 },
+    { "lat": 9.3234996, "lon": 76.3890146 },
+    { "lat": 9.3221533, "lon": 76.3891847 },
+    { "lat": 9.3213608, "lon": 76.3892849 },
+    { "lat": 9.3213131, "lon": 76.3892921 },
+    { "lat": 9.3194099, "lon": 76.3895787 },
+    { "lat": 9.3188461, "lon": 76.3898274 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "name": "Alappuzha to Kollam",
+    "route": "ferry",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1033125438,
+  "bounds": {
+    "minlat": 8.8920281,
+    "minlon": 76.3483376,
+    "maxlat": 9.5000886,
+    "maxlon": 76.5851991
+  },
+  "geometry": [
+    { "lat": 9.5000680, "lon": 76.3483376 },
+    { "lat": 9.5000886, "lon": 76.3485025 },
+    { "lat": 9.5000094, "lon": 76.3491384 },
+    { "lat": 9.4999667, "lon": 76.3491955 },
+    { "lat": 9.4999838, "lon": 76.3492646 },
+    { "lat": 9.4997675, "lon": 76.3504552 },
+    { "lat": 9.4997815, "lon": 76.3506522 },
+    { "lat": 9.5000455, "lon": 76.3526145 },
+    { "lat": 9.4988313, "lon": 76.3600016 },
+    { "lat": 9.4993743, "lon": 76.3621053 },
+    { "lat": 9.4989636, "lon": 76.3658193 },
+    { "lat": 9.4986964, "lon": 76.3665864 },
+    { "lat": 9.4928632, "lon": 76.3656717 },
+    { "lat": 9.4898685, "lon": 76.3656664 },
+    { "lat": 9.4874187, "lon": 76.3647491 },
+    { "lat": 9.4851277, "lon": 76.3641751 },
+    { "lat": 9.4794874, "lon": 76.3638425 },
+    { "lat": 9.4744131, "lon": 76.3643950 },
+    { "lat": 9.4718998, "lon": 76.3643253 },
+    { "lat": 9.4690319, "lon": 76.3624585 },
+    { "lat": 9.4669841, "lon": 76.3618255 },
+    { "lat": 9.4631902, "lon": 76.3625550 },
+    { "lat": 9.4619943, "lon": 76.3628501 },
+    { "lat": 9.4579570, "lon": 76.3626891 },
+    { "lat": 9.4543270, "lon": 76.3627106 },
+    { "lat": 9.4512208, "lon": 76.3644808 },
+    { "lat": 9.4459292, "lon": 76.3661867 },
+    { "lat": 9.4452730, "lon": 76.3666803 },
+    { "lat": 9.4447915, "lon": 76.3672703 },
+    { "lat": 9.4438019, "lon": 76.3701028 },
+    { "lat": 9.4431987, "lon": 76.3705695 },
+    { "lat": 9.4420927, "lon": 76.3705265 },
+    { "lat": 9.4402406, "lon": 76.3697219 },
+    { "lat": 9.4394468, "lon": 76.3695449 },
+    { "lat": 9.4367797, "lon": 76.3706821 },
+    { "lat": 9.4358484, "lon": 76.3716209 },
+    { "lat": 9.4351075, "lon": 76.3721359 },
+    { "lat": 9.4319271, "lon": 76.3728064 },
+    { "lat": 9.4294399, "lon": 76.3744640 },
+    { "lat": 9.4284979, "lon": 76.3748932 },
+    { "lat": 9.4266246, "lon": 76.3749415 },
+    { "lat": 9.4240685, "lon": 76.3747752 },
+    { "lat": 9.4221952, "lon": 76.3750434 },
+    { "lat": 9.4202900, "lon": 76.3756174 },
+    { "lat": 9.4199513, "lon": 76.3757354 },
+    { "lat": 9.4188612, "lon": 76.3770658 },
+    { "lat": 9.4174535, "lon": 76.3786268 },
+    { "lat": 9.4161886, "lon": 76.3792223 },
+    { "lat": 9.4145692, "lon": 76.3795066 },
+    { "lat": 9.4126164, "lon": 76.3797051 },
+    { "lat": 9.4102773, "lon": 76.3802147 },
+    { "lat": 9.4085255, "lon": 76.3811749 },
+    { "lat": 9.4059482, "lon": 76.3828486 },
+    { "lat": 9.4034132, "lon": 76.3843453 },
+    { "lat": 9.4006347, "lon": 76.3850695 },
+    { "lat": 9.3987533, "lon": 76.3863033 },
+    { "lat": 9.3983067, "lon": 76.3862704 },
+    { "lat": 9.3973154, "lon": 76.3863169 },
+    { "lat": 9.3960049, "lon": 76.3864640 },
+    { "lat": 9.3951898, "lon": 76.3866251 },
+    { "lat": 9.3947571, "lon": 76.3866742 },
+    { "lat": 9.3936160, "lon": 76.3868322 },
+    { "lat": 9.3930479, "lon": 76.3869108 },
+    { "lat": 9.3902365, "lon": 76.3872393 },
+    { "lat": 9.3883425, "lon": 76.3873149 },
+    { "lat": 9.3874475, "lon": 76.3872666 },
+    { "lat": 9.3870813, "lon": 76.3872302 },
+    { "lat": 9.3870124, "lon": 76.3872234 },
+    { "lat": 9.3862541, "lon": 76.3871450 },
+    { "lat": 9.3852322, "lon": 76.3869607 },
+    { "lat": 9.3846564, "lon": 76.3868542 },
+    { "lat": 9.3844074, "lon": 76.3868344 },
+    { "lat": 9.3837216, "lon": 76.3867402 },
+    { "lat": 9.3832642, "lon": 76.3866930 },
+    { "lat": 9.3829170, "lon": 76.3866423 },
+    { "lat": 9.3823710, "lon": 76.3865402 },
+    { "lat": 9.3815317, "lon": 76.3863865 },
+    { "lat": 9.3812226, "lon": 76.3863591 },
+    { "lat": 9.3805846, "lon": 76.3862033 },
+    { "lat": 9.3798556, "lon": 76.3859184 },
+    { "lat": 9.3776626, "lon": 76.3853938 },
+    { "lat": 9.3764966, "lon": 76.3851366 },
+    { "lat": 9.3743402, "lon": 76.3846896 },
+    { "lat": 9.3728785, "lon": 76.3843998 },
+    { "lat": 9.3726672, "lon": 76.3843828 },
+    { "lat": 9.3704437, "lon": 76.3842024 },
+    { "lat": 9.3679071, "lon": 76.3840448 },
+    { "lat": 9.3632665, "lon": 76.3835189 },
+    { "lat": 9.3602687, "lon": 76.3832954 },
+    { "lat": 9.3570692, "lon": 76.3829995 },
+    { "lat": 9.3567227, "lon": 76.3829853 },
+    { "lat": 9.3545044, "lon": 76.3829976 },
+    { "lat": 9.3500006, "lon": 76.3835253 },
+    { "lat": 9.3484059, "lon": 76.3839199 },
+    { "lat": 9.3458406, "lon": 76.3845548 },
+    { "lat": 9.3437836, "lon": 76.3849232 },
+    { "lat": 9.3400147, "lon": 76.3856221 },
+    { "lat": 9.3394473, "lon": 76.3857610 },
+    { "lat": 9.3357458, "lon": 76.3866666 },
+    { "lat": 9.3356558, "lon": 76.3866810 },
+    { "lat": 9.3325002, "lon": 76.3871893 },
+    { "lat": 9.3306264, "lon": 76.3874111 },
+    { "lat": 9.3295966, "lon": 76.3876427 },
+    { "lat": 9.3281682, "lon": 76.3879640 },
+    { "lat": 9.3258417, "lon": 76.3884927 },
+    { "lat": 9.3234931, "lon": 76.3889741 },
+    { "lat": 9.3221483, "lon": 76.3891440 },
+    { "lat": 9.3213553, "lon": 76.3892443 },
+    { "lat": 9.3213072, "lon": 76.3892516 },
+    { "lat": 9.3193987, "lon": 76.3895390 },
+    { "lat": 9.3188300, "lon": 76.3897898 },
+    { "lat": 9.3182195, "lon": 76.3899250 },
+    { "lat": 9.3163345, "lon": 76.3902525 },
+    { "lat": 9.3144344, "lon": 76.3906447 },
+    { "lat": 9.3135770, "lon": 76.3907789 },
+    { "lat": 9.3129814, "lon": 76.3908569 },
+    { "lat": 9.3113626, "lon": 76.3911496 },
+    { "lat": 9.3096053, "lon": 76.3916688 },
+    { "lat": 9.3074820, "lon": 76.3922241 },
+    { "lat": 9.3058408, "lon": 76.3926491 },
+    { "lat": 9.3052599, "lon": 76.3927996 },
+    { "lat": 9.3050178, "lon": 76.3928430 },
+    { "lat": 9.3049563, "lon": 76.3928304 },
+    { "lat": 9.3044404, "lon": 76.3927909 },
+    { "lat": 9.3034931, "lon": 76.3932193 },
+    { "lat": 9.3028875, "lon": 76.3935979 },
+    { "lat": 9.3019723, "lon": 76.3945704 },
+    { "lat": 9.3016463, "lon": 76.3954744 },
+    { "lat": 9.3015246, "lon": 76.3960620 },
+    { "lat": 9.3010824, "lon": 76.3961967 },
+    { "lat": 9.3002410, "lon": 76.3963339 },
+    { "lat": 9.2991106, "lon": 76.3968106 },
+    { "lat": 9.2974268, "lon": 76.3979442 },
+    { "lat": 9.2961089, "lon": 76.3982635 },
+    { "lat": 9.2944443, "lon": 76.3985806 },
+    { "lat": 9.2943832, "lon": 76.3985922 },
+    { "lat": 9.2933884, "lon": 76.3987249 },
+    { "lat": 9.2917137, "lon": 76.3999070 },
+    { "lat": 9.2902697, "lon": 76.4009733 },
+    { "lat": 9.2891718, "lon": 76.4014510 },
+    { "lat": 9.2881844, "lon": 76.4018561 },
+    { "lat": 9.2862699, "lon": 76.4031633 },
+    { "lat": 9.2849794, "lon": 76.4042851 },
+    { "lat": 9.2845305, "lon": 76.4047915 },
+    { "lat": 9.2839955, "lon": 76.4053076 },
+    { "lat": 9.2821950, "lon": 76.4054944 },
+    { "lat": 9.2806682, "lon": 76.4053266 },
+    { "lat": 9.2790502, "lon": 76.4050991 },
+    { "lat": 9.2775909, "lon": 76.4051750 },
+    { "lat": 9.2760508, "lon": 76.4052981 },
+    { "lat": 9.2747732, "lon": 76.4055553 },
+    { "lat": 9.2727396, "lon": 76.4065186 },
+    { "lat": 9.2717131, "lon": 76.4068977 },
+    { "lat": 9.2704437, "lon": 76.4075697 },
+    { "lat": 9.2697685, "lon": 76.4079559 },
+    { "lat": 9.2690792, "lon": 76.4083678 },
+    { "lat": 9.2686905, "lon": 76.4085751 },
+    { "lat": 9.2684543, "lon": 76.4090969 },
+    { "lat": 9.2683305, "lon": 76.4102609 },
+    { "lat": 9.2679775, "lon": 76.4108453 },
+    { "lat": 9.2675748, "lon": 76.4110585 },
+    { "lat": 9.2663524, "lon": 76.4113513 },
+    { "lat": 9.2657636, "lon": 76.4116408 },
+    { "lat": 9.2651390, "lon": 76.4121026 },
+    { "lat": 9.2648396, "lon": 76.4127867 },
+    { "lat": 9.2643883, "lon": 76.4140159 },
+    { "lat": 9.2639801, "lon": 76.4144311 },
+    { "lat": 9.2636151, "lon": 76.4144368 },
+    { "lat": 9.2627592, "lon": 76.4137803 },
+    { "lat": 9.2615583, "lon": 76.4127641 },
+    { "lat": 9.2610035, "lon": 76.4121927 },
+    { "lat": 9.2605566, "lon": 76.4117801 },
+    { "lat": 9.2601140, "lon": 76.4117357 },
+    { "lat": 9.2595628, "lon": 76.4120095 },
+    { "lat": 9.2591918, "lon": 76.4121938 },
+    { "lat": 9.2585441, "lon": 76.4123569 },
+    { "lat": 9.2581373, "lon": 76.4124732 },
+    { "lat": 9.2580819, "lon": 76.4124890 },
+    { "lat": 9.2576953, "lon": 76.4125539 },
+    { "lat": 9.2575697, "lon": 76.4126144 },
+    { "lat": 9.2575308, "lon": 76.4126331 },
+    { "lat": 9.2575072, "lon": 76.4126451 },
+    { "lat": 9.2570788, "lon": 76.4128528 },
+    { "lat": 9.2570477, "lon": 76.4128679 },
+    { "lat": 9.2568556, "lon": 76.4129611 },
+    { "lat": 9.2555600, "lon": 76.4138360 },
+    { "lat": 9.2542344, "lon": 76.4144821 },
+    { "lat": 9.2525059, "lon": 76.4151617 },
+    { "lat": 9.2514408, "lon": 76.4153546 },
+    { "lat": 9.2506437, "lon": 76.4155056 },
+    { "lat": 9.2504689, "lon": 76.4155162 },
+    { "lat": 9.2500871, "lon": 76.4153688 },
+    { "lat": 9.2499435, "lon": 76.4153133 },
+    { "lat": 9.2495285, "lon": 76.4152185 },
+    { "lat": 9.2487424, "lon": 76.4154065 },
+    { "lat": 9.2479348, "lon": 76.4158486 },
+    { "lat": 9.2474884, "lon": 76.4162865 },
+    { "lat": 9.2466954, "lon": 76.4167539 },
+    { "lat": 9.2459762, "lon": 76.4170417 },
+    { "lat": 9.2450113, "lon": 76.4179896 },
+    { "lat": 9.2442801, "lon": 76.4187880 },
+    { "lat": 9.2435212, "lon": 76.4195842 },
+    { "lat": 9.2429239, "lon": 76.4199912 },
+    { "lat": 9.2417060, "lon": 76.4211122 },
+    { "lat": 9.2383939, "lon": 76.4239827 },
+    { "lat": 9.2354808, "lon": 76.4263219 },
+    { "lat": 9.2326315, "lon": 76.4281331 },
+    { "lat": 9.2291916, "lon": 76.4308384 },
+    { "lat": 9.2256803, "lon": 76.4326353 },
+    { "lat": 9.2164923, "lon": 76.4367213 },
+    { "lat": 9.2107310, "lon": 76.4392156 },
+    { "lat": 9.2023825, "lon": 76.4411813 },
+    { "lat": 9.1955956, "lon": 76.4436352 },
+    { "lat": 9.1907325, "lon": 76.4460446 },
+    { "lat": 9.1833313, "lon": 76.4500655 },
+    { "lat": 9.1782766, "lon": 76.4528407 },
+    { "lat": 9.1761318, "lon": 76.4535933 },
+    { "lat": 9.1739271, "lon": 76.4545250 },
+    { "lat": 9.1678392, "lon": 76.4573141 },
+    { "lat": 9.1555954, "lon": 76.4631197 },
+    { "lat": 9.1511127, "lon": 76.4651279 },
+    { "lat": 9.1468869, "lon": 76.4663057 },
+    { "lat": 9.1368133, "lon": 76.4698407 },
+    { "lat": 9.1311177, "lon": 76.4717273 },
+    { "lat": 9.1281981, "lon": 76.4726576 },
+    { "lat": 9.1258004, "lon": 76.4734800 },
+    { "lat": 9.1229992, "lon": 76.4747668 },
+    { "lat": 9.1207770, "lon": 76.4755964 },
+    { "lat": 9.1195260, "lon": 76.4758968 },
+    { "lat": 9.1186865, "lon": 76.4760308 },
+    { "lat": 9.1172222, "lon": 76.4762212 },
+    { "lat": 9.1165042, "lon": 76.4765168 },
+    { "lat": 9.1143569, "lon": 76.4778061 },
+    { "lat": 9.1107148, "lon": 76.4792567 },
+    { "lat": 9.1072096, "lon": 76.4809179 },
+    { "lat": 9.1027607, "lon": 76.4827619 },
+    { "lat": 9.0956453, "lon": 76.4854651 },
+    { "lat": 9.0917193, "lon": 76.4874820 },
+    { "lat": 9.0900115, "lon": 76.4883928 },
+    { "lat": 9.0866849, "lon": 76.4901004 },
+    { "lat": 9.0842171, "lon": 76.4913533 },
+    { "lat": 9.0817664, "lon": 76.4927428 },
+    { "lat": 9.0774176, "lon": 76.4941438 },
+    { "lat": 9.0747754, "lon": 76.4951282 },
+    { "lat": 9.0718986, "lon": 76.4964983 },
+    { "lat": 9.0699593, "lon": 76.4970398 },
+    { "lat": 9.0683808, "lon": 76.4972491 },
+    { "lat": 9.0652187, "lon": 76.4971684 },
+    { "lat": 9.0637292, "lon": 76.4974953 },
+    { "lat": 9.0622542, "lon": 76.4982810 },
+    { "lat": 9.0613263, "lon": 76.4989790 },
+    { "lat": 9.0600551, "lon": 76.5003466 },
+    { "lat": 9.0569490, "lon": 76.5030828 },
+    { "lat": 9.0547099, "lon": 76.5043609 },
+    { "lat": 9.0532998, "lon": 76.5051527 },
+    { "lat": 9.0515825, "lon": 76.5059071 },
+    { "lat": 9.0502863, "lon": 76.5062663 },
+    { "lat": 9.0485919, "lon": 76.5073133 },
+    { "lat": 9.0466783, "lon": 76.5077305 },
+    { "lat": 9.0435912, "lon": 76.5075480 },
+    { "lat": 9.0406266, "lon": 76.5083091 },
+    { "lat": 9.0377534, "lon": 76.5095129 },
+    { "lat": 9.0368937, "lon": 76.5101848 },
+    { "lat": 9.0351691, "lon": 76.5155294 },
+    { "lat": 9.0306639, "lon": 76.5173540 },
+    { "lat": 9.0271667, "lon": 76.5185651 },
+    { "lat": 9.0228720, "lon": 76.5201968 },
+    { "lat": 9.0183436, "lon": 76.5228831 },
+    { "lat": 9.0169670, "lon": 76.5233218 },
+    { "lat": 9.0147752, "lon": 76.5243404 },
+    { "lat": 9.0141232, "lon": 76.5245717 },
+    { "lat": 9.0122520, "lon": 76.5247174 },
+    { "lat": 9.0105731, "lon": 76.5239285 },
+    { "lat": 9.0081281, "lon": 76.5231022 },
+    { "lat": 9.0060469, "lon": 76.5221181 },
+    { "lat": 9.0048608, "lon": 76.5216049 },
+    { "lat": 9.0038143, "lon": 76.5216394 },
+    { "lat": 9.0027410, "lon": 76.5220962 },
+    { "lat": 9.0016082, "lon": 76.5227692 },
+    { "lat": 9.0003421, "lon": 76.5226514 },
+    { "lat": 9.0000547, "lon": 76.5226086 },
+    { "lat": 8.9976788, "lon": 76.5230993 },
+    { "lat": 8.9956174, "lon": 76.5235253 },
+    { "lat": 8.9933203, "lon": 76.5242438 },
+    { "lat": 8.9921487, "lon": 76.5246087 },
+    { "lat": 8.9905430, "lon": 76.5245709 },
+    { "lat": 8.9897468, "lon": 76.5246848 },
+    { "lat": 8.9883930, "lon": 76.5250885 },
+    { "lat": 8.9881673, "lon": 76.5251532 },
+    { "lat": 8.9845135, "lon": 76.5262905 },
+    { "lat": 8.9819082, "lon": 76.5268812 },
+    { "lat": 8.9790306, "lon": 76.5288602 },
+    { "lat": 8.9786418, "lon": 76.5291773 },
+    { "lat": 8.9751076, "lon": 76.5318653 },
+    { "lat": 8.9749033, "lon": 76.5320370 },
+    { "lat": 8.9731120, "lon": 76.5334873 },
+    { "lat": 8.9727706, "lon": 76.5337312 },
+    { "lat": 8.9720608, "lon": 76.5341551 },
+    { "lat": 8.9718785, "lon": 76.5342465 },
+    { "lat": 8.9716914, "lon": 76.5342639 },
+    { "lat": 8.9696747, "lon": 76.5344905 },
+    { "lat": 8.9680622, "lon": 76.5347483 },
+    { "lat": 8.9671940, "lon": 76.5349230 },
+    { "lat": 8.9661055, "lon": 76.5351789 },
+    { "lat": 8.9645720, "lon": 76.5359552 },
+    { "lat": 8.9632061, "lon": 76.5369923 },
+    { "lat": 8.9622028, "lon": 76.5387093 },
+    { "lat": 8.9621825, "lon": 76.5387441 },
+    { "lat": 8.9612374, "lon": 76.5394965 },
+    { "lat": 8.9610034, "lon": 76.5395857 },
+    { "lat": 8.9596526, "lon": 76.5405386 },
+    { "lat": 8.9583442, "lon": 76.5415186 },
+    { "lat": 8.9567386, "lon": 76.5431548 },
+    { "lat": 8.9556813, "lon": 76.5450361 },
+    { "lat": 8.9545770, "lon": 76.5471859 },
+    { "lat": 8.9535616, "lon": 76.5494132 },
+    { "lat": 8.9511942, "lon": 76.5531793 },
+    { "lat": 8.9494129, "lon": 76.5554978 },
+    { "lat": 8.9471929, "lon": 76.5592432 },
+    { "lat": 8.9446755, "lon": 76.5631684 },
+    { "lat": 8.9396390, "lon": 76.5670293 },
+    { "lat": 8.9376230, "lon": 76.5680496 },
+    { "lat": 8.9355155, "lon": 76.5686062 },
+    { "lat": 8.9337368, "lon": 76.5690759 },
+    { "lat": 8.9303433, "lon": 76.5697629 },
+    { "lat": 8.9292285, "lon": 76.5701036 },
+    { "lat": 8.9283705, "lon": 76.5701302 },
+    { "lat": 8.9275501, "lon": 76.5701556 },
+    { "lat": 8.9265523, "lon": 76.5697988 },
+    { "lat": 8.9257318, "lon": 76.5691953 },
+    { "lat": 8.9252058, "lon": 76.5680969 },
+    { "lat": 8.9240148, "lon": 76.5663747 },
+    { "lat": 8.9234639, "lon": 76.5655146 },
+    { "lat": 8.9227947, "lon": 76.5651642 },
+    { "lat": 8.9220081, "lon": 76.5652553 },
+    { "lat": 8.9193157, "lon": 76.5659878 },
+    { "lat": 8.9147151, "lon": 76.5675401 },
+    { "lat": 8.9128303, "lon": 76.5691013 },
+    { "lat": 8.9119897, "lon": 76.5699539 },
+    { "lat": 8.9094704, "lon": 76.5714828 },
+    { "lat": 8.9064219, "lon": 76.5721686 },
+    { "lat": 8.9056472, "lon": 76.5725620 },
+    { "lat": 8.9051684, "lon": 76.5732607 },
+    { "lat": 8.9049166, "lon": 76.5748925 },
+    { "lat": 8.9048270, "lon": 76.5755073 },
+    { "lat": 8.9042635, "lon": 76.5771369 },
+    { "lat": 8.9036460, "lon": 76.5789229 },
+    { "lat": 8.9028733, "lon": 76.5803768 },
+    { "lat": 8.9023093, "lon": 76.5811234 },
+    { "lat": 8.9010562, "lon": 76.5822227 },
+    { "lat": 8.8980006, "lon": 76.5837478 },
+    { "lat": 8.8960465, "lon": 76.5844390 },
+    { "lat": 8.8923561, "lon": 76.5848785 },
+    { "lat": 8.8921094, "lon": 76.5849926 },
+    { "lat": 8.8920566, "lon": 76.5850325 },
+    { "lat": 8.8920281, "lon": 76.5851991 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "name": "Alappuzha to Kollam",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1033125439,
+  "bounds": {
+    "minlat": 9.4891773,
+    "minlon": 76.3656425,
+    "maxlat": 9.4898156,
+    "maxlon": 76.3657951
+  },
+  "geometry": [
+    { "lat": 9.4898156, "lon": 76.3657951 },
+    { "lat": 9.4891773, "lon": 76.3656425 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "name": "Alappuzha to Kollam",
+    "route": "ferry",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1100883332,
+  "bounds": {
+    "minlat": 9.5000481,
+    "minlon": 76.3529484,
+    "maxlat": 9.5236856,
+    "maxlon": 76.3573550
+  },
+  "geometry": [
+    { "lat": 9.5000481, "lon": 76.3529484 },
+    { "lat": 9.5013284, "lon": 76.3529964 },
+    { "lat": 9.5047232, "lon": 76.3531284 },
+    { "lat": 9.5100939, "lon": 76.3537183 },
+    { "lat": 9.5107714, "lon": 76.3538571 },
+    { "lat": 9.5121018, "lon": 76.3541298 },
+    { "lat": 9.5136433, "lon": 76.3547906 },
+    { "lat": 9.5147292, "lon": 76.3552561 },
+    { "lat": 9.5148119, "lon": 76.3552755 },
+    { "lat": 9.5236856, "lon": 76.3573550 }
+  ],
+  "tags": {
+    "name": "Vada Canal",
+    "name:ml": "വാടക്കനാൽ",
+    "route": "ferry",
+    "toll": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1100883333,
+  "bounds": {
+    "minlat": 9.4898156,
+    "minlon": 76.3529484,
+    "maxlat": 9.5000481,
+    "maxlon": 76.3666427
+  },
+  "geometry": [
+    { "lat": 9.5000481, "lon": 76.3529484 },
+    { "lat": 9.5000361, "lon": 76.3530621 },
+    { "lat": 9.4991535, "lon": 76.3593526 },
+    { "lat": 9.4990396, "lon": 76.3600724 },
+    { "lat": 9.4995289, "lon": 76.3619456 },
+    { "lat": 9.4990297, "lon": 76.3656813 },
+    { "lat": 9.4990167, "lon": 76.3657785 },
+    { "lat": 9.4989403, "lon": 76.3661497 },
+    { "lat": 9.4987341, "lon": 76.3666427 },
+    { "lat": 9.4973250, "lon": 76.3665178 },
+    { "lat": 9.4968715, "lon": 76.3664889 },
+    { "lat": 9.4938491, "lon": 76.3659302 },
+    { "lat": 9.4923658, "lon": 76.3657200 },
+    { "lat": 9.4898156, "lon": 76.3657951 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "no",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "no",
+    "name": "Alappuzha to Kollam",
+    "route": "ferry",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1100896880,
+  "bounds": {
+    "minlat": 9.3874436,
+    "minlon": 76.3863248,
+    "maxlat": 9.3987680,
+    "maxlon": 76.3873559
+  },
+  "geometry": [
+    { "lat": 9.3987680, "lon": 76.3863545 },
+    { "lat": 9.3983008, "lon": 76.3863248 },
+    { "lat": 9.3973183, "lon": 76.3863578 },
+    { "lat": 9.3960110, "lon": 76.3865045 },
+    { "lat": 9.3951959, "lon": 76.3866656 },
+    { "lat": 9.3947621, "lon": 76.3867149 },
+    { "lat": 9.3936215, "lon": 76.3868728 },
+    { "lat": 9.3930530, "lon": 76.3869515 },
+    { "lat": 9.3902396, "lon": 76.3872802 },
+    { "lat": 9.3883422, "lon": 76.3873559 },
+    { "lat": 9.3874436, "lon": 76.3873074 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "name": "Alappuzha to Kollam",
+    "route": "ferry",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1100966865,
+  "bounds": {
+    "minlat": 9.5149990,
+    "minlon": 76.3753532,
+    "maxlat": 9.5341978,
+    "maxlon": 76.3937170
+  },
+  "geometry": [
+    { "lat": 9.5149990, "lon": 76.3937170 },
+    { "lat": 9.5151932, "lon": 76.3936874 },
+    { "lat": 9.5155210, "lon": 76.3936464 },
+    { "lat": 9.5160869, "lon": 76.3922199 },
+    { "lat": 9.5166292, "lon": 76.3900601 },
+    { "lat": 9.5172580, "lon": 76.3866651 },
+    { "lat": 9.5174781, "lon": 76.3851110 },
+    { "lat": 9.5176746, "lon": 76.3839554 },
+    { "lat": 9.5180518, "lon": 76.3834454 },
+    { "lat": 9.5183348, "lon": 76.3833338 },
+    { "lat": 9.5223748, "lon": 76.3831585 },
+    { "lat": 9.5233808, "lon": 76.3830947 },
+    { "lat": 9.5256916, "lon": 76.3829831 },
+    { "lat": 9.5263917, "lon": 76.3829615 },
+    { "lat": 9.5287883, "lon": 76.3828875 },
+    { "lat": 9.5337484, "lon": 76.3825802 },
+    { "lat": 9.5338575, "lon": 76.3829596 },
+    { "lat": 9.5341978, "lon": 76.3818821 },
+    { "lat": 9.5340227, "lon": 76.3804329 },
+    { "lat": 9.5318779, "lon": 76.3753532 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "yes",
+    "motorcar": "yes",
+    "name": "NW3",
+    "route": "ferry",
+    "type": "route"
+  }
+},
+{
+  "type": "way",
+  "id": 1256103270,
+  "bounds": {
+    "minlat": 9.4790444,
+    "minlon": 76.3870885,
+    "maxlat": 9.4791927,
+    "maxlon": 76.3879036
+  },
+  "geometry": [
+    { "lat": 9.4791927, "lon": 76.3870885 },
+    { "lat": 9.4790444, "lon": 76.3879036 }
+  ],
+  "tags": {
+    "fee": "yes",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1262673948,
+  "bounds": {
+    "minlat": 9.5119606,
+    "minlon": 76.3543292,
+    "maxlat": 9.5119619,
+    "maxlon": 76.3545542
+  },
+  "geometry": [
+    { "lat": 9.5119606, "lon": 76.3545542 },
+    { "lat": 9.5119619, "lon": 76.3543292 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1416481882,
+  "bounds": {
+    "minlat": 9.3181517,
+    "minlon": 76.4437467,
+    "maxlat": 9.3189368,
+    "maxlon": 76.4438153
+  },
+  "geometry": [
+    { "lat": 9.3181517, "lon": 76.4438153 },
+    { "lat": 9.3189368, "lon": 76.4437467 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1417603595,
+  "bounds": {
+    "minlat": 9.4524326,
+    "minlon": 76.4071564,
+    "maxlat": 9.4527892,
+    "maxlon": 76.4080084
+  },
+  "geometry": [
+    { "lat": 9.4527892, "lon": 76.4071564 },
+    { "lat": 9.4524326, "lon": 76.4080084 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1422583030,
+  "bounds": {
+    "minlat": 9.4885647,
+    "minlon": 76.3817595,
+    "maxlat": 9.4888640,
+    "maxlon": 76.3818003
+  },
+  "geometry": [
+    { "lat": 9.4885647, "lon": 76.3817595 },
+    { "lat": 9.4888640, "lon": 76.3818003 }
+  ],
+  "tags": {
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1465620148,
+  "bounds": {
+    "minlat": 9.4998262,
+    "minlon": 76.3483376,
+    "maxlat": 9.5001559,
+    "maxlon": 76.3529484
+  },
+  "geometry": [
+    { "lat": 9.5000680, "lon": 76.3483376 },
+    { "lat": 9.5001559, "lon": 76.3484050 },
+    { "lat": 9.5000485, "lon": 76.3491073 },
+    { "lat": 9.4999667, "lon": 76.3491955 },
+    { "lat": 9.5000160, "lon": 76.3493239 },
+    { "lat": 9.4998472, "lon": 76.3503470 },
+    { "lat": 9.4998262, "lon": 76.3504860 },
+    { "lat": 9.5000742, "lon": 76.3524261 },
+    { "lat": 9.5000930, "lon": 76.3525512 },
+    { "lat": 9.5000481, "lon": 76.3529484 }
+  ],
+  "tags": {
+    "foot": "no",
+    "motor_vehicle": "no",
+    "name": "Vada Canal",
+    "name:ml": "വാടക്കനാൽ",
+    "route": "ferry",
+    "toll": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1466028781,
+  "bounds": {
+    "minlat": 9.4690335,
+    "minlon": 76.3529484,
+    "maxlat": 9.5177566,
+    "maxlon": 76.4650870
+  },
+  "geometry": [
+    { "lat": 9.4690335, "lon": 76.4650870 },
+    { "lat": 9.4691302, "lon": 76.4646181 },
+    { "lat": 9.4707383, "lon": 76.4596434 },
+    { "lat": 9.4710217, "lon": 76.4594451 },
+    { "lat": 9.4701692, "lon": 76.4593055 },
+    { "lat": 9.4704981, "lon": 76.4591183 },
+    { "lat": 9.4707176, "lon": 76.4586958 },
+    { "lat": 9.4706597, "lon": 76.4585235 },
+    { "lat": 9.4708417, "lon": 76.4584464 },
+    { "lat": 9.4714260, "lon": 76.4574337 },
+    { "lat": 9.4718398, "lon": 76.4570705 },
+    { "lat": 9.4718994, "lon": 76.4568959 },
+    { "lat": 9.4720842, "lon": 76.4569052 },
+    { "lat": 9.4729216, "lon": 76.4565679 },
+    { "lat": 9.4744536, "lon": 76.4561219 },
+    { "lat": 9.4750266, "lon": 76.4558127 },
+    { "lat": 9.4762631, "lon": 76.4547724 },
+    { "lat": 9.4762276, "lon": 76.4546014 },
+    { "lat": 9.4764322, "lon": 76.4546249 },
+    { "lat": 9.4776477, "lon": 76.4541245 },
+    { "lat": 9.4777836, "lon": 76.4541545 },
+    { "lat": 9.4778022, "lon": 76.4539946 },
+    { "lat": 9.4785676, "lon": 76.4530918 },
+    { "lat": 9.4790272, "lon": 76.4521652 },
+    { "lat": 9.4792677, "lon": 76.4511411 },
+    { "lat": 9.4794388, "lon": 76.4510435 },
+    { "lat": 9.4793265, "lon": 76.4508701 },
+    { "lat": 9.4794601, "lon": 76.4501928 },
+    { "lat": 9.4797167, "lon": 76.4494613 },
+    { "lat": 9.4802725, "lon": 76.4487731 },
+    { "lat": 9.4807215, "lon": 76.4484101 },
+    { "lat": 9.4809179, "lon": 76.4480748 },
+    { "lat": 9.4811611, "lon": 76.4481240 },
+    { "lat": 9.4820271, "lon": 76.4478077 },
+    { "lat": 9.4826465, "lon": 76.4476479 },
+    { "lat": 9.4861238, "lon": 76.4472979 },
+    { "lat": 9.4863274, "lon": 76.4470998 },
+    { "lat": 9.4865442, "lon": 76.4472707 },
+    { "lat": 9.4876677, "lon": 76.4472400 },
+    { "lat": 9.4879420, "lon": 76.4474000 },
+    { "lat": 9.4880681, "lon": 76.4471544 },
+    { "lat": 9.4886490, "lon": 76.4467806 },
+    { "lat": 9.4890755, "lon": 76.4464578 },
+    { "lat": 9.4893245, "lon": 76.4460625 },
+    { "lat": 9.4895863, "lon": 76.4456538 },
+    { "lat": 9.4899791, "lon": 76.4448997 },
+    { "lat": 9.4901426, "lon": 76.4443882 },
+    { "lat": 9.4903634, "lon": 76.4441437 },
+    { "lat": 9.4901726, "lon": 76.4438705 },
+    { "lat": 9.4902244, "lon": 76.4434904 },
+    { "lat": 9.4904318, "lon": 76.4427808 },
+    { "lat": 9.4910022, "lon": 76.4422935 },
+    { "lat": 9.4923967, "lon": 76.4413843 },
+    { "lat": 9.4924455, "lon": 76.4412651 },
+    { "lat": 9.4925765, "lon": 76.4412558 },
+    { "lat": 9.4933128, "lon": 76.4406681 },
+    { "lat": 9.4936505, "lon": 76.4402499 },
+    { "lat": 9.4940109, "lon": 76.4397018 },
+    { "lat": 9.4940817, "lon": 76.4395082 },
+    { "lat": 9.4942515, "lon": 76.4393825 },
+    { "lat": 9.4941503, "lon": 76.4392286 },
+    { "lat": 9.4948500, "lon": 76.4332892 },
+    { "lat": 9.4947553, "lon": 76.4329609 },
+    { "lat": 9.4949782, "lon": 76.4327902 },
+    { "lat": 9.4964338, "lon": 76.4280439 },
+    { "lat": 9.4979348, "lon": 76.4238524 },
+    { "lat": 9.4982018, "lon": 76.4235337 },
+    { "lat": 9.4984519, "lon": 76.4233967 },
+    { "lat": 9.4987966, "lon": 76.4233761 },
+    { "lat": 9.4990538, "lon": 76.4238112 },
+    { "lat": 9.4993408, "lon": 76.4233898 },
+    { "lat": 9.5084733, "lon": 76.4221249 },
+    { "lat": 9.5086398, "lon": 76.4218132 },
+    { "lat": 9.5089488, "lon": 76.4220680 },
+    { "lat": 9.5112762, "lon": 76.4218238 },
+    { "lat": 9.5115757, "lon": 76.4216892 },
+    { "lat": 9.5117887, "lon": 76.4214857 },
+    { "lat": 9.5120326, "lon": 76.4211007 },
+    { "lat": 9.5121746, "lon": 76.4206375 },
+    { "lat": 9.5122825, "lon": 76.4194116 },
+    { "lat": 9.5125707, "lon": 76.4192249 },
+    { "lat": 9.5122962, "lon": 76.4188668 },
+    { "lat": 9.5132388, "lon": 76.4077054 },
+    { "lat": 9.5137482, "lon": 76.4072845 },
+    { "lat": 9.5133289, "lon": 76.4068282 },
+    { "lat": 9.5128772, "lon": 76.4064932 },
+    { "lat": 9.5121315, "lon": 76.4063334 },
+    { "lat": 9.5094801, "lon": 76.4069100 },
+    { "lat": 9.5093020, "lon": 76.4074316 },
+    { "lat": 9.5088676, "lon": 76.4069761 },
+    { "lat": 9.5081345, "lon": 76.4065004 },
+    { "lat": 9.5078771, "lon": 76.4058958 },
+    { "lat": 9.5083847, "lon": 76.3947845 },
+    { "lat": 9.5085103, "lon": 76.3945233 },
+    { "lat": 9.5086871, "lon": 76.3943786 },
+    { "lat": 9.5092172, "lon": 76.3942858 },
+    { "lat": 9.5093358, "lon": 76.3941326 },
+    { "lat": 9.5095238, "lon": 76.3942318 },
+    { "lat": 9.5147976, "lon": 76.3935878 },
+    { "lat": 9.5153568, "lon": 76.3934925 },
+    { "lat": 9.5154700, "lon": 76.3933895 },
+    { "lat": 9.5161448, "lon": 76.3916299 },
+    { "lat": 9.5161149, "lon": 76.3915214 },
+    { "lat": 9.5161915, "lon": 76.3914691 },
+    { "lat": 9.5163736, "lon": 76.3907649 },
+    { "lat": 9.5170401, "lon": 76.3874053 },
+    { "lat": 9.5174179, "lon": 76.3849011 },
+    { "lat": 9.5177208, "lon": 76.3846026 },
+    { "lat": 9.5175139, "lon": 76.3842930 },
+    { "lat": 9.5175326, "lon": 76.3839741 },
+    { "lat": 9.5174987, "lon": 76.3837997 },
+    { "lat": 9.5173857, "lon": 76.3837107 },
+    { "lat": 9.5169889, "lon": 76.3836899 },
+    { "lat": 9.5167065, "lon": 76.3838557 },
+    { "lat": 9.5175549, "lon": 76.3816725 },
+    { "lat": 9.5177566, "lon": 76.3786781 },
+    { "lat": 9.5176825, "lon": 76.3783926 },
+    { "lat": 9.5170587, "lon": 76.3783221 },
+    { "lat": 9.5155639, "lon": 76.3784522 },
+    { "lat": 9.5152618, "lon": 76.3786054 },
+    { "lat": 9.5152257, "lon": 76.3782399 },
+    { "lat": 9.5128633, "lon": 76.3740638 },
+    { "lat": 9.5122716, "lon": 76.3730268 },
+    { "lat": 9.5119736, "lon": 76.3726675 },
+    { "lat": 9.5116490, "lon": 76.3726326 },
+    { "lat": 9.5114320, "lon": 76.3725183 },
+    { "lat": 9.5101801, "lon": 76.3718085 },
+    { "lat": 9.5092665, "lon": 76.3705201 },
+    { "lat": 9.5087736, "lon": 76.3701359 },
+    { "lat": 9.5087048, "lon": 76.3699731 },
+    { "lat": 9.5085421, "lon": 76.3701022 },
+    { "lat": 9.5074980, "lon": 76.3704363 },
+    { "lat": 9.5062041, "lon": 76.3698007 },
+    { "lat": 9.5061411, "lon": 76.3696826 },
+    { "lat": 9.5060062, "lon": 76.3697666 },
+    { "lat": 9.5035181, "lon": 76.3698205 },
+    { "lat": 9.5034426, "lon": 76.3695585 },
+    { "lat": 9.5023513, "lon": 76.3687306 },
+    { "lat": 9.5020388, "lon": 76.3687145 },
+    { "lat": 9.5021187, "lon": 76.3685086 },
+    { "lat": 9.5021411, "lon": 76.3672151 },
+    { "lat": 9.5019447, "lon": 76.3670609 },
+    { "lat": 9.5012046, "lon": 76.3668822 },
+    { "lat": 9.4990800, "lon": 76.3664068 },
+    { "lat": 9.4989996, "lon": 76.3662674 },
+    { "lat": 9.4990449, "lon": 76.3658967 },
+    { "lat": 9.4991426, "lon": 76.3657847 },
+    { "lat": 9.4990752, "lon": 76.3656822 },
+    { "lat": 9.4994634, "lon": 76.3620634 },
+    { "lat": 9.4993948, "lon": 76.3600439 },
+    { "lat": 9.4996634, "lon": 76.3584997 },
+    { "lat": 9.5003360, "lon": 76.3574465 },
+    { "lat": 9.5003006, "lon": 76.3570379 },
+    { "lat": 9.5000481, "lon": 76.3529484 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "duration": "01:35",
+    "foot": "yes",
+    "horse": "no",
+    "motor_vehicle": "no",
+    "name": "Alapuzha - Kavalam - Krishnapuram",
+    "route": "ferry"
+  }
+},
+{
+  "type": "way",
+  "id": 1467283176,
+  "bounds": {
+    "minlat": 9.5013663,
+    "minlon": 76.3524852,
+    "maxlat": 9.5343547,
+    "maxlon": 76.3829596
+  },
+  "geometry": [
+    { "lat": 9.5338575, "lon": 76.3829596 },
+    { "lat": 9.5343547, "lon": 76.3819459 },
+    { "lat": 9.5341725, "lon": 76.3803327 },
+    { "lat": 9.5333895, "lon": 76.3784766 },
+    { "lat": 9.5321410, "lon": 76.3755047 },
+    { "lat": 9.5310724, "lon": 76.3730585 },
+    { "lat": 9.5269670, "lon": 76.3631236 },
+    { "lat": 9.5269035, "lon": 76.3591647 },
+    { "lat": 9.5266919, "lon": 76.3583600 },
+    { "lat": 9.5264380, "lon": 76.3580596 },
+    { "lat": 9.5259512, "lon": 76.3578021 },
+    { "lat": 9.5243324, "lon": 76.3573408 },
+    { "lat": 9.5223749, "lon": 76.3569653 },
+    { "lat": 9.5177933, "lon": 76.3558871 },
+    { "lat": 9.5170685, "lon": 76.3557610 },
+    { "lat": 9.5153649, "lon": 76.3553613 },
+    { "lat": 9.5143782, "lon": 76.3550019 },
+    { "lat": 9.5135158, "lon": 76.3546854 },
+    { "lat": 9.5123043, "lon": 76.3541731 },
+    { "lat": 9.5121138, "lon": 76.3540927 },
+    { "lat": 9.5107329, "lon": 76.3538057 },
+    { "lat": 9.5098441, "lon": 76.3537332 },
+    { "lat": 9.5086953, "lon": 76.3536729 },
+    { "lat": 9.5079857, "lon": 76.3535897 },
+    { "lat": 9.5047782, "lon": 76.3531834 },
+    { "lat": 9.5036248, "lon": 76.3530117 },
+    { "lat": 9.5016394, "lon": 76.3528629 },
+    { "lat": 9.5013663, "lon": 76.3526309 },
+    { "lat": 9.5013672, "lon": 76.3524852 }
+  ],
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "boat": "yes",
+    "foot": "yes",
+    "horse": "no",
+    "maxspeed": "40 mph",
+    "motor_vehicle": "no",
+    "motorboat": "yes",
+    "motorcar": "no",
+    "name": "kottayam -Alappuzha ferry",
+    "route": "ferry",
+    "toll": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 7504351,
+  "bounds": {
+    "minlat": 8.8920281,
+    "minlon": 75.7628565,
+    "maxlat": 11.3244316,
+    "maxlon": 76.5851991
+  },
+  "tags": {
+    "boat": "yes",
+    "name": "National Waterway 3",
+    "network": "IN:NW",
+    "public_transport:version": "2",
+    "ref": "NW3",
+    "route": "ferry",
+    "type": "route",
+    "waterway": "canal",
+    "wikidata": "Q3529970"
+  }
+},
+{
+  "type": "relation",
+  "id": 10859757,
+  "bounds": {
+    "minlat": 9.4998802,
+    "minlon": 76.3483376,
+    "maxlat": 9.5777301,
+    "maxlon": 76.5191093
+  },
+  "tags": {
+    "access": "yes",
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "yes",
+    "motor_vehicle": "yes",
+    "motorcar": "yes",
+    "name": "Kottayam-Alappuzha ferry",
+    "route": "ferry",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 14762340,
+  "bounds": {
+    "minlat": 9.5964495,
+    "minlon": 76.3658903,
+    "maxlat": 9.6050461,
+    "maxlon": 76.4304857
+  },
+  "tags": {
+    "duration": "40",
+    "fee": "yes",
+    "from": "Muhamma Boat Jetty",
+    "name": "Muhamma → Kumarakom Ferry",
+    "operator": "Kerala State Water Transport Department",
+    "route": "ferry",
+    "to": "Kumarakom Boat Jetty",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 17524758,
+  "bounds": {
+    "minlat": 9.5964495,
+    "minlon": 76.3658903,
+    "maxlat": 9.6050461,
+    "maxlon": 76.4304857
+  },
+  "tags": {
+    "duration": "40",
+    "fee": "yes",
+    "from": "Kumarakom Boat Jetty",
+    "name": "Kumarakom → Muhamma Ferry",
+    "operator": "Kerala State Water Transport Department",
+    "route": "ferry",
+    "to": "Muhamma Boat Jetty",
+    "type": "route"
+  }
+}
+
+  ]
+}
