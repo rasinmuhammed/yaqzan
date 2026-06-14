@@ -550,7 +550,7 @@ body,
 .landing-hero { position: relative; display: flex; align-items: center; justify-content: space-between; min-height: calc(100vh - 80px); padding: 40px 60px; max-width: 1400px; margin: 0 auto; gap: 40px; overflow: visible; box-sizing: border-box; }
 .landing-hero-content { max-width: 640px; text-align: left; flex-shrink: 0; z-index: 2; }
 .landing-hero-logo-block { display: flex; align-items: center; justify-content: flex-start; gap: 20px; margin-bottom: 36px; }
-.landing-hero-logo { height: 75px; width: 75px; object-fit: contain; filter: brightness(1.1); }
+.landing-hero-logo { height: 75px; width: auto; object-fit: contain; filter: brightness(1.1); }
 .landing-hero-brand { text-align: left; display: flex; align-items: baseline; justify-content: flex-start; gap: 16px; }
 .landing-hero-name { font-family: "Outfit", "Space Grotesk Variable", sans-serif; font-size: 24px; font-weight: 800; letter-spacing: 0.25em; color: var(--ink-bright); margin: 0; line-height: 1; }
 .landing-hero-arabic { font-family: "Cairo", sans-serif; font-size: 22px; color: var(--brand); font-weight: 700; line-height: 1; }

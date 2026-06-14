@@ -191,7 +191,7 @@ export default function App() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg>
           </button>
         )}
-        <img src="/yaqzan-logo.png" alt="Yaqzan" className="h-9 w-9 object-contain" style={{ filter: "brightness(1.1)" }} />
+        <img src="/yaqzan-logo.png" alt="Yaqzan" className="h-9 w-auto object-contain" style={{ filter: "brightness(1.1)" }} />
         <div className="flex items-baseline gap-3">
           <h1 className="display text-[18px] font-bold tracking-[0.2em] text-[var(--ink-bright)]">
             YAQZAN<span className="ml-2 text-[14px] font-medium text-[var(--brand)]">يقظان</span>

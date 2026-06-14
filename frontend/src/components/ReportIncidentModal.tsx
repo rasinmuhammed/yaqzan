@@ -57,7 +57,7 @@ export function ReportIncidentModal({
       <div className="w-full max-w-lg rounded-xl border border-[var(--brand-line)] bg-[var(--bg-base)] shadow-2xl">
         <div className="flex items-center justify-between border-b border-[var(--hairline)] px-5 py-4">
           <div className="flex items-center gap-2">
-            <img src="/yaqzan-logo.png" alt="" className="h-5 w-5 object-contain" style={{ filter: "brightness(1.1)" }} />
+            <img src="/yaqzan-logo.png" alt="" className="h-5 w-auto object-contain" style={{ filter: "brightness(1.1)" }} />
             <div className="text-[12px] font-bold tracking-[0.15em] text-[var(--brand)]">SUBMIT INCIDENT REPORT</div>
           </div>
           <button onClick={onClose} className="text-[var(--ink-faint)] hover:text-[var(--ink)] transition-colors">

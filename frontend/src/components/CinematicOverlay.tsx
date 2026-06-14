@@ -197,7 +197,7 @@ export function StartupSplash({ cityName, onDone }: { cityName: string; onDone: 
             transition={{ duration: 0.5 }}
             className="mt-4 flex items-center justify-center gap-4 display text-[36px] font-bold tracking-[0.15em] text-[var(--ink-bright)]"
           >
-            <img src="/yaqzan-logo.png" alt="" className="h-12 w-12 object-contain" style={{ filter: "brightness(1.1)" }} />
+            <img src="/yaqzan-logo.png" alt="" className="h-12 w-auto object-contain" style={{ filter: "brightness(1.1)" }} />
             <div>
               YAQZAN
               <span className="ml-3 text-[28px] font-medium text-[var(--brand)]">يقظان</span>
