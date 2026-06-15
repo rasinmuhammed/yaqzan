@@ -135,6 +135,8 @@ interface SimResult {
   scenario: string;
   scenarioName: string;
   peakRisk: number;
+  baselinePeakRisk: number;
+  reductionPct: number;
   totalEvacuated: number;
   peakTide: number;
   blockedRoads: number;
@@ -155,53 +157,49 @@ export const SimulatorPanel = memo(function SimulatorPanel({
   const [running, setRunning] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
 
-  // Listen for simulator results from WebSocket
-  // For now, we use mock data to demonstrate the UI
+  // Real, deterministic results streamed back from the headless backend run.
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const m = (e as CustomEvent).detail;
+      if (m.type === "sim_result") {
+        setRunning(null);
+        setProgress(100);
+        if (m.error) return;
+        const r: SimResult = {
+          scenario: m.scenario,
+          scenarioName: m.scenarioName ?? m.scenario,
+          peakRisk: m.peakRisk,
+          baselinePeakRisk: m.baselinePeakRisk,
+          reductionPct: m.reductionPct,
+          totalEvacuated: m.totalEvacuated,
+          peakTide: m.peakTide,
+          blockedRoads: m.blockedRoads,
+          hospitalOverload: m.hospitalOverload,
+          responseTime: m.responseTime,
+          grade: m.grade,
+          summary: m.summary,
+        };
+        setResults((prev) => {
+          const idx = prev.findIndex((x) => x.scenario === r.scenario);
+          if (idx >= 0) { const c = [...prev]; c[idx] = r; return c; }
+          return [...prev, r];
+        });
+      }
+    };
+    window.addEventListener("yaqzan_ws", handler);
+    return () => window.removeEventListener("yaqzan_ws", handler);
+  }, []);
+
+  // The headless run finishes in well under a second; the progress bar is a
+  // brief affordance, not a fake delay. Real metrics replace it on sim_result.
   const runSimulation = (scenarioId: string) => {
     setRunning(scenarioId);
     setProgress(0);
-
-    // Animate progress
     const interval = setInterval(() => {
-      setProgress((p) => {
-        if (p >= 100) {
-          clearInterval(interval);
-          return 100;
-        }
-        return p + Math.random() * 15;
-      });
-    }, 200);
-
-    // Simulate completion after ~2s
-    setTimeout(() => {
-      clearInterval(interval);
-      setProgress(100);
-      setRunning(null);
-
-      const scenario = scenarios.find((s) => s.id === scenarioId);
-      const mockResult: SimResult = {
-        scenario: scenarioId,
-        scenarioName: scenario?.name ?? scenarioId,
-        peakRisk: Math.floor(8000 + Math.random() * 15000),
-        totalEvacuated: Math.floor(3000 + Math.random() * 8000),
-        peakTide: 1.5 + Math.random() * 3,
-        blockedRoads: Math.floor(5 + Math.random() * 20),
-        hospitalOverload: Math.random() > 0.4,
-        responseTime: Math.floor(3 + Math.random() * 8),
-        grade: ["A", "B", "C", "D"][Math.floor(Math.random() * 4)] as SimResult["grade"],
-        summary: generateSummary(scenario?.name ?? ""),
-      };
-
-      setResults((prev) => {
-        // Replace if same scenario
-        const idx = prev.findIndex((r) => r.scenario === scenarioId);
-        if (idx >= 0) { const c = [...prev]; c[idx] = mockResult; return c; }
-        return [...prev, mockResult];
-      });
-
-      // Send actual simulation command to backend
-      send({ cmd: "run_simulation", scenario: scenarioId });
-    }, 2500);
+      setProgress((p) => (p >= 90 ? 90 : p + 12));
+    }, 120);
+    setTimeout(() => clearInterval(interval), 2000);
+    send({ cmd: "run_simulation", scenario: scenarioId });
   };
 
   const gradeColor: Record<string, string> = {
@@ -210,7 +208,15 @@ export const SimulatorPanel = memo(function SimulatorPanel({
 
   return (
     <div className="flex h-full flex-col">
-      <DashHeader title="SITUATION SIMULATOR" subtitle="Preparedness analysis & scenario comparison" />
+      <DashHeader title="SITUATION SIMULATOR" subtitle="Preparedness analysis & scenario comparison"
+        right={
+          <span className="flex items-center gap-1.5 rounded bg-[rgba(140,160,200,0.1)] px-2 py-1 text-[8.5px] font-bold tracking-wider text-[var(--ink-dim)]"
+            title="Each run executes the full simulation engine headless with a fixed seed. Numbers are deterministic — re-run any scenario and you get identical results.">
+            <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M4 12a8 8 0 018-8 8 8 0 017 4M20 12a8 8 0 01-8 8 8 8 0 01-7-4" /><path d="M16 4h4v4M8 20H4v-4" /></svg>
+            DETERMINISTIC ENGINE RUN
+          </span>
+        }
+      />
       <div className="scroll-thin flex-1 overflow-y-auto px-5 py-4">
         {/* Prompt-to-disaster designer */}
         <DisasterDesigner send={send} />
@@ -272,12 +278,31 @@ export const SimulatorPanel = memo(function SimulatorPanel({
                       </span>
                     </div>
                   </div>
-                  {/* Metrics */}
+                  {/* Headline: the commander's measured effect vs doing nothing */}
+                  <div className="flex items-stretch gap-2 px-4 pt-3">
+                    <div className="flex-1 rounded-lg border border-[var(--hairline)] bg-[var(--bg-raised)] px-3 py-2">
+                      <div className="text-[7px] tracking-[0.15em] uppercase text-[var(--ink-faint)] mb-0.5">No response (baseline)</div>
+                      <div className="display text-[16px] font-bold tabular-nums" style={{ color: "var(--danger-hot)" }}>
+                        {r.baselinePeakRisk.toLocaleString()}
+                      </div>
+                      <div className="text-[8px] text-[var(--ink-faint)]">peak at risk</div>
+                    </div>
+                    <div className="flex flex-col items-center justify-center px-1">
+                      <span className="display text-[15px] font-bold" style={{ color: "var(--ok)" }}>−{r.reductionPct}%</span>
+                      <span className="text-[7px] tracking-[0.12em] uppercase text-[var(--ink-faint)]">managed</span>
+                    </div>
+                    <div className="flex-1 rounded-lg border border-[var(--ok)] bg-[var(--ok-dim)] px-3 py-2">
+                      <div className="text-[7px] tracking-[0.15em] uppercase text-[var(--ink-faint)] mb-0.5">Standard response</div>
+                      <div className="display text-[16px] font-bold tabular-nums" style={{ color: "var(--ok)" }}>
+                        {r.peakRisk.toLocaleString()}
+                      </div>
+                      <div className="text-[8px] text-[var(--ink-faint)]">peak at risk</div>
+                    </div>
+                  </div>
+                  {/* Supporting metrics */}
                   <div className="grid grid-cols-3 gap-2 px-4 py-3">
-                    <MiniMetric label="Peak Risk" value={r.peakRisk.toLocaleString()}
-                      color={r.peakRisk > 15000 ? "var(--danger-hot)" : "var(--danger)"} />
                     <MiniMetric label="Evacuated" value={r.totalEvacuated.toLocaleString()} color="var(--ok)" />
-                    <MiniMetric label="Response" value={`${r.responseTime} ticks`}
+                    <MiniMetric label="Response" value={`t+${r.responseTime}`}
                       color={r.responseTime > 6 ? "var(--danger)" : "var(--ok)"} />
                     <MiniMetric label="Peak Tide" value={`${r.peakTide.toFixed(1)}m`} color="var(--water)" />
                     <MiniMetric label="Roads Down" value={String(r.blockedRoads)}
@@ -285,6 +310,7 @@ export const SimulatorPanel = memo(function SimulatorPanel({
                     <MiniMetric label="Hospital"
                       value={r.hospitalOverload ? "OVERLOADED" : "OK"}
                       color={r.hospitalOverload ? "var(--danger-hot)" : "var(--ok)"} />
+                    <MiniMetric label="Lives Shielded" value={(r.baselinePeakRisk - r.peakRisk).toLocaleString()} color="var(--ok)" />
                   </div>
                   {/* Summary */}
                   <div className="px-4 py-3 border-t border-[var(--hairline)]">
@@ -342,10 +368,3 @@ function MiniMetric({ label, value, color }: { label: string; value: string; col
   );
 }
 
-function generateSummary(name: string): string {
-  const summaries: Record<string, string> = {
-    "Kuttanad Monsoon Deluge": "Twin monsoon pulses over the Pamba catchment overwhelmed the below-sea-level polders. Vandanam Medical College needed emergency generator support after the grid failed. Road links through Pandanad were lost, forcing boat-only evacuation of Champakulam and Kainakary. Recommend pre-staging boats at Nedumudy and opening Edathua and Chengannur relief camps ahead of the second crest.",
-    "Pamba Night Dam Release": "An overnight reservoir release sent a fast surge into Chengannur and Pandanad with little warning. Darkness and collapsing mobile coverage made reaching trapped families the critical constraint. Key learning: pre-position rescue boats downstream of the dams and establish verified Malayalam-language alert channels before any night release.",
-  };
-  return summaries[name] ?? "Simulation complete. Analysis pending integration with K2 reasoning engine for detailed assessment.";
-}

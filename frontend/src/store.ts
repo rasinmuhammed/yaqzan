@@ -324,6 +324,7 @@ export function useYaqzan() {
         // out via custom event instead of the reducer.
         if (msg.type?.startsWith("chat_") || msg.type?.startsWith("scenario_gen_")
             || msg.type?.startsWith("report_") || msg.type === "citizen_report"
+            || msg.type === "sim_result" || msg.type === "sim_running"
             || msg.type?.startsWith("live_event_")) {
           window.dispatchEvent(new CustomEvent("yaqzan_ws", { detail: msg }));
           // Honest throughput counters for the public-reporting layer.
